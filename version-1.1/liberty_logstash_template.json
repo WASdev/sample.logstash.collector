@@ -8,84 +8,84 @@
             "_ttl": { "enabled": true, "default": 7776000000 },
             "properties": {
             "host": { "type": "string", "index": "not_analyzed" },
-            "was_userDir": { "type": "string", "index": "not_analyzed" },
-            "was_serverName": { "type": "string", "index": "not_analyzed" },
-            "was_datetime": { "type": "date", "format": "yyyy-MM-dd'T'HH:mm:ss.SSSZ" },
-            "was_sequence": { "type": "string", "index": "not_analyzed" },
-            "was_className": { "type": "string", "index": "not_analyzed" },
+            "ibm_userDir": { "type": "string", "index": "not_analyzed" },
+            "ibm_serverName": { "type": "string", "index": "not_analyzed" },
+            "ibm_datetime": { "type": "date", "format": "yyyy-MM-dd'T'HH:mm:ss.SSSZ" },
+            "ibm_sequence": { "type": "string", "index": "not_analyzed" },
+            "ibm_className": { "type": "string", "index": "not_analyzed" },
             "module": { "type": "string", "index": "not_analyzed" },
             "message": { "type": "string" },
-            "was_messageId": { "type": "string", "index": "not_analyzed" },
-            "was_methodName": { "type": "string", "index": "not_analyzed" },
+            "ibm_messageId": { "type": "string", "index": "not_analyzed" },
+            "ibm_methodName": { "type": "string", "index": "not_analyzed" },
             "loglevel": { "type": "string", "index": "not_analyzed" },
-            "was_threadId": { "type": "string", "index": "not_analyzed" }
+            "ibm_threadId": { "type": "string", "index": "not_analyzed" }
             }
         },
         "liberty_ffdc": {
             "_ttl": { "enabled": true, "default": 7776000000 },
             "properties": {
             "host": { "type": "string", "index": "not_analyzed" },
-            "was_userDir": { "type": "string", "index": "not_analyzed" },
-            "was_serverName": { "type": "string", "index": "not_analyzed" },
-            "was_datetime": { "type": "date", "format": "yyyy-MM-dd'T'HH:mm:ss.SSSZ" },
-            "was_sequence": { "type": "string", "index": "not_analyzed" },
-            "was_className": { "type": "string", "index": "not_analyzed" },
-            "was_exceptionName": { "type": "string", "index": "not_analyzed" },
-            "was_objectDetails": { "type": "string", "index": "not_analyzed" },
-            "was_probeID": { "type": "string", "index": "not_analyzed" },
-            "was_stackTrace": { "type": "string", "index": "not_analyzed" }
+            "ibm_userDir": { "type": "string", "index": "not_analyzed" },
+            "ibm_serverName": { "type": "string", "index": "not_analyzed" },
+            "ibm_datetime": { "type": "date", "format": "yyyy-MM-dd'T'HH:mm:ss.SSSZ" },
+            "ibm_sequence": { "type": "string", "index": "not_analyzed" },
+            "ibm_className": { "type": "string", "index": "not_analyzed" },
+            "ibm_exceptionName": { "type": "string", "index": "not_analyzed" },
+            "ibm_objectDetails": { "type": "string", "index": "not_analyzed" },
+            "ibm_probeID": { "type": "string", "index": "not_analyzed" },
+            "ibm_stackTrace": { "type": "string", "index": "not_analyzed" }
             }
         },
         "liberty_trace": {
             "_ttl": { "enabled": true, "default": 7776000000 },
             "properties": {
             "host": { "type": "string", "index": "not_analyzed" },
-            "was_userDir": { "type": "string", "index": "not_analyzed" },
-            "was_serverName": { "type": "string", "index": "not_analyzed" },
-            "was_datetime": { "type": "date", "format": "yyyy-MM-dd'T'HH:mm:ss.SSSZ" },
-            "was_sequence": { "type": "string", "index": "not_analyzed" },
-            "was_className": { "type": "string", "index": "not_analyzed" },
+            "ibm_userDir": { "type": "string", "index": "not_analyzed" },
+            "ibm_serverName": { "type": "string", "index": "not_analyzed" },
+            "ibm_datetime": { "type": "date", "format": "yyyy-MM-dd'T'HH:mm:ss.SSSZ" },
+            "ibm_sequence": { "type": "string", "index": "not_analyzed" },
+            "ibm_className": { "type": "string", "index": "not_analyzed" },
             "module": { "type": "string", "index": "not_analyzed" },
             "message": { "type": "string" },
-            "was_methodName": { "type": "string", "index": "not_analyzed" },
+            "ibm_methodName": { "type": "string", "index": "not_analyzed" },
             "loglevel": { "type": "string", "index": "not_analyzed" },
-            "was_threadId": { "type": "string", "index": "not_analyzed" }
+            "ibm_threadId": { "type": "string", "index": "not_analyzed" }
             }
         },
         "liberty_gc": {
             "_ttl": { "enabled": true, "default": 7776000000 },
             "properties": {
             "host": { "type": "string", "index": "not_analyzed" },
-            "was_userDir": { "type": "string", "index": "not_analyzed" },
-            "was_serverName": { "type": "string", "index": "not_analyzed" },
-            "was_datetime": { "type": "date", "format": "yyyy-MM-dd'T'HH:mm:ss.SSSZ" },
-            "was_sequence": { "type": "string", "index": "not_analyzed" },
-            "was_heap": { "type": "long" },
-            "was_usedHeap": { "type": "long" },
-            "was_duration": { "type": "long" },
-            "was_gcType": { "type": "string", "index": "not_analyzed" },
-            "was_reason": { "type": "string", "index": "not_analyzed" }
+            "ibm_userDir": { "type": "string", "index": "not_analyzed" },
+            "ibm_serverName": { "type": "string", "index": "not_analyzed" },
+            "ibm_datetime": { "type": "date", "format": "yyyy-MM-dd'T'HH:mm:ss.SSSZ" },
+            "ibm_sequence": { "type": "string", "index": "not_analyzed" },
+            "ibm_heap": { "type": "long" },
+            "ibm_usedHeap": { "type": "long" },
+            "ibm_duration": { "type": "long" },
+            "ibm_gcType": { "type": "string", "index": "not_analyzed" },
+            "ibm_reason": { "type": "string", "index": "not_analyzed" }
             }
         },
         "liberty_accesslog": {
             "_ttl": { "enabled": true, "default": 7776000000 },
             "properties": {
             "host": { "type": "string", "index": "not_analyzed" },
-            "was_userDir": { "type": "string", "index": "not_analyzed" },
-            "was_serverName": { "type": "string", "index": "not_analyzed" },
-            "was_datetime": { "type": "date", "format": "yyyy-MM-dd'T'HH:mm:ss.SSSZ" },
-            "was_sequence": { "type": "string", "index": "not_analyzed" },
-            "was_requestHost": { "type": "string", "index": "not_analyzed" },
-            "was_requestPort": { "type": "string", "index": "not_analyzed" },
-            "was_remoteHost": { "type": "string", "index": "not_analyzed" },
-            "was_requestMethod": { "type": "string", "index": "not_analyzed" },
-            "was_requestProtocol": { "type": "string", "index": "not_analyzed" },
-            "was_bytesReceived": { "type": "long" },
-            "was_elapsedTime": { "type": "long" },
-            "was_queryString": { "type": "string" },
-            "was_responseCode": { "type": "integer" },
-            "was_uriPath": { "type": "string", "index": "not_analyzed" },
-            "was_userAgent": { "type": "string", "index": "not_analyzed" }
+            "ibm_userDir": { "type": "string", "index": "not_analyzed" },
+            "ibm_serverName": { "type": "string", "index": "not_analyzed" },
+            "ibm_datetime": { "type": "date", "format": "yyyy-MM-dd'T'HH:mm:ss.SSSZ" },
+            "ibm_sequence": { "type": "string", "index": "not_analyzed" },
+            "ibm_requestHost": { "type": "string", "index": "not_analyzed" },
+            "ibm_requestPort": { "type": "string", "index": "not_analyzed" },
+            "ibm_remoteHost": { "type": "string", "index": "not_analyzed" },
+            "ibm_requestMethod": { "type": "string", "index": "not_analyzed" },
+            "ibm_requestProtocol": { "type": "string", "index": "not_analyzed" },
+            "ibm_bytesReceived": { "type": "long" },
+            "ibm_elapsedTime": { "type": "long" },
+            "ibm_queryString": { "type": "string" },
+            "ibm_responseCode": { "type": "integer" },
+            "ibm_uriPath": { "type": "string", "index": "not_analyzed" },
+            "ibm_userAgent": { "type": "string", "index": "not_analyzed" }
             }
         }
     }
