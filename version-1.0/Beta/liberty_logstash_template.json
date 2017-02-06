@@ -62,6 +62,7 @@
             "sequence": { "type": "string", "index": "not_analyzed" },
             "heap": { "type": "long" },
             "usedHeap": { "type": "long" },
+            "maxHeap": { "type": "long" },
             "duration": { "type": "long" },
             "gcType": { "type": "string", "index": "not_analyzed" },
             "reason": { "type": "string", "index": "not_analyzed" }
