@@ -17,3 +17,5 @@ The files under *[version-1.0/16.0.0.1+](version1.0/16.0.0.1+)* may be used in *
 Dashboards are generally **not** backwards compatible and may lead to unexpected problems. This would mean that higher Liberty versions of dashboards are not compatible with lower Liberty versions of dashboards.
 
 There is also a Beta directory under each *version-1.0* or *version-1.1* directory for use with Beta versions of Liberty. These dashboards are not guaranteed to be compatible with non-beta versions of Liberty.
+
+Note: There are currently template files under the main version-1.0 directory which does not match the structure, these reflect the 16.0.0.1+ files and are planned for removal/cleanup
