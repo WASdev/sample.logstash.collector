@@ -12,10 +12,10 @@ The sample files used for *logstashCollector-1.0* can be found in *version-1.0* 
 Each logstashCollector version contains subdirectories for specific versions of WebSphere Liberty. Dashboards for a *lower* version of Liberty may be used for higher versions of Liberty.
 
 > For example:
-The files under *[version-1.0/16.0.0.1+](version1.0/16.0.0.1+)* may be used in *logstashCollector-1.0* for any version of Liberty 16.0.0.1 and above.
+The files under *[version-1.0/8.5.5.9+](version-1.0/8.5.5.9+)* may be used in *logstashCollector-1.0* for any version of Liberty 8.5.5.9 and above.
 
 Dashboards are generally **not** backwards compatible and may lead to unexpected problems. This would mean that higher Liberty versions of dashboards are not compatible with lower Liberty versions of dashboards.
 
-There is also a Beta directory under each *version-1.0* or *version-1.1* directory for use with Beta versions of Liberty. These dashboards are not guaranteed to be compatible with non-beta versions of Liberty.
+There is also a Beta directory under each *[version-1.0](version-1.0/Beta)* or *[version-1.1](version-1.1/Beta)* directory for use with the latest Beta versions of Liberty. These dashboards are not guaranteed to be compatible with non-beta and previous beta versions of Liberty.
 
-Note: There are currently template files under the main version-1.0 directory which does not match the structure, these reflect the 16.0.0.1+ files and are planned for removal/cleanup
+Note: There are currently template files under the main directory and version-1.0 directory which do not match the structure above, these reflect the 8.5.5.9+ files and are planned for removal/cleanup
