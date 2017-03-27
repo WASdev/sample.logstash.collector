@@ -1,0 +1,93 @@
+{
+    "template": "logstash-*",
+    "settings": {
+        "index.refresh_interval": "5s"
+    },
+    "mappings": {
+        "liberty_message": {
+            "_ttl": { "enabled": true, "default": 7776000000 },
+            "properties": {
+            "hostName": { "type": "string", "index": "not_analyzed" },
+            "wlpUserDir": { "type": "string", "index": "not_analyzed" },
+            "serverName": { "type": "string", "index": "not_analyzed" },
+            "datetime": { "type": "date", "format": "yyyy-MM-dd'T'HH:mm:ss.SSSZ" },
+            "sequence": { "type": "string", "index": "not_analyzed" },
+            "className": { "type": "string", "index": "not_analyzed" },
+            "loggerName": { "type": "string", "index": "not_analyzed" },
+            "message": { "type": "string" },
+            "messageId": { "type": "string", "index": "not_analyzed" },
+            "methodName": { "type": "string", "index": "not_analyzed" },
+            "severity": { "type": "string", "index": "not_analyzed" },
+            "threadId": { "type": "string", "index": "not_analyzed" }
+            }
+        },
+        "liberty_ffdc": {
+            "_ttl": { "enabled": true, "default": 7776000000 },
+            "properties": {
+            "hostName": { "type": "string", "index": "not_analyzed" },
+            "wlpUserDir": { "type": "string", "index": "not_analyzed" },
+            "serverName": { "type": "string", "index": "not_analyzed" },
+            "datetime": { "type": "date", "format": "yyyy-MM-dd'T'HH:mm:ss.SSSZ" },
+            "sequence": { "type": "string", "index": "not_analyzed" },
+            "className": { "type": "string", "index": "not_analyzed" },
+            "exceptionName": { "type": "string", "index": "not_analyzed" },
+            "objectDetails": { "type": "string", "index": "not_analyzed" },
+            "probeID": { "type": "string", "index": "not_analyzed" },
+            "stackTrace": { "type": "string", "index": "not_analyzed" }
+            }
+        },
+        "liberty_trace": {
+            "_ttl": { "enabled": true, "default": 7776000000 },
+            "properties": {
+            "hostName": { "type": "string", "index": "not_analyzed" },
+            "wlpUserDir": { "type": "string", "index": "not_analyzed" },
+            "serverName": { "type": "string", "index": "not_analyzed" },
+            "datetime": { "type": "date", "format": "yyyy-MM-dd'T'HH:mm:ss.SSSZ" },
+            "sequence": { "type": "string", "index": "not_analyzed" },
+            "className": { "type": "string", "index": "not_analyzed" },
+            "loggerName": { "type": "string", "index": "not_analyzed" },
+            "message": { "type": "string" },
+            "methodName": { "type": "string", "index": "not_analyzed" },
+            "severity": { "type": "string", "index": "not_analyzed" },
+            "threadId": { "type": "string", "index": "not_analyzed" }
+            }
+        },
+        "liberty_gc": {
+            "_ttl": { "enabled": true, "default": 7776000000 },
+            "properties": {
+            "hostName": { "type": "string", "index": "not_analyzed" },
+            "wlpUserDir": { "type": "string", "index": "not_analyzed" },
+            "serverName": { "type": "string", "index": "not_analyzed" },
+            "datetime": { "type": "date", "format": "yyyy-MM-dd'T'HH:mm:ss.SSSZ" },
+            "sequence": { "type": "string", "index": "not_analyzed" },
+            "heap": { "type": "long" },
+            "usedHeap": { "type": "long" },
+            "maxHeap": { "type": "long" },
+            "duration": { "type": "long" },
+            "gcType": { "type": "string", "index": "not_analyzed" },
+            "reason": { "type": "string", "index": "not_analyzed" }
+            }
+        },
+        "liberty_accesslog": {
+            "_ttl": { "enabled": true, "default": 7776000000 },
+            "properties": {
+            "hostName": { "type": "string", "index": "not_analyzed" },
+            "wlpUserDir": { "type": "string", "index": "not_analyzed" },
+            "serverName": { "type": "string", "index": "not_analyzed" },
+            "datetime": { "type": "date", "format": "yyyy-MM-dd'T'HH:mm:ss.SSSZ" },
+            "sequence": { "type": "string", "index": "not_analyzed" },
+            "requestHost": { "type": "string", "index": "not_analyzed" },
+            "requestPort": { "type": "string", "index": "not_analyzed" },
+            "remoteHost": { "type": "string", "index": "not_analyzed" },
+            "requestMethod": { "type": "string", "index": "not_analyzed" },
+            "requestProtocol": { "type": "string", "index": "not_analyzed" },
+            "bytesReceived": { "type": "long" },
+            "elapsedTime": { "type": "long" },
+            "queryString": { "type": "string" },
+            "responseCode": { "type": "integer" },
+            "uriPath": { "type": "string", "index": "not_analyzed" },
+            "userAgent": { "type": "string", "index": "not_analyzed" }
+            }
+        }
+    }
+}
