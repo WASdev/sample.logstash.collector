@@ -6,6 +6,8 @@ This project contains the following samples for exploiting the *logstashCollecto
 * Kibana dashboard *(liberty-kibana4.json)*
 
 ### Subdirectories
+**Note: There are currently sample files under the main directory and the version-1.0 directory. These are for Liberty v8.5.5.9+ and are kept around to preserve external links (temporarily). If you require more updated dashboards, you must navigate to the appropriate Liberty version.**
+
 The sample files used for *logstashCollector-1.0* can be found in *version-1.0* directory and the files used for *logstashCollector-1.1* can be found in *version-1.1* directory.
 
 
@@ -16,6 +18,4 @@ The files under *[version-1.0/8.5.5.9+](version-1.0/8.5.5.9+)* may be used in *l
 
 Dashboards are generally **not** backwards compatible and may lead to unexpected problems. This would mean that higher Liberty versions of dashboards are not compatible with lower Liberty versions of dashboards.
 
-There is also a Beta directory under each *[version-1.0](version-1.0/Beta)* or *[version-1.1](version-1.1/Beta)* directory for use with the latest Beta versions of Liberty. These dashboards are not guaranteed to be compatible with non-beta and previous beta versions of Liberty.
-
-Note: There are currently template files under the main directory and version-1.0 directory which do not match the structure above, these reflect the 8.5.5.9+ files and are planned for removal/cleanup
+There is also a Beta directory under each *[version-1.0](version-1.0/Beta)* or *[version-1.1](version-1.1/Beta)* directory for use with the latest Beta versions of Liberty. These dashboards are not guaranteed to be compatible with non-beta and outdated beta versions of Liberty.
