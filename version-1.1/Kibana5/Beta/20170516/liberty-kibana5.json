@@ -1,0 +1,624 @@
+[
+  {
+    "_id": "Liberty-Problems-K5-20170516",
+    "_type": "dashboard",
+    "_source": {
+      "title": "Liberty-Problems-K5-20170516",
+      "hits": 0,
+      "description": "",
+      "panelsJSON": "[{\"col\":1,\"id\":\"liberty_probleminfo\",\"panelIndex\":1,\"row\":1,\"size_x\":12,\"size_y\":1,\"type\":\"visualization\"},{\"col\":1,\"id\":\"liberty_hostsTable\",\"panelIndex\":2,\"row\":2,\"size_x\":3,\"size_y\":2,\"type\":\"visualization\"},{\"col\":4,\"id\":\"liberty_userDirsTable\",\"panelIndex\":3,\"row\":2,\"size_x\":3,\"size_y\":2,\"type\":\"visualization\"},{\"col\":7,\"id\":\"liberty_serversTable\",\"panelIndex\":4,\"row\":2,\"size_x\":3,\"size_y\":2,\"type\":\"visualization\"},{\"col\":1,\"id\":\"liberty_topMessageIds\",\"panelIndex\":5,\"row\":4,\"size_x\":12,\"size_y\":3,\"type\":\"visualization\"},{\"col\":1,\"id\":\"liberty_messageGraph\",\"panelIndex\":6,\"row\":7,\"size_x\":4,\"size_y\":2,\"type\":\"visualization\"},{\"col\":9,\"id\":\"liberty_ffdcGraph\",\"panelIndex\":7,\"row\":7,\"size_x\":4,\"size_y\":2,\"type\":\"visualization\"},{\"col\":5,\"id\":\"liberty_traceGraph\",\"panelIndex\":8,\"row\":7,\"size_x\":4,\"size_y\":2,\"type\":\"visualization\"},{\"col\":1,\"columns\":[\"loglevel\",\"module\",\"message\",\"ibm_sequence\"],\"id\":\"liberty_messageSearch\",\"panelIndex\":9,\"row\":9,\"size_x\":12,\"size_y\":4,\"sort\":[\"ibm_sequence\",\"desc\"],\"type\":\"search\"},{\"col\":1,\"columns\":[\"loglevel\",\"module\",\"message\",\"ibm_sequence\"],\"id\":\"liberty_traceSearch\",\"panelIndex\":10,\"row\":13,\"size_x\":12,\"size_y\":4,\"sort\":[\"ibm_sequence\",\"desc\"],\"type\":\"search\"},{\"col\":1,\"columns\":[\"ibm_className\",\"ibm_probeID\",\"ibm_exceptionName\",\"ibm_sequence\"],\"id\":\"liberty_ffdcSearch\",\"panelIndex\":11,\"row\":17,\"size_x\":12,\"size_y\":4,\"sort\":[\"ibm_sequence\",\"desc\"],\"type\":\"search\"},{\"col\":10,\"id\":\"liberty_tagsTable\",\"panelIndex\":12,\"row\":2,\"size_x\":3,\"size_y\":2,\"type\":\"visualization\"}]",
+      "optionsJSON": "{\"darkTheme\":false}",
+      "uiStateJSON": "{\"P-6\":{\"vis\":{\"colors\":{\"AUDIT\":\"#3F2B5B\",\"INFO\":\"#7EB26D\",\"SEVERE\":\"#BF1B00\",\"WARNING\":\"#F2C96D\"}}}}",
+      "version": 1,
+      "timeRestore": false,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"_type:liberty_message OR _type:liberty_trace OR _type:liberty_ffdc\"}}}]}"
+      }
+    }
+  },
+  {
+    "_id": "Liberty-Memory-K5-20170516",
+    "_type": "dashboard",
+    "_source": {
+      "title": "Liberty-Memory-K5-20170516",
+      "hits": 0,
+      "description": "",
+      "panelsJSON": "[{\"col\":1,\"id\":\"liberty_meminfo\",\"row\":1,\"size_x\":12,\"size_y\":1,\"type\":\"visualization\",\"panelIndex\":1},{\"col\":1,\"id\":\"liberty_hostsTable\",\"row\":2,\"size_x\":3,\"size_y\":2,\"type\":\"visualization\",\"panelIndex\":2},{\"col\":4,\"id\":\"liberty_userDirsTable\",\"row\":2,\"size_x\":3,\"size_y\":2,\"type\":\"visualization\",\"panelIndex\":3},{\"col\":7,\"id\":\"liberty_serversTable\",\"row\":2,\"size_x\":3,\"size_y\":2,\"type\":\"visualization\",\"panelIndex\":4},{\"col\":1,\"id\":\"liberty_gcDuration\",\"row\":4,\"size_x\":6,\"size_y\":4,\"type\":\"visualization\",\"panelIndex\":5},{\"col\":7,\"id\":\"liberty_gcHeap\",\"row\":4,\"size_x\":6,\"size_y\":4,\"type\":\"visualization\",\"panelIndex\":6},{\"col\":1,\"columns\":[\"ibm_gcType\",\"ibm_usedHeap\",\"ibm_heap\",\"ibm_maxHeap\",\"ibm_duration\",\"ibm_sequence\"],\"id\":\"liberty_gcSearch\",\"row\":8,\"size_x\":12,\"size_y\":5,\"sort\":[\"ibm_sequence\",\"desc\"],\"type\":\"search\",\"panelIndex\":7},{\"col\":10,\"id\":\"liberty_tagsTable\",\"row\":2,\"size_x\":3,\"size_y\":2,\"type\":\"visualization\",\"panelIndex\":8}]",
+      "optionsJSON": "{\"darkTheme\":false}",
+      "uiStateJSON": "{}",
+      "version": 1,
+      "timeRestore": false,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"_type:liberty_gc\"}}}]}"
+      }
+    }
+  },
+  {
+    "_id": "Liberty-Traffic-K5-20170516",
+    "_type": "dashboard",
+    "_source": {
+      "title": "Liberty-Traffic-K5-20170516",
+      "hits": 0,
+      "description": "",
+      "panelsJSON": "[{\"col\":1,\"id\":\"liberty_trafficinfo\",\"row\":1,\"size_x\":12,\"size_y\":1,\"type\":\"visualization\",\"panelIndex\":1},{\"col\":1,\"id\":\"liberty_hostsTable\",\"row\":2,\"size_x\":3,\"size_y\":2,\"type\":\"visualization\",\"panelIndex\":2},{\"col\":4,\"id\":\"liberty_userDirsTable\",\"row\":2,\"size_x\":3,\"size_y\":2,\"type\":\"visualization\",\"panelIndex\":3},{\"col\":7,\"id\":\"liberty_serversTable\",\"row\":2,\"size_x\":3,\"size_y\":2,\"type\":\"visualization\",\"panelIndex\":4},{\"col\":7,\"id\":\"liberty_slowestURLs\",\"row\":6,\"size_x\":6,\"size_y\":3,\"type\":\"visualization\",\"panelIndex\":5},{\"col\":1,\"id\":\"liberty_accessLogResponseCodeGraph\",\"row\":9,\"size_x\":4,\"size_y\":3,\"type\":\"visualization\",\"panelIndex\":6},{\"col\":9,\"id\":\"liberty_accessLogElapsedTimeGraph\",\"row\":9,\"size_x\":4,\"size_y\":3,\"type\":\"visualization\",\"panelIndex\":7},{\"col\":1,\"columns\":[\"ibm_remoteHost\",\"ibm_uriPath\",\"ibm_responseCode\",\"ibm_bytesReceived\",\"ibm_elapsedTime\",\"ibm_sequence\"],\"id\":\"liberty_accessLogSearch\",\"row\":12,\"size_x\":12,\"size_y\":4,\"sort\":[\"ibm_sequence\",\"desc\"],\"type\":\"search\",\"panelIndex\":8},{\"col\":1,\"id\":\"liberty_topURLs\",\"row\":6,\"size_x\":6,\"size_y\":3,\"type\":\"visualization\",\"panelIndex\":9},{\"col\":5,\"id\":\"liberty_accessLogAverageElapsedTimeGraph\",\"row\":9,\"size_x\":4,\"size_y\":3,\"type\":\"visualization\",\"panelIndex\":10},{\"col\":10,\"id\":\"liberty_tagsTable\",\"row\":2,\"size_x\":3,\"size_y\":2,\"type\":\"visualization\",\"panelIndex\":11}]",
+      "optionsJSON": "{\"darkTheme\":false}",
+      "uiStateJSON": "{}",
+      "version": 1,
+      "timeRestore": false,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"_type:liberty_accesslog\"}}}]}"
+      }
+    }
+  },
+  {
+    "_id": "liberty_messageSearch",
+    "_type": "search",
+    "_source": {
+      "title": "Liberty Messages Search",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "loglevel",
+        "module",
+        "message",
+        "ibm_sequence"
+      ],
+      "sort": [
+        "ibm_sequence",
+        "desc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"logstash-*\",\"query\":{\"query_string\":{\"query\":\"_type:liberty_message\",\"analyze_wildcard\":true}},\"filter\":[],\"highlight\":{\"pre_tags\":[\"@kibana-highlighted-field@\"],\"post_tags\":[\"@/kibana-highlighted-field@\"],\"fields\":{\"*\":{}},\"fragment_size\":2147483647}}"
+      }
+    }
+  },
+  {
+    "_id": "liberty_ffdcSearch",
+    "_type": "search",
+    "_source": {
+      "title": "Liberty FFDC Search",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "ibm_className",
+        "ibm_probeID",
+        "ibm_exceptionName",
+        "ibm_sequence"
+      ],
+      "sort": [
+        "ibm_sequence",
+        "desc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"logstash-*\",\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"type:liberty_ffdc\"}},\"filter\":[],\"highlight\":{\"pre_tags\":[\"@kibana-highlighted-field@\"],\"post_tags\":[\"@/kibana-highlighted-field@\"],\"fields\":{\"*\":{}},\"fragment_size\":2147483647}}"
+      }
+    }
+  },
+  {
+    "_id": "liberty_gcSearch",
+    "_type": "search",
+    "_source": {
+      "title": "Liberty GC Search",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "ibm_gcType",
+        "ibm_usedHeap",
+        "ibm_heap",
+        "ibm_maxHeap",
+        "ibm_duration",
+        "ibm_sequence"
+      ],
+      "sort": [
+        "ibm_sequence",
+        "desc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"logstash-*\",\"query\":{\"query_string\":{\"query\":\"type:liberty_gc\",\"analyze_wildcard\":true}},\"filter\":[],\"highlight\":{\"pre_tags\":[\"@kibana-highlighted-field@\"],\"post_tags\":[\"@/kibana-highlighted-field@\"],\"fields\":{\"*\":{}},\"fragment_size\":2147483647}}"
+      }
+    }
+  },
+  {
+    "_id": "liberty_badHits",
+    "_type": "search",
+    "_source": {
+      "title": "Liberty Bad Hits Search",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "_source"
+      ],
+      "sort": [
+        "@timestamp",
+        "desc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"logstash-*\",\"highlight\":{\"pre_tags\":[\"@kibana-highlighted-field@\"],\"post_tags\":[\"@/kibana-highlighted-field@\"],\"fields\":{\"*\":{}},\"fragment_size\":2147483647},\"filter\":[],\"query\":{\"query_string\":{\"query\":\"type:\\\"liberty_accesslog\\\" AND !ibm_responseCode:\\\"200\\\"\",\"analyze_wildcard\":true}}}"
+      }
+    }
+  },
+  {
+    "_id": "liberty_traceSearch",
+    "_type": "search",
+    "_source": {
+      "title": "Liberty Trace Search",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "loglevel",
+        "module",
+        "message",
+        "ibm_sequence"
+      ],
+      "sort": [
+        "ibm_sequence",
+        "desc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"logstash-*\",\"query\":{\"query_string\":{\"query\":\"type:liberty_trace\",\"analyze_wildcard\":true}},\"filter\":[],\"highlight\":{\"pre_tags\":[\"@kibana-highlighted-field@\"],\"post_tags\":[\"@/kibana-highlighted-field@\"],\"fields\":{\"*\":{}},\"fragment_size\":2147483647}}"
+      }
+    }
+  },
+  {
+    "_id": "liberty_all",
+    "_type": "search",
+    "_source": {
+      "title": "Liberty All Search",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "_source"
+      ],
+      "sort": [
+        "@timestamp",
+        "desc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"logstash-*\",\"highlight\":{\"pre_tags\":[\"@kibana-highlighted-field@\"],\"post_tags\":[\"@/kibana-highlighted-field@\"],\"fields\":{\"*\":{}},\"fragment_size\":2147483647},\"filter\":[],\"query\":{\"query_string\":{\"query\":\"_type:liberty_*\",\"analyze_wildcard\":true}}}"
+      }
+    }
+  },
+  {
+    "_id": "liberty_accessLogSearch",
+    "_type": "search",
+    "_source": {
+      "title": "Liberty Access Logs Search",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "ibm_remoteHost",
+        "ibm_uriPath",
+        "ibm_responseCode",
+        "ibm_bytesReceived",
+        "ibm_elapsedTime",
+        "ibm_sequence"
+      ],
+      "sort": [
+        "ibm_sequence",
+        "desc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"logstash-*\",\"query\":{\"query_string\":{\"query\":\"type:liberty_accesslog\",\"analyze_wildcard\":true}},\"filter\":[],\"highlight\":{\"pre_tags\":[\"@kibana-highlighted-field@\"],\"post_tags\":[\"@/kibana-highlighted-field@\"],\"fields\":{\"*\":{}},\"fragment_size\":2147483647}}"
+      }
+    }
+  },
+  {
+    "_id": "liberty_meminfo",
+    "_type": "visualization",
+    "_source": {
+      "title": "Liberty Memory Dashboard",
+      "visState": "{\"type\":\"markdown\",\"params\":{\"markdown\":\"Dashboard visualizes the garbage collection duration and JVM heap usage information. Duration numbers are in microseconds. Garbage collection data is only available from Liberty servers running on an IBM JDK. Configure the Liberty logstashCollector feature to use the garbageCollection source.\\n Click on host, user directory, server name or tag to filter the content shown on the dashboard.\"},\"aggs\":[],\"listeners\":{},\"title\":\"Liberty Memory Dashboard\"}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "liberty_trafficinfo",
+    "_type": "visualization",
+    "_source": {
+      "title": "Liberty Traffic Dashboard",
+      "visState": "{\"type\":\"markdown\",\"params\":{\"markdown\":\"Dashboard visualizes access logging information. Duration numbers are in microseconds. Configure accessLogging in your Liberty server.xml file and configure the logstashCollector feature to use the accessLog source.\\n Click on host, user directory, server name or tag to filter the content shown on the dashboard.\"},\"aggs\":[],\"listeners\":{},\"title\":\"Liberty Traffic Dashboard\"}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "liberty_probleminfo",
+    "_type": "visualization",
+    "_source": {
+      "title": "Liberty Problems Dashboard",
+      "visState": "{\"type\":\"markdown\",\"params\":{\"markdown\":\"Dashboard visualizes message, trace and FFDC information. Configure the Liberty logstashCollector feature to use the message, trace and ffdc sources.\\n Click on host, user directory, server name or tag to filter the content shown on the dashboard.\"},\"aggs\":[],\"listeners\":{},\"title\":\"Liberty Problems Dashboard\"}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "liberty_accessLogCount",
+    "_type": "visualization",
+    "_source": {
+      "title": "Liberty Access Log Count",
+      "visState": "{\"type\":\"metric\",\"params\":{\"fontSize\":\"30\"},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{}}],\"listeners\":{},\"title\":\"Liberty Access Log Count\"}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[],\"index\":\"logstash-*\",\"query\":{\"query_string\":{\"query\":\"type:access_log OR type:liberty_accesslog\",\"analyze_wildcard\":true}},\"highlight\":{\"pre_tags\":[\"@kibana-highlighted-field@\"],\"post_tags\":[\"@/kibana-highlighted-field@\"],\"fields\":{\"*\":{}},\"require_field_match\":false,\"fragment_size\":2147483647}}"
+      }
+    }
+  },
+  {
+    "_id": "liberty_slowGC",
+    "_type": "visualization",
+    "_source": {
+      "title": "Liberty Slow GC",
+      "visState": "{\"type\":\"histogram\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"scale\":\"linear\",\"mode\":\"stacked\",\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"ibm_datetime\",\"interval\":\"a\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}},{\"id\":\"3\",\"type\":\"range\",\"schema\":\"group\",\"params\":{\"field\":\"ibm_duration\",\"ranges\":[{\"from\":1000000,\"to\":5000000},{\"from\":5000000}]}}],\"listeners\":{},\"title\":\"Liberty Slow GC\"}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"logstash-*\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "liberty_gcCount",
+    "_type": "visualization",
+    "_source": {
+      "title": "Liberty GC Count",
+      "visState": "{\"type\":\"metric\",\"params\":{\"fontSize\":\"30\"},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{}}],\"listeners\":{},\"title\":\"Liberty GC Count\"}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"logstash-*\",\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"type:liberty_gc\"}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "liberty_messageGraph",
+    "_type": "visualization",
+    "_source": {
+      "title": "Liberty Message",
+      "visState": "{\"type\":\"histogram\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"scale\":\"linear\",\"mode\":\"stacked\",\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"ibm_datetime\",\"interval\":\"a\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}},{\"id\":\"3\",\"type\":\"terms\",\"schema\":\"group\",\"params\":{\"field\":\"loglevel\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{},\"title\":\"Liberty Message\"}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"logstash-*\",\"query\":{\"query_string\":{\"query\":\"_type:liberty_message*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "liberty_messageCount",
+    "_type": "visualization",
+    "_source": {
+      "title": "Liberty Message Count",
+      "visState": "{\"type\":\"metric\",\"params\":{\"fontSize\":\"30\"},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{}}],\"listeners\":{},\"title\":\"Liberty Message Count\"}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"logstash-*\",\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"_type:liberty_message*\"}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "liberty_slowestURLs",
+    "_type": "visualization",
+    "_source": {
+      "title": "Liberty Slowest URLs",
+      "visState": "{\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false},\"aggs\":[{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"ibm_uriPath\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"custom\",\"orderAgg\":{\"id\":\"2-orderAgg\",\"type\":\"avg\",\"schema\":{\"group\":\"none\",\"name\":\"orderAgg\",\"title\":\"Order Agg\",\"aggFilter\":[\"!percentiles\",\"!median\",\"!std_dev\"],\"min\":0,\"max\":null,\"editor\":false,\"params\":[]},\"params\":{\"field\":\"ibm_elapsedTime\"}}}},{\"id\":\"4\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"3\",\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"ibm_elapsedTime\"}},{\"id\":\"5\",\"type\":\"min\",\"schema\":\"metric\",\"params\":{\"field\":\"ibm_elapsedTime\"}},{\"id\":\"1\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"ibm_elapsedTime\"}}],\"listeners\":{},\"title\":\"Liberty Slowest URLs\"}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "savedSearchId": "liberty_accessLogSearch",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "liberty_accessLogAverageElapsedTimeGraph",
+    "_type": "visualization",
+    "_source": {
+      "title": "Liberty Access Log Average Elapsed Time",
+      "visState": "{\"type\":\"line\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":false,\"showCircles\":true,\"smoothLines\":false,\"interpolate\":\"linear\",\"scale\":\"linear\",\"drawLinesBetweenPoints\":true,\"radiusRatio\":9,\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"ibm_elapsedTime\"}},{\"id\":\"2\",\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"ibm_datetime\",\"interval\":\"a\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}}],\"listeners\":{},\"title\":\"Liberty Access Log Average Elapsed Time\"}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "savedSearchId": "liberty_accessLogSearch",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "liberty_topMessageIds",
+    "_type": "visualization",
+    "_source": {
+      "title": "Liberty Top Message IDs",
+      "visState": "{\"type\":\"histogram\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"scale\":\"linear\",\"mode\":\"stacked\",\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"ibm_datetime\",\"interval\":\"a\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}},{\"id\":\"3\",\"type\":\"terms\",\"schema\":\"group\",\"params\":{\"field\":\"ibm_messageId\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{},\"title\":\"Liberty Top Message IDs\"}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "savedSearchId": "liberty_messageSearch",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "liberty_serversTable",
+    "_type": "visualization",
+    "_source": {
+      "title": "Liberty Servers",
+      "visState": "{\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"ibm_serverName\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{},\"title\":\"Liberty Servers\"}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "savedSearchId": "liberty_all",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "liberty_accessLogResponseCodeGraph",
+    "_type": "visualization",
+    "_source": {
+      "title": "Liberty Access Log Response Code",
+      "visState": "{\"type\":\"histogram\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"scale\":\"linear\",\"mode\":\"stacked\",\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"ibm_datetime\",\"interval\":\"a\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}},{\"id\":\"3\",\"type\":\"terms\",\"schema\":\"group\",\"params\":{\"field\":\"ibm_responseCode\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{},\"title\":\"Liberty Access Log Response Code\"}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "savedSearchId": "liberty_accessLogSearch",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "liberty_accessLogElapsedTimeGraph",
+    "_type": "visualization",
+    "_source": {
+      "title": "Liberty Access Log Elapsed Time",
+      "visState": "{\"type\":\"histogram\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"scale\":\"linear\",\"mode\":\"stacked\",\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"ibm_datetime\",\"interval\":\"a\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}},{\"id\":\"3\",\"type\":\"range\",\"schema\":\"group\",\"params\":{\"field\":\"ibm_elapsedTime\",\"ranges\":[{\"from\":0,\"to\":250000},{\"from\":250000,\"to\":500000},{\"from\":500000,\"to\":1000000},{\"from\":1000000,\"to\":2000000},{\"from\":2000000}]}}],\"listeners\":{},\"title\":\"Liberty Access Log Elapsed Time\"}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "savedSearchId": "liberty_accessLogSearch",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "liberty_slowHits",
+    "_type": "visualization",
+    "_source": {
+      "title": "Liberty Slow Hits",
+      "visState": "{\"type\":\"histogram\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"scale\":\"linear\",\"mode\":\"stacked\",\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"ibm_datetime\",\"interval\":\"a\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}},{\"id\":\"3\",\"type\":\"range\",\"schema\":\"group\",\"params\":{\"field\":\"ibm_elapsedTime\",\"ranges\":[{\"from\":500000,\"to\":1000000},{\"from\":1000000}]}}],\"listeners\":{},\"title\":\"Liberty Slow Hits\"}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "savedSearchId": "liberty_accessLogSearch",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "liberty_hotResponseCodes",
+    "_type": "visualization",
+    "_source": {
+      "title": "Liberty Hot Response Codes",
+      "visState": "{\"type\":\"histogram\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"scale\":\"linear\",\"mode\":\"stacked\",\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"ibm_datetime\",\"interval\":\"a\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}},{\"id\":\"3\",\"type\":\"filters\",\"schema\":\"group\",\"params\":{\"filters\":[{\"input\":{\"query\":{\"query_string\":{\"query\":\"ibm_responseCode:[100 TO 199]\",\"analyze_wildcard\":true}}},\"label\":\"100s\"},{\"input\":{\"query\":{\"query_string\":{\"query\":\"ibm_responseCode:[300 TO 399]\",\"analyze_wildcard\":true}}},\"label\":\"300s\"},{\"input\":{\"query\":{\"query_string\":{\"query\":\"ibm_responseCode:[400 TO 499]\",\"analyze_wildcard\":true}}},\"label\":\"400s\"},{\"input\":{\"query\":{\"query_string\":{\"query\":\"ibm_responseCode:[500 TO 599]\",\"analyze_wildcard\":true}}},\"label\":\"500s\"}]}}],\"listeners\":{},\"title\":\"Liberty Hot Response Codes\"}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "savedSearchId": "liberty_accessLogSearch",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "liberty_tagsTable",
+    "_type": "visualization",
+    "_source": {
+      "title": "Liberty Tags",
+      "visState": "{\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"ibm_tags\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{},\"title\":\"Liberty Tags\"}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "savedSearchId": "liberty_all",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "liberty_topURLs",
+    "_type": "visualization",
+    "_source": {
+      "title": "Liberty Top URLs",
+      "visState": "{\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"ibm_uriPath\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\"}},{\"id\":\"3\",\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"ibm_elapsedTime\"}},{\"id\":\"4\",\"type\":\"min\",\"schema\":\"metric\",\"params\":{\"field\":\"ibm_elapsedTime\"}},{\"id\":\"5\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"ibm_elapsedTime\"}}],\"listeners\":{},\"title\":\"Liberty Top URLs\"}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "savedSearchId": "liberty_accessLogSearch",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "liberty_ffdcGraph",
+    "_type": "visualization",
+    "_source": {
+      "title": "Liberty FFDC",
+      "visState": "{\"type\":\"histogram\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"scale\":\"linear\",\"mode\":\"stacked\",\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"ibm_datetime\",\"interval\":\"a\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}}],\"listeners\":{},\"title\":\"Liberty FFDC\"}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "savedSearchId": "liberty_ffdcSearch",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "liberty_hotMessages",
+    "_type": "visualization",
+    "_source": {
+      "title": "Liberty Hot Messages",
+      "visState": "{\"type\":\"histogram\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"scale\":\"linear\",\"mode\":\"stacked\",\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"ibm_datetime\",\"interval\":\"a\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}},{\"id\":\"3\",\"type\":\"filters\",\"schema\":\"group\",\"params\":{\"filters\":[{\"input\":{\"query\":{\"query_string\":{\"query\":\"loglevel:FATAL\",\"analyze_wildcard\":true}}},\"label\":\"\"},{\"input\":{\"query\":{\"query_string\":{\"query\":\"loglevel:ERROR\",\"analyze_wildcard\":true}}}},{\"input\":{\"query\":{\"query_string\":{\"query\":\"loglevel:WARNING\",\"analyze_wildcard\":true}}}}]}}],\"listeners\":{},\"title\":\"Liberty Hot Messages\"}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "savedSearchId": "liberty_messageSearch",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "liberty_userDirsTable",
+    "_type": "visualization",
+    "_source": {
+      "title": "Liberty User Directories",
+      "visState": "{\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"ibm_userDir\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{},\"title\":\"Liberty User Directories\"}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "savedSearchId": "liberty_all",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "liberty_hostsTable",
+    "_type": "visualization",
+    "_source": {
+      "title": "Liberty Hosts Table",
+      "visState": "{\"aggs\":[{\"id\":\"1\",\"params\":{},\"schema\":\"metric\",\"type\":\"count\"},{\"id\":\"2\",\"params\":{\"field\":\"host\",\"order\":\"desc\",\"orderBy\":\"1\",\"size\":5},\"schema\":\"bucket\",\"type\":\"terms\"}],\"listeners\":{},\"params\":{\"perPage\":10,\"showMeticsAtAllLevels\":false,\"showPartialRows\":false},\"type\":\"table\",\"title\":\"Liberty Hosts Table\"}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "savedSearchId": "liberty_all",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "liberty_traceCount",
+    "_type": "visualization",
+    "_source": {
+      "title": "Liberty Trace Count",
+      "visState": "{\"type\":\"metric\",\"params\":{\"fontSize\":\"30\"},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{}}],\"listeners\":{},\"title\":\"Liberty Trace Count\"}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "savedSearchId": "liberty_traceSearch",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "liberty_ffdcCount",
+    "_type": "visualization",
+    "_source": {
+      "title": "Liberty FFDC Count",
+      "visState": "{\"type\":\"metric\",\"params\":{\"fontSize\":\"30\"},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{}}],\"listeners\":{},\"title\":\"Liberty FFDC Count\"}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "savedSearchId": "liberty_ffdcSearch",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "liberty_traceGraph",
+    "_type": "visualization",
+    "_source": {
+      "title": "Liberty Trace",
+      "visState": "{\"type\":\"histogram\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"scale\":\"linear\",\"mode\":\"stacked\",\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"ibm_datetime\",\"interval\":\"a\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}},{\"id\":\"3\",\"type\":\"terms\",\"schema\":\"group\",\"params\":{\"field\":\"loglevel\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{},\"title\":\"Liberty Trace\"}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "savedSearchId": "liberty_traceSearch",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "liberty_accessLogMetrics",
+    "_type": "visualization",
+    "_source": {
+      "title": "Liberty Access Log Metrics",
+      "visState": "{\"type\":\"metric\",\"params\":{\"fontSize\":60},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"ibm_elapsedTime\"}}],\"listeners\":{},\"title\":\"Liberty Access Log Metrics\"}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "savedSearchId": "liberty_accessLogSearch",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "liberty_gcDuration",
+    "_type": "visualization",
+    "_source": {
+      "title": "Liberty GC Duration",
+      "visState": "{\"type\":\"line\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"showCircles\":true,\"smoothLines\":false,\"interpolate\":\"linear\",\"scale\":\"linear\",\"drawLinesBetweenPoints\":true,\"radiusRatio\":9,\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"ibm_duration\"}},{\"id\":\"2\",\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"ibm_datetime\",\"interval\":\"a\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}}],\"listeners\":{},\"title\":\"Liberty GC Duration\"}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "savedSearchId": "liberty_gcSearch",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "liberty_gcHeap",
+    "_type": "visualization",
+    "_source": {
+      "title": "Liberty GC Heap",
+      "visState": "{\"type\":\"line\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"showCircles\":true,\"smoothLines\":false,\"interpolate\":\"linear\",\"scale\":\"linear\",\"drawLinesBetweenPoints\":true,\"radiusRatio\":9,\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"ibm_heap\"}},{\"id\":\"2\",\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"ibm_datetime\",\"interval\":\"a\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}},{\"id\":\"3\",\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"ibm_usedHeap\"}},{\"id\":\"4\",\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"ibm_maxHeap\"}}],\"listeners\":{},\"title\":\"Liberty GC Heap\"}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "savedSearchId": "liberty_gcSearch",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[]}"
+      }
+    }
+  }
+]
