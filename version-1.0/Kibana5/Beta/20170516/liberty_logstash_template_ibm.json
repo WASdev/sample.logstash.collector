@@ -1,0 +1,93 @@
+{
+    "template": "logstash-*",
+    "settings": {
+        "index.refresh_interval": "5s"
+    },
+    "mappings": {
+        "liberty_message": {
+            "properties": {
+            "hostName": { "type": "keyword", "index": "true" },
+            "wlpUserDir": { "type": "keyword", "index": "true" },
+            "serverName": { "type": "keyword", "index": "true" },
+            "datetime": { "type": "date", "format": "yyyy-MM-dd'T'HH:mm:ss.SSSZ" },
+            "sequence": { "type": "keyword", "index": "true" },
+            "className": { "type": "keyword", "index": "true" },
+            "loggerName": { "type": "keyword", "index": "true" },
+            "message": { "type": "text", "index": "true" },
+            "messageId": { "type": "keyword", "index": "true" },
+            "methodName": { "type": "keyword", "index": "true" },
+            "severity": { "type": "keyword", "index": "true" },
+            "threadId": { "type": "keyword", "index": "true" },
+            "tags": { "type": "keyword", "index": "true"}
+            }
+        },
+        "liberty_ffdc": {
+            "properties": {
+            "hostName": { "type": "keyword", "index": "true" },
+            "wlpUserDir": { "type": "keyword", "index": "true" },
+            "serverName": { "type": "keyword", "index": "true" },
+            "datetime": { "type": "date", "format": "yyyy-MM-dd'T'HH:mm:ss.SSSZ" },
+            "sequence": { "type": "keyword", "index": "true" },
+            "className": { "type": "keyword", "index": "true" },
+            "exceptionName": { "type": "keyword", "index": "true" },
+            "objectDetails": { "type": "keyword", "index": "true" },
+            "probeID": { "type": "keyword", "index": "true" },
+            "stackTrace": { "type": "keyword", "index": "true" },
+            "tags": { "type": "keyword", "index": "true"}
+            }
+        },
+        "liberty_trace": {
+            "properties": {
+            "hostName": { "type": "keyword", "index": "true" },
+            "wlpUserDir": { "type": "keyword", "index": "true" },
+            "serverName": { "type": "keyword", "index": "true" },
+            "datetime": { "type": "date", "format": "yyyy-MM-dd'T'HH:mm:ss.SSSZ" },
+            "sequence": { "type": "keyword", "index": "true" },
+            "className": { "type": "keyword", "index": "true" },
+            "loggerName": { "type": "keyword", "index": "true" },
+            "message": { "type": "text", "index": "true" },
+            "methodName": { "type": "keyword", "index": "true" },
+            "severity": { "type": "keyword", "index": "true" },
+            "threadId": { "type": "keyword", "index": "true" },
+            "tags": { "type": "keyword", "index": "true"}
+            }
+        },
+        "liberty_gc": {
+            "properties": {
+            "hostName": { "type": "keyword", "index": "true" },
+            "wlpUserDir": { "type": "keyword", "index": "true" },
+            "serverName": { "type": "keyword", "index": "true" },
+            "datetime": { "type": "date", "format": "yyyy-MM-dd'T'HH:mm:ss.SSSZ" },
+            "sequence": { "type": "keyword", "index": "true" },
+            "heap": { "type": "long", "index": "true" },
+            "usedHeap": { "type": "long", "index": "true" },
+            "maxHeap": { "type": "long", "index": "true" },
+            "duration": { "type": "long", "index": "true" },
+            "gcType": { "type": "keyword", "index": "true" },
+            "reason": { "type": "keyword", "index": "true" },
+            "tags": { "type": "keyword", "index": "true"}
+            }
+        },
+        "liberty_accesslog": {
+            "properties": {
+            "hostName": { "type": "keyword", "index": "true" },
+            "wlpUserDir": { "type": "keyword", "index": "true" },
+            "serverName": { "type": "keyword", "index": "true" },
+            "datetime": { "type": "date", "format": "yyyy-MM-dd'T'HH:mm:ss.SSSZ" },
+            "sequence": { "type": "keyword", "index": "true" },
+            "requestHost": { "type": "keyword", "index": "true" },
+            "requestPort": { "type": "keyword", "index": "true" },
+            "remoteHost": { "type": "keyword", "index": "true" },
+            "requestMethod": { "type": "keyword", "index": "true" },
+            "requestProtocol": { "type": "keyword", "index": "true" },
+            "bytesReceived": { "type": "long", "index": "true" },
+            "elapsedTime": { "type": "long", "index": "true" },
+            "querykeyword": { "type": "text", "index": "true" },
+            "responseCode": { "type": "integer", "index": "true" },
+            "uriPath": { "type": "keyword", "index": "true" },
+            "userAgent": { "type": "keyword", "index": "true" },
+            "tags": { "type": "keyword", "index": "true"}
+            }
+        }
+    }
+}

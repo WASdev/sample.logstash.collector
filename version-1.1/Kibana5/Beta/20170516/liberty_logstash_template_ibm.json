@@ -1,0 +1,93 @@
+{
+    "template": "logstash-*",
+    "settings": {
+        "index.refresh_interval": "5s"
+    },
+    "mappings": {
+        "liberty_message": {
+            "properties": {
+            "host": { "type": "keyword", "index": "true" },
+            "ibm_userDir": { "type": "keyword", "index": "true" },
+            "ibm_serverName": { "type": "keyword", "index": "true" },
+            "ibm_datetime": { "type": "date", "format": "yyyy-MM-dd'T'HH:mm:ss.SSSZ" },
+            "ibm_sequence": { "type": "keyword", "index": "true" },
+            "ibm_className": { "type": "keyword", "index": "true" },
+            "module": { "type": "keyword", "index": "true" },
+            "message": { "type": "text", "index": "true" },
+            "ibm_messageId": { "type": "keyword", "index": "true" },
+            "ibm_methodName": { "type": "keyword", "index": "true" },
+            "loglevel": { "type": "keyword", "index": "true" },
+            "ibm_threadId": { "type": "keyword", "index": "true" },
+            "ibm_tags": { "type": "keyword", "index": "true"}
+            }
+        },
+        "liberty_ffdc": {
+            "properties": {
+            "host": { "type": "keyword", "index": "true" },
+            "ibm_userDir": { "type": "keyword", "index": "true" },
+            "ibm_serverName": { "type": "keyword", "index": "true" },
+            "ibm_datetime": { "type": "date", "format": "yyyy-MM-dd'T'HH:mm:ss.SSSZ" },
+            "ibm_sequence": { "type": "keyword", "index": "true" },
+            "ibm_className": { "type": "keyword", "index": "true" },
+            "ibm_exceptionName": { "type": "keyword", "index": "true" },
+            "ibm_objectDetails": { "type": "keyword", "index": "true" },
+            "ibm_probeID": { "type": "keyword", "index": "true" },
+            "ibm_stackTrace": { "type": "keyword", "index": "true" },
+            "ibm_tags": { "type": "keyword", "index": "true"}
+            }
+        },
+        "liberty_trace": {
+            "properties": {
+            "host": { "type": "keyword", "index": "true" },
+            "ibm_userDir": { "type": "keyword", "index": "true" },
+            "ibm_serverName": { "type": "keyword", "index": "true" },
+            "ibm_datetime": { "type": "date", "format": "yyyy-MM-dd'T'HH:mm:ss.SSSZ" },
+            "ibm_sequence": { "type": "keyword", "index": "true" },
+            "ibm_className": { "type": "keyword", "index": "true" },
+            "module": { "type": "keyword", "index": "true" },
+            "message": { "type": "text", "index": "true" },
+            "ibm_methodName": { "type": "keyword", "index": "true" },
+            "loglevel": { "type": "keyword", "index": "true" },
+            "ibm_threadId": { "type": "keyword", "index": "true" },
+            "ibm_tags": { "type": "keyword", "index": "true"}
+            }
+        },
+        "liberty_gc": {
+            "properties": {
+            "host": { "type": "keyword", "index": "true" },
+            "ibm_userDir": { "type": "keyword", "index": "true" },
+            "ibm_serverName": { "type": "keyword", "index": "true" },
+            "ibm_datetime": { "type": "date", "format": "yyyy-MM-dd'T'HH:mm:ss.SSSZ" },
+            "ibm_sequence": { "type": "keyword", "index": "true" },
+            "ibm_heap": { "type": "long", "index": "true" },
+            "ibm_usedHeap": { "type": "long", "index": "true" },
+            "ibm_maxHeap": { "type": "long", "index": "true" },
+            "ibm_duration": { "type": "long", "index": "true" },
+            "ibm_gcType": { "type": "keyword", "index": "true" },
+            "ibm_reason": { "type": "keyword", "index": "true" },
+            "ibm_tags": { "type": "keyword", "index": "true"}
+            }
+        },
+        "liberty_accesslog": {
+            "properties": {
+            "host": { "type": "keyword", "index": "true" },
+            "ibm_userDir": { "type": "keyword", "index": "true" },
+            "ibm_serverName": { "type": "keyword", "index": "true" },
+            "ibm_datetime": { "type": "date", "format": "yyyy-MM-dd'T'HH:mm:ss.SSSZ" },
+            "ibm_sequence": { "type": "keyword", "index": "true" },
+            "ibm_requestHost": { "type": "keyword", "index": "true" },
+            "ibm_requestPort": { "type": "keyword", "index": "true" },
+            "ibm_remoteHost": { "type": "keyword", "index": "true" },
+            "ibm_requestMethod": { "type": "keyword", "index": "true" },
+            "ibm_requestProtocol": { "type": "keyword", "index": "true" },
+            "ibm_bytesReceived": { "type": "long", "index": "true" },
+            "ibm_elapsedTime": { "type": "long", "index": "true" },
+            "ibm_queryString": { "type": "text", "index": "true" },
+            "ibm_responseCode": { "type": "integer", "index": "true" },
+            "ibm_uriPath": { "type": "keyword", "index": "true" },
+            "ibm_userAgent": { "type": "keyword", "index": "true" },
+            "ibm_tags": { "type": "keyword", "index": "true"}
+            }
+        }
+    }
+}
