@@ -88,6 +88,17 @@
             "userAgent": { "type": "keyword", "index": "true" },
             "tags": { "type": "keyword", "index": "true"}
             }
+        },
+        "liberty_audit": {
+            "properties": {
+            "host": { "type": "keyword", "index": "true" },
+            "ibm_userDir": { "type": "keyword", "index": "true" },
+            "ibm_serverName": { "type": "keyword", "index": "true" },
+            "ibm_datetime": { "type": "date", "format": "yyyy-MM-dd'T'HH:mm:ss.SSSZ" },
+            "ibm_sequence": { "type": "keyword", "index": "true" },
+            "ibm_threadId": { "type": "keyword", "index": "true" },
+            "ibm_tags": { "type": "keyword", "index": "true"}
+            }
         }
     }
 }
