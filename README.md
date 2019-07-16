@@ -1,9 +1,6 @@
 # sample.logstash.collector
   
-This project contains the following samples for exploiting the *logstashCollector-1.0* and *logstashCollector-1.1* feature in Liberty:
-* Logstash configuration file *(liberty_logstash.conf)*
-* Index template *(liberty_logstash_template.json)*
-* Kibana dashboard *(liberty-kibana4.json)*
+This project contains the sample dashboards and configuration files to help you exploit the *logstashCollector-1.0* and *logstashCollector-1.1* features in Liberty.
 
 ### Subdirectories
 
