@@ -1,0 +1,926 @@
+[
+  {
+    "_id": "AWWM4k5S9D2Mc8V9L7hN",
+    "_type": "dashboard",
+    "_source": {
+      "title": "Liberty-Audit-K5-20180912",
+      "hits": 0,
+      "description": "",
+      "panelsJSON": "[{\"col\":1,\"id\":\"AWWM33px9D2Mc8V9L7gV\",\"panelIndex\":1,\"row\":5,\"size_x\":6,\"size_y\":3,\"type\":\"visualization\"},{\"col\":1,\"id\":\"AWWM4xzJ9D2Mc8V9L7hf\",\"panelIndex\":2,\"row\":8,\"size_x\":12,\"size_y\":3,\"type\":\"visualization\"},{\"col\":7,\"id\":\"AWWM5Z9q9D2Mc8V9L7iR\",\"panelIndex\":3,\"row\":5,\"size_x\":6,\"size_y\":3,\"type\":\"visualization\"},{\"col\":1,\"id\":\"AWWQKkVm9D2Mc8V9L72R\",\"panelIndex\":6,\"row\":1,\"size_x\":12,\"size_y\":1,\"type\":\"visualization\"},{\"col\":1,\"id\":\"AWWvh82DwC3Eko_hdJWf\",\"panelIndex\":11,\"row\":2,\"size_x\":3,\"size_y\":3,\"type\":\"visualization\"},{\"col\":4,\"id\":\"AWWviH0nwC3Eko_hdJXw\",\"panelIndex\":12,\"row\":2,\"size_x\":3,\"size_y\":3,\"type\":\"visualization\"},{\"col\":10,\"id\":\"AWWviUWtwC3Eko_hdJZp\",\"panelIndex\":13,\"row\":2,\"size_x\":3,\"size_y\":3,\"type\":\"visualization\"},{\"col\":7,\"id\":\"AWWviNl5wC3Eko_hdJYt\",\"panelIndex\":14,\"row\":2,\"size_x\":3,\"size_y\":3,\"type\":\"visualization\"},{\"size_x\":12,\"size_y\":5,\"panelIndex\":15,\"type\":\"search\",\"id\":\"AWWM6M0L9D2Mc8V9L7jR\",\"col\":1,\"row\":11,\"columns\":[\"ibm_audit_eventName\",\"ibm_audit_outcome\",\"ibm_audit_target.credential.token\",\"ibm_audit_initiator.host.address\",\"ibm_sequence\"],\"sort\":[\"ibm_sequence\",\"desc\"]}]",
+      "optionsJSON": "{\"darkTheme\":false}",
+      "uiStateJSON": "{\"P-1\":{\"spy\":{\"mode\":{\"fill\":false,\"name\":null}}},\"P-11\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-12\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-13\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-14\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-3\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}}",
+      "version": 1,
+      "timeRestore": false,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[{\"query\":{\"match_all\":{}}}],\"highlightAll\":true,\"version\":true}"
+      }
+    }
+  },
+  {
+    "_id": "AWWQh9I49D2Mc8V9L8W_",
+    "_type": "dashboard",
+    "_source": {
+      "title": "Liberty-Audit-AUTHN-AUTHZ-K5-20180912",
+      "hits": 0,
+      "description": "",
+      "panelsJSON": "[{\"col\":7,\"id\":\"AWWQjfOr9D2Mc8V9L8Y6\",\"panelIndex\":6,\"row\":5,\"size_x\":6,\"size_y\":3,\"type\":\"visualization\"},{\"col\":1,\"id\":\"AWWQ6mSx9D2Mc8V9L_9z\",\"panelIndex\":9,\"row\":1,\"size_x\":12,\"size_y\":1,\"type\":\"visualization\"},{\"col\":1,\"id\":\"AWWvkXy3wC3Eko_hdJqQ\",\"panelIndex\":12,\"row\":2,\"size_x\":3,\"size_y\":3,\"type\":\"visualization\"},{\"col\":7,\"id\":\"AWWvlkREwC3Eko_hdJ0S\",\"panelIndex\":13,\"row\":2,\"size_x\":3,\"size_y\":3,\"type\":\"visualization\"},{\"col\":10,\"id\":\"AWWvlyiiwC3Eko_hdJ2K\",\"panelIndex\":14,\"row\":2,\"size_x\":3,\"size_y\":3,\"type\":\"visualization\"},{\"col\":4,\"id\":\"AWWvlXVYwC3Eko_hdJyZ\",\"panelIndex\":15,\"row\":2,\"size_x\":3,\"size_y\":3,\"type\":\"visualization\"},{\"col\":1,\"id\":\"AWWv8X9MwC3Eko_hdL7A\",\"panelIndex\":16,\"row\":5,\"size_x\":6,\"size_y\":3,\"type\":\"visualization\"},{\"size_x\":12,\"size_y\":6,\"panelIndex\":17,\"type\":\"search\",\"id\":\"AWWQjMM79D2Mc8V9L8Yi\",\"col\":1,\"row\":8,\"columns\":[\"ibm_audit_eventName\",\"ibm_audit_outcome\",\"ibm_audit_target.credential.token\",\"ibm_audit_target.appname\",\"ibm_audit_target.session\",\"ibm_audit_initiator.host.address\",\"ibm_audit_target.role.names\",\"ibm_sequence\"],\"sort\":[\"ibm_sequence\",\"desc\"]}]",
+      "optionsJSON": "{\"darkTheme\":false}",
+      "uiStateJSON": "{\"P-12\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-13\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-14\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-15\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-16\":{\"vis\":{\"colors\":{\"Failure/Denied\":\"#BF1B00\",\"Success\":\"#629E51\"}}}}",
+      "version": 1,
+      "timeRestore": false,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[{\"query\":{\"match_all\":{}}}],\"highlightAll\":true,\"version\":true}"
+      }
+    }
+  },
+  {
+    "_id": "AWWlCbuA9D2Mc8V9MBxG",
+    "_type": "dashboard",
+    "_source": {
+      "title": "Liberty-Audit-JMS-K5-20180912",
+      "hits": 0,
+      "description": "",
+      "panelsJSON": "[{\"col\":1,\"id\":\"AWWlChc69D2Mc8V9MBxP\",\"panelIndex\":1,\"row\":1,\"size_x\":12,\"size_y\":1,\"type\":\"visualization\"},{\"col\":1,\"id\":\"AWWvWO4YwC3Eko_hdHNA\",\"panelIndex\":11,\"row\":5,\"size_x\":6,\"size_y\":3,\"type\":\"visualization\"},{\"col\":1,\"id\":\"AWWvo_tzwC3Eko_hdKqI\",\"panelIndex\":14,\"row\":2,\"size_x\":3,\"size_y\":3,\"type\":\"visualization\"},{\"col\":4,\"id\":\"AWWvpLxawC3Eko_hdKrs\",\"panelIndex\":15,\"row\":2,\"size_x\":3,\"size_y\":3,\"type\":\"visualization\"},{\"col\":7,\"id\":\"AWWvpRM1wC3Eko_hdKsX\",\"panelIndex\":16,\"row\":2,\"size_x\":3,\"size_y\":3,\"type\":\"visualization\"},{\"col\":10,\"id\":\"AWWvpYGRwC3Eko_hdKtT\",\"panelIndex\":17,\"row\":2,\"size_x\":3,\"size_y\":3,\"type\":\"visualization\"},{\"col\":7,\"id\":\"AWXEdMrLwC3Eko_hds7L\",\"panelIndex\":21,\"row\":5,\"size_x\":6,\"size_y\":3,\"type\":\"visualization\"},{\"size_x\":12,\"size_y\":4,\"panelIndex\":22,\"type\":\"search\",\"id\":\"AWXEd9cMwC3Eko_hdtEk\",\"col\":1,\"row\":8,\"columns\":[\"ibm_audit_eventName\",\"ibm_audit_outcome\",\"ibm_audit_target.credential.token\",\"ibm_audit_target.messaging.callType\",\"ibm_audit_target.messaging.remote.chainName\",\"ibm_sequence\"],\"sort\":[\"ibm_sequence\",\"desc\"]},{\"size_x\":12,\"size_y\":4,\"panelIndex\":23,\"type\":\"search\",\"id\":\"AWXEeNT1wC3Eko_hdtHa\",\"col\":1,\"row\":12,\"columns\":[\"ibm_audit_eventName\",\"ibm_audit_outcome\",\"ibm_audit_target.credential.token\",\"ibm_audit_target.messaging.operationType\",\"ibm_audit_target.messaging.destination\",\"ibm_audit_target.messaging.jmsActions\",\"ibm_audit_target.messaging.jmsResource\",\"ibm_sequence\"],\"sort\":[\"ibm_sequence\",\"desc\"]}]",
+      "optionsJSON": "{\"darkTheme\":false}",
+      "uiStateJSON": "{\"P-11\":{\"vis\":{\"colors\":{\"Failure/Denied\":\"#E24D42\",\"Success\":\"#629E51\"}}},\"P-14\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-15\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-16\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-17\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}}",
+      "version": 1,
+      "timeRestore": false,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[{\"query\":{\"match_all\":{}}}],\"highlightAll\":true,\"version\":true}"
+      }
+    }
+  },
+  {
+    "_id": "AWWQ6YXZ9D2Mc8V9L_9h",
+    "_type": "dashboard",
+    "_source": {
+      "title": "Liberty-Audit-JMX-K5-20180912",
+      "hits": 0,
+      "description": "",
+      "panelsJSON": "[{\"col\":1,\"id\":\"AWWQ7Ib09D2Mc8V9L_-e\",\"panelIndex\":1,\"row\":1,\"size_x\":12,\"size_y\":1,\"type\":\"visualization\"},{\"col\":7,\"id\":\"AWWQ7i-R9D2Mc8V9L__A\",\"panelIndex\":6,\"row\":5,\"size_x\":6,\"size_y\":3,\"type\":\"visualization\"},{\"col\":1,\"id\":\"AWWv3jxkwC3Eko_hdLTO\",\"panelIndex\":10,\"row\":2,\"size_x\":3,\"size_y\":3,\"type\":\"visualization\"},{\"col\":4,\"id\":\"AWWv3xZVwC3Eko_hdLVH\",\"panelIndex\":11,\"row\":2,\"size_x\":3,\"size_y\":3,\"type\":\"visualization\"},{\"col\":7,\"id\":\"AWWv364UwC3Eko_hdLWX\",\"panelIndex\":12,\"row\":2,\"size_x\":3,\"size_y\":3,\"type\":\"visualization\"},{\"col\":10,\"id\":\"AWWv4DE9wC3Eko_hdLXV\",\"panelIndex\":13,\"row\":2,\"size_x\":3,\"size_y\":3,\"type\":\"visualization\"},{\"col\":1,\"id\":\"AWWv8nW3wC3Eko_hdL85\",\"panelIndex\":14,\"row\":5,\"size_x\":6,\"size_y\":3,\"type\":\"visualization\"},{\"size_x\":12,\"size_y\":5,\"panelIndex\":15,\"type\":\"search\",\"id\":\"AWXEp7FbwC3Eko_hdvX1\",\"col\":1,\"row\":8,\"columns\":[\"ibm_audit_eventName\",\"ibm_audit_target.jmx.mbean.name\",\"ibm_audit_outcome\",\"ibm_audit_target.jmx.mbean.action\",\"ibm_audit_target.jmx.mbean.attribute.name\",\"ibm_sequence\"],\"sort\":[\"ibm_sequence\",\"desc\"]},{\"size_x\":12,\"size_y\":6,\"panelIndex\":16,\"type\":\"search\",\"id\":\"AWXEpOcswC3Eko_hdvPX\",\"col\":1,\"row\":13,\"columns\":[\"ibm_audit_eventName\",\"ibm_audit_target.jmx.mbean.action\",\"ibm_audit_outcome\",\"ibm_audit_target.jmx.notification.name\",\"ibm_audit_target.jmx.notification.listener\",\"ibm_audit_target.jmx.notification.filter\",\"ibm_audit_target.jmx.notification.handback\",\"ibm_sequence\"],\"sort\":[\"ibm_sequence\",\"desc\"]}]",
+      "optionsJSON": "{\"darkTheme\":false}",
+      "uiStateJSON": "{\"P-10\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-11\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-12\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-13\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-14\":{\"vis\":{\"colors\":{\"Failure/Denied\":\"#BF1B00\",\"Success\":\"#629E51\"}}}}",
+      "version": 1,
+      "timeRestore": false,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[{\"query\":{\"match_all\":{}}}],\"highlightAll\":true,\"version\":true}"
+      }
+    }
+  },
+  {
+    "_id": "AWW1HvAHwC3Eko_hdbAC",
+    "_type": "dashboard",
+    "_source": {
+      "title": "Liberty-Audit-SECURITY_MEMBER_MGMT-K5-20180912",
+      "hits": 0,
+      "description": "",
+      "panelsJSON": "[{\"col\":1,\"id\":\"AWW1I85vwC3Eko_hdbTk\",\"panelIndex\":1,\"row\":1,\"size_x\":12,\"size_y\":1,\"type\":\"visualization\"},{\"col\":1,\"id\":\"AWW1IkOQwC3Eko_hdbPm\",\"panelIndex\":2,\"row\":2,\"size_x\":3,\"size_y\":3,\"type\":\"visualization\"},{\"col\":4,\"id\":\"AWW1IrVuwC3Eko_hdbQy\",\"panelIndex\":3,\"row\":2,\"size_x\":3,\"size_y\":3,\"type\":\"visualization\"},{\"col\":7,\"id\":\"AWW1IvH2wC3Eko_hdbRM\",\"panelIndex\":4,\"row\":2,\"size_x\":3,\"size_y\":3,\"type\":\"visualization\"},{\"col\":10,\"id\":\"AWW1IzYIwC3Eko_hdbR_\",\"panelIndex\":5,\"row\":2,\"size_x\":3,\"size_y\":3,\"type\":\"visualization\"},{\"col\":1,\"id\":\"AWWM7Dk19D2Mc8V9L7kV\",\"panelIndex\":6,\"row\":9,\"size_x\":6,\"size_y\":3,\"type\":\"visualization\"},{\"col\":1,\"id\":\"AWW1KkPTwC3Eko_hdbtQ\",\"panelIndex\":7,\"row\":5,\"size_x\":6,\"size_y\":4,\"type\":\"visualization\"},{\"col\":7,\"id\":\"AWW1MGxjwC3Eko_hdcGM\",\"panelIndex\":9,\"row\":5,\"size_x\":6,\"size_y\":4,\"type\":\"visualization\"},{\"col\":7,\"id\":\"AWXE1WU6wC3Eko_hdw7x\",\"panelIndex\":10,\"row\":9,\"size_x\":6,\"size_y\":3,\"type\":\"visualization\"},{\"size_x\":12,\"size_y\":6,\"panelIndex\":11,\"type\":\"search\",\"id\":\"AWW1IU4UwC3Eko_hdbF6\",\"col\":1,\"row\":12,\"columns\":[\"ibm_audit_eventName\",\"ibm_audit_outcome\",\"ibm_audit_target.typeURI\",\"ibm_audit_target.uniqueName\",\"ibm_audit_target.repositoryId\",\"ibm_audit_target.realm\",\"ibm_audit_target.appname\",\"ibm_audit_initiator.host.address\",\"ibm_sequence\"],\"sort\":[\"ibm_sequence\",\"desc\"]}]",
+      "optionsJSON": "{\"darkTheme\":false}",
+      "uiStateJSON": "{\"P-2\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-3\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-4\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-5\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-6\":{\"vis\":{\"colors\":{\"Count\":\"#BA43A9\"}}},\"P-9\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-10\":{\"vis\":{\"colors\":{\"Failure/Denied\":\"#BF1B00\",\"service/vmmservice/create\":\"#0A437C\",\"service/vmmservice/update\":\"#1F78C1\",\"service/vmmservice/get\":\"#BADFF4\",\"cn=group2,o=ibm,c=usa\":\"#3F6833\",\"uid=user1,o=ibm,c=us\":\"#7EB26D\",\"uid=user2,o=ibm,c=us\":\"#E0F9D7\",\"uid=user2,o=ibm,c=usa\":\"#E5AC0E\",\"cn=group1,o=ibm,c=us\":\"#FCEACA\",\"Success\":\"#508642\"}}}}",
+      "version": 1,
+      "timeRestore": false,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[{\"query\":{\"match_all\":{}}}],\"highlightAll\":true,\"version\":true}"
+      }
+    }
+  },
+  {
+    "_id": "liberty_all",
+    "_type": "search",
+    "_source": {
+      "title": "Liberty All Search",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "_source"
+      ],
+      "sort": [
+        "@timestamp",
+        "desc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"logstash-*\",\"highlight\":{\"pre_tags\":[\"@kibana-highlighted-field@\"],\"post_tags\":[\"@/kibana-highlighted-field@\"],\"fields\":{\"*\":{}},\"fragment_size\":2147483647},\"filter\":[],\"query\":{\"query_string\":{\"query\":\"_type:liberty_*\",\"analyze_wildcard\":true}}}"
+      }
+    }
+  },
+  {
+    "_id": "AWWQjMM79D2Mc8V9L8Yi",
+    "_type": "search",
+    "_source": {
+      "title": "Audit AUTHN/AUTHZ Search",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "ibm_audit_eventName",
+        "ibm_audit_outcome",
+        "ibm_audit_target.credential.token",
+        "ibm_audit_target.appname",
+        "ibm_audit_target.session",
+        "ibm_audit_initiator.host.address",
+        "ibm_audit_target.role.names",
+        "ibm_sequence"
+      ],
+      "sort": [
+        "ibm_sequence",
+        "desc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"logstash-*\",\"highlightAll\":true,\"version\":true,\"query\":{\"match_all\":{}},\"filter\":[{\"meta\":{\"index\":\"logstash-*\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"_type\",\"value\":\"liberty_audit\"},\"query\":{\"match\":{\"_type\":{\"query\":\"liberty_audit\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}},{\"meta\":{\"index\":\"logstash-*\",\"type\":\"phrases\",\"key\":\"ibm_audit_eventName\",\"value\":\"SECURITY_AUTHZ, SECURITY_AUTHN_FAILOVER, SECURITY_AUTHN_DELEGATION, SECURITY_AUTHN, SECURITY_API_AUTHN_TERMINATE, SECURITY_API_AUTHN\",\"params\":[\"SECURITY_AUTHZ\",\"SECURITY_AUTHN_FAILOVER\",\"SECURITY_AUTHN_DELEGATION\",\"SECURITY_AUTHN\",\"SECURITY_API_AUTHN_TERMINATE\",\"SECURITY_API_AUTHN\"],\"negate\":false,\"disabled\":false,\"alias\":null},\"query\":{\"bool\":{\"should\":[{\"match_phrase\":{\"ibm_audit_eventName\":\"SECURITY_AUTHZ\"}},{\"match_phrase\":{\"ibm_audit_eventName\":\"SECURITY_AUTHN_FAILOVER\"}},{\"match_phrase\":{\"ibm_audit_eventName\":\"SECURITY_AUTHN_DELEGATION\"}},{\"match_phrase\":{\"ibm_audit_eventName\":\"SECURITY_AUTHN\"}},{\"match_phrase\":{\"ibm_audit_eventName\":\"SECURITY_API_AUTHN_TERMINATE\"}},{\"match_phrase\":{\"ibm_audit_eventName\":\"SECURITY_API_AUTHN\"}}],\"minimum_should_match\":1}},\"$state\":{\"store\":\"appState\"}}]}"
+      }
+    }
+  },
+  {
+    "_id": "AWXEp7FbwC3Eko_hdvX1",
+    "_type": "search",
+    "_source": {
+      "title": "JMX MBEAN Operations",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "ibm_audit_eventName",
+        "ibm_audit_target.jmx.mbean.name",
+        "ibm_audit_outcome",
+        "ibm_audit_target.jmx.mbean.action",
+        "ibm_audit_target.jmx.mbean.attribute.name",
+        "ibm_sequence"
+      ],
+      "sort": [
+        "ibm_sequence",
+        "desc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"logstash-*\",\"highlightAll\":true,\"version\":true,\"query\":{\"match_all\":{}},\"filter\":[{\"meta\":{\"index\":\"logstash-*\",\"type\":\"phrases\",\"key\":\"ibm_audit_eventName\",\"value\":\"JMX_MBEAN, JMX_MBEAN_REGISTER, JMX_MBEAN_ATTRIBUTES\",\"params\":[\"JMX_MBEAN\",\"JMX_MBEAN_REGISTER\",\"JMX_MBEAN_ATTRIBUTES\"],\"negate\":false,\"disabled\":false,\"alias\":null},\"query\":{\"bool\":{\"should\":[{\"match_phrase\":{\"ibm_audit_eventName\":\"JMX_MBEAN\"}},{\"match_phrase\":{\"ibm_audit_eventName\":\"JMX_MBEAN_REGISTER\"}},{\"match_phrase\":{\"ibm_audit_eventName\":\"JMX_MBEAN_ATTRIBUTES\"}}],\"minimum_should_match\":1}},\"$state\":{\"store\":\"appState\"}}]}"
+      }
+    }
+  },
+  {
+    "_id": "AWXEeNT1wC3Eko_hdtHa",
+    "_type": "search",
+    "_source": {
+      "title": "JMS Authorization Data",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "ibm_audit_eventName",
+        "ibm_audit_outcome",
+        "ibm_audit_target.credential.token",
+        "ibm_audit_target.messaging.operationType",
+        "ibm_audit_target.messaging.destination",
+        "ibm_audit_target.messaging.jmsActions",
+        "ibm_audit_target.messaging.jmsResource",
+        "ibm_sequence"
+      ],
+      "sort": [
+        "ibm_sequence",
+        "desc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"logstash-*\",\"highlightAll\":true,\"version\":true,\"query\":{\"match_all\":{}},\"filter\":[{\"meta\":{\"index\":\"logstash-*\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"ibm_audit_eventName\",\"value\":\"SECURITY_JMS_AUTHZ\"},\"query\":{\"match\":{\"ibm_audit_eventName\":{\"query\":\"SECURITY_JMS_AUTHZ\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}]}"
+      }
+    }
+  },
+  {
+    "_id": "AWWq7bvGwC3Eko_hc-St",
+    "_type": "search",
+    "_source": {
+      "title": "JMS Messaging Search",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "ibm_audit_eventName",
+        "ibm_audit_outcome",
+        "ibm_audit_target.messaging.jmsResource",
+        "ibm_audit_target.messaging.operationType",
+        "ibm_audit_target.messaging.jmsActions",
+        "ibm_sequence"
+      ],
+      "sort": [
+        "ibm_sequence",
+        "desc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"logstash-*\",\"highlightAll\":true,\"version\":true,\"query\":{\"match_all\":{}},\"filter\":[{\"$state\":{\"store\":\"appState\"},\"meta\":{\"alias\":null,\"disabled\":false,\"index\":\"logstash-*\",\"key\":\"ibm_audit_eventName\",\"negate\":false,\"params\":[\"SECURITY_JMS_AUTHN\",\"SECURITY_JMS_AUTHZ\"],\"type\":\"phrases\",\"value\":\"SECURITY_JMS_AUTHN, SECURITY_JMS_AUTHZ\"},\"query\":{\"bool\":{\"minimum_should_match\":1,\"should\":[{\"match_phrase\":{\"ibm_audit_eventName\":\"SECURITY_JMS_AUTHN\"}},{\"match_phrase\":{\"ibm_audit_eventName\":\"SECURITY_JMS_AUTHZ\"}}]}}}]}"
+      }
+    }
+  },
+  {
+    "_id": "AWXEpOcswC3Eko_hdvPX",
+    "_type": "search",
+    "_source": {
+      "title": "JMX Notification",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "ibm_audit_eventName",
+        "ibm_audit_target.jmx.mbean.action",
+        "ibm_audit_outcome",
+        "ibm_audit_target.jmx.notification.name",
+        "ibm_audit_target.jmx.notification.listener",
+        "ibm_audit_target.jmx.notification.filter",
+        "ibm_audit_target.jmx.notification.handback",
+        "ibm_sequence"
+      ],
+      "sort": [
+        "ibm_sequence",
+        "desc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"logstash-*\",\"highlightAll\":true,\"version\":true,\"query\":{\"match_all\":{}},\"filter\":[{\"meta\":{\"index\":\"logstash-*\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"ibm_audit_eventName\",\"value\":\"JMX_NOTIFICATION\"},\"query\":{\"match\":{\"ibm_audit_eventName\":{\"query\":\"JMX_NOTIFICATION\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}]}"
+      }
+    }
+  },
+  {
+    "_id": "AWXEd9cMwC3Eko_hdtEk",
+    "_type": "search",
+    "_source": {
+      "title": "JMS Authentication Data",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "ibm_audit_eventName",
+        "ibm_audit_outcome",
+        "ibm_audit_target.credential.token",
+        "ibm_audit_target.messaging.callType",
+        "ibm_audit_target.messaging.remote.chainName",
+        "ibm_sequence"
+      ],
+      "sort": [
+        "ibm_sequence",
+        "desc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"logstash-*\",\"highlightAll\":true,\"version\":true,\"query\":{\"match_all\":{}},\"filter\":[{\"meta\":{\"index\":\"logstash-*\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"ibm_audit_eventName\",\"value\":\"SECURITY_JMS_AUTHN\"},\"query\":{\"match\":{\"ibm_audit_eventName\":{\"query\":\"SECURITY_JMS_AUTHN\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}]}"
+      }
+    }
+  },
+  {
+    "_id": "AWWref6PwC3Eko_hdCJt",
+    "_type": "search",
+    "_source": {
+      "title": "Authorization Outcomes",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "ibm_audit_eventName",
+        "ibm_audit_outcome",
+        "ibm_audit_target.role.names",
+        "ibm_audit_target.credential.token",
+        "ibm_audit_target.credential.type",
+        "ibm_sequence"
+      ],
+      "sort": [
+        "ibm_sequence",
+        "desc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"logstash-*\",\"highlightAll\":true,\"version\":true,\"query\":{\"match_all\":{}},\"filter\":[{\"meta\":{\"negate\":false,\"index\":\"logstash-*\",\"type\":\"phrase\",\"key\":\"ibm_audit_eventName\",\"value\":\"SECURITY_AUTHZ\",\"disabled\":false,\"alias\":null},\"query\":{\"match\":{\"ibm_audit_eventName\":{\"query\":\"SECURITY_AUTHZ\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}]}"
+      }
+    }
+  },
+  {
+    "_id": "AWWM6M0L9D2Mc8V9L7jR",
+    "_type": "search",
+    "_source": {
+      "title": "General Audit Logging Search",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "ibm_audit_eventName",
+        "ibm_audit_outcome",
+        "ibm_audit_target.credential.token",
+        "ibm_audit_initiator.host.address",
+        "ibm_sequence"
+      ],
+      "sort": [
+        "ibm_sequence",
+        "desc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"logstash-*\",\"highlightAll\":true,\"version\":true,\"query\":{\"match_all\":{}},\"filter\":[{\"meta\":{\"index\":\"logstash-*\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"_type\",\"value\":\"liberty_audit\"},\"query\":{\"match\":{\"_type\":{\"query\":\"liberty_audit\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}]}"
+      }
+    }
+  },
+  {
+    "_id": "AWWQ6KH59D2Mc8V9L_9O",
+    "_type": "search",
+    "_source": {
+      "title": "JMX Search",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "ibm_audit_eventName",
+        "ibm_audit_outcome",
+        "ibm_audit_target.jmx.mbean.name",
+        "ibm_audit_target.jmx.mbean.action",
+        "ibm_audit_target.jmx.mbean.attribute.name",
+        "ibm_sequence"
+      ],
+      "sort": [
+        "ibm_sequence",
+        "desc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"logstash-*\",\"highlightAll\":true,\"version\":true,\"query\":{\"match_all\":{}},\"filter\":[{\"meta\":{\"index\":\"logstash-*\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"_type\",\"value\":\"liberty_audit\"},\"query\":{\"match\":{\"_type\":{\"query\":\"liberty_audit\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}},{\"meta\":{\"index\":\"logstash-*\",\"type\":\"phrases\",\"key\":\"ibm_audit_eventName\",\"value\":\"JMX_NOTIFICATION, JMX_MBEAN_ATTRIBUTES, JMX_MBEAN_REGISTER, JMX_MBEAN\",\"params\":[\"JMX_NOTIFICATION\",\"JMX_MBEAN_ATTRIBUTES\",\"JMX_MBEAN_REGISTER\",\"JMX_MBEAN\"],\"negate\":false,\"disabled\":false,\"alias\":null},\"query\":{\"bool\":{\"should\":[{\"match_phrase\":{\"ibm_audit_eventName\":\"JMX_NOTIFICATION\"}},{\"match_phrase\":{\"ibm_audit_eventName\":\"JMX_MBEAN_ATTRIBUTES\"}},{\"match_phrase\":{\"ibm_audit_eventName\":\"JMX_MBEAN_REGISTER\"}},{\"match_phrase\":{\"ibm_audit_eventName\":\"JMX_MBEAN\"}}],\"minimum_should_match\":1}},\"$state\":{\"store\":\"appState\"}}]}"
+      }
+    }
+  },
+  {
+    "_id": "AWW1IU4UwC3Eko_hdbF6",
+    "_type": "search",
+    "_source": {
+      "title": "SECURITY_MEMBER_MGMT Search",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "ibm_audit_eventName",
+        "ibm_audit_outcome",
+        "ibm_audit_target.typeURI",
+        "ibm_audit_target.uniqueName",
+        "ibm_audit_target.repositoryId",
+        "ibm_audit_target.realm",
+        "ibm_audit_target.appname",
+        "ibm_audit_initiator.host.address",
+        "ibm_sequence"
+      ],
+      "sort": [
+        "ibm_sequence",
+        "desc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"logstash-*\",\"highlightAll\":true,\"version\":true,\"query\":{\"match_all\":{}},\"filter\":[{\"meta\":{\"index\":\"logstash-*\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"_type\",\"value\":\"liberty_audit\"},\"query\":{\"match\":{\"_type\":{\"query\":\"liberty_audit\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}},{\"meta\":{\"index\":\"logstash-*\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"ibm_audit_eventName\",\"value\":\"SECURITY_MEMBER_MGMT\"},\"query\":{\"match\":{\"ibm_audit_eventName\":{\"query\":\"SECURITY_MEMBER_MGMT\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}]}"
+      }
+    }
+  },
+  {
+    "_id": "AWWQKkVm9D2Mc8V9L72R",
+    "_type": "visualization",
+    "_source": {
+      "title": "Liberty Audit Dashboard",
+      "visState": "{\"title\":\"Liberty Audit Dashboard\",\"type\":\"markdown\",\"params\":{\"type\":\"markdown\",\"markdown\":\"Dashboard visualizes auditable events.  Configure the liberty audit feature in your Liberty server.xml file and configure the logstashCollector feature to use the audit source.  Click on host, user directory, server name or tag to filter the content shown on the dashboard.\"},\"aggs\":[],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"query\":{\"match_all\":{}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "AWWM7Dk19D2Mc8V9L7kV",
+    "_type": "visualization",
+    "_source": {
+      "title": "Actions for SECURITY_MEMBER_MGMT events",
+      "visState": "{\"title\":\"Actions for SECURITY_MEMBER_MGMT events\",\"type\":\"histogram\",\"params\":{\"grid\":{\"categoryLines\":false,\"style\":{\"color\":\"#eee\"}},\"categoryAxes\":[{\"id\":\"CategoryAxis-1\",\"type\":\"category\",\"position\":\"left\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\"},\"labels\":{\"show\":true,\"rotate\":0,\"filter\":false,\"truncate\":200},\"title\":{\"text\":\"ibm_audit_target.typeURI: Descending\"}}],\"valueAxes\":[{\"id\":\"ValueAxis-1\",\"name\":\"LeftAxis-1\",\"type\":\"value\",\"position\":\"bottom\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\",\"mode\":\"normal\"},\"labels\":{\"show\":true,\"rotate\":75,\"filter\":true,\"truncate\":100},\"title\":{\"text\":\"Count\"}}],\"seriesParams\":[{\"show\":true,\"type\":\"histogram\",\"mode\":\"normal\",\"data\":{\"label\":\"Count\",\"id\":\"1\"},\"valueAxis\":\"ValueAxis-1\",\"drawLinesBetweenPoints\":true,\"showCircles\":true}],\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"times\":[],\"addTimeMarker\":false,\"type\":\"horizontal_bar\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"ibm_audit_target.typeURI\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"logstash-*\",\"query\":{\"match_all\":{}},\"filter\":[{\"meta\":{\"index\":\"logstash-*\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"ibm_audit_eventName\",\"value\":\"SECURITY_MEMBER_MGMT\"},\"query\":{\"match\":{\"ibm_audit_eventName\":{\"query\":\"SECURITY_MEMBER_MGMT\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}]}"
+      }
+    }
+  },
+  {
+    "_id": "AWWvh82DwC3Eko_hdJWf",
+    "_type": "visualization",
+    "_source": {
+      "title": "Liberty Hosts Table (Audit)",
+      "visState": "{\"title\":\"Liberty Hosts Table (Audit)\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showMeticsAtAllLevels\":false,\"showPartialRows\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\",\"type\":\"table\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"host\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+      "description": "",
+      "savedSearchId": "liberty_all",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[{\"meta\":{\"index\":\"logstash-*\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"_type\",\"value\":\"liberty_audit\"},\"query\":{\"match\":{\"_type\":{\"query\":\"liberty_audit\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}]}"
+      }
+    }
+  },
+  {
+    "_id": "AWWvkXy3wC3Eko_hdJqQ",
+    "_type": "visualization",
+    "_source": {
+      "title": "Liberty Hosts Table (AUTHN/AUTHZ)",
+      "visState": "{\"title\":\"Liberty Hosts Table (AUTHN/AUTHZ)\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showMeticsAtAllLevels\":false,\"showPartialRows\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\",\"type\":\"table\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"host\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+      "description": "",
+      "savedSearchId": "liberty_all",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[{\"meta\":{\"index\":\"logstash-*\",\"type\":\"phrases\",\"key\":\"ibm_audit_eventName\",\"value\":\"SECURITY_API_AUTHN, SECURITY_API_AUTHN_TERMINATE, SECURITY_AUTHN, SECURITY_AUTHN_DELEGATION, SECURITY_AUTHN_FAILOVER, SECURITY_AUTHZ\",\"params\":[\"SECURITY_API_AUTHN\",\"SECURITY_API_AUTHN_TERMINATE\",\"SECURITY_AUTHN\",\"SECURITY_AUTHN_DELEGATION\",\"SECURITY_AUTHN_FAILOVER\",\"SECURITY_AUTHZ\"],\"negate\":false,\"disabled\":false,\"alias\":null},\"query\":{\"bool\":{\"should\":[{\"match_phrase\":{\"ibm_audit_eventName\":\"SECURITY_API_AUTHN\"}},{\"match_phrase\":{\"ibm_audit_eventName\":\"SECURITY_API_AUTHN_TERMINATE\"}},{\"match_phrase\":{\"ibm_audit_eventName\":\"SECURITY_AUTHN\"}},{\"match_phrase\":{\"ibm_audit_eventName\":\"SECURITY_AUTHN_DELEGATION\"}},{\"match_phrase\":{\"ibm_audit_eventName\":\"SECURITY_AUTHN_FAILOVER\"}},{\"match_phrase\":{\"ibm_audit_eventName\":\"SECURITY_AUTHZ\"}}],\"minimum_should_match\":1}},\"$state\":{\"store\":\"appState\"}}]}"
+      }
+    }
+  },
+  {
+    "_id": "AWWvo_tzwC3Eko_hdKqI",
+    "_type": "visualization",
+    "_source": {
+      "title": "Liberty Hosts Table (JMS)",
+      "visState": "{\"title\":\"Liberty Hosts Table (JMS)\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showMeticsAtAllLevels\":false,\"showPartialRows\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\",\"type\":\"table\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"host\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+      "description": "",
+      "savedSearchId": "liberty_all",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[{\"meta\":{\"index\":\"logstash-*\",\"type\":\"phrases\",\"key\":\"ibm_audit_eventName\",\"value\":\"SECURITY_JMS_AUTHN, SECURITY_JMS_AUTHZ\",\"params\":[\"SECURITY_JMS_AUTHN\",\"SECURITY_JMS_AUTHZ\"],\"negate\":false,\"disabled\":false,\"alias\":null},\"query\":{\"bool\":{\"should\":[{\"match_phrase\":{\"ibm_audit_eventName\":\"SECURITY_JMS_AUTHN\"}},{\"match_phrase\":{\"ibm_audit_eventName\":\"SECURITY_JMS_AUTHZ\"}}],\"minimum_should_match\":1}},\"$state\":{\"store\":\"appState\"}}]}"
+      }
+    }
+  },
+  {
+    "_id": "AWWv3jxkwC3Eko_hdLTO",
+    "_type": "visualization",
+    "_source": {
+      "title": "Liberty Hosts Table (JMX)",
+      "visState": "{\"title\":\"Liberty Hosts Table (JMX)\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showMeticsAtAllLevels\":false,\"showPartialRows\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\",\"type\":\"table\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"host\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+      "description": "",
+      "savedSearchId": "liberty_all",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[{\"meta\":{\"index\":\"logstash-*\",\"type\":\"phrases\",\"key\":\"ibm_audit_eventName\",\"value\":\"JMX_NOTIFICATION, JMX_MBEAN_ATTRIBUTES, JMX_MBEAN_REGISTER, JMX_MBEAN\",\"params\":[\"JMX_NOTIFICATION\",\"JMX_MBEAN_ATTRIBUTES\",\"JMX_MBEAN_REGISTER\",\"JMX_MBEAN\"],\"negate\":false,\"disabled\":false,\"alias\":null},\"query\":{\"bool\":{\"should\":[{\"match_phrase\":{\"ibm_audit_eventName\":\"JMX_NOTIFICATION\"}},{\"match_phrase\":{\"ibm_audit_eventName\":\"JMX_MBEAN_ATTRIBUTES\"}},{\"match_phrase\":{\"ibm_audit_eventName\":\"JMX_MBEAN_REGISTER\"}},{\"match_phrase\":{\"ibm_audit_eventName\":\"JMX_MBEAN\"}}],\"minimum_should_match\":1}},\"$state\":{\"store\":\"appState\"}}]}"
+      }
+    }
+  },
+  {
+    "_id": "AWWQ6mSx9D2Mc8V9L_9z",
+    "_type": "visualization",
+    "_source": {
+      "title": "Liberty Audit AUTHN/AUTHZ",
+      "visState": "{\"title\":\"Liberty Audit AUTHN/AUTHZ\",\"type\":\"markdown\",\"params\":{\"type\":\"markdown\",\"markdown\":\"Dashboard visualizes auditable security authentication and authorization events. Configure the liberty audit feature in your Liberty server.xml file and configure the logstashCollector feature to use the audit source.  Click on host, user directory, server name or tag to filter the content shown on the dashboard.\"},\"aggs\":[],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"query\":{\"match_all\":{}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "AWWM33px9D2Mc8V9L7gV",
+    "_type": "visualization",
+    "_source": {
+      "title": "Successes vs Failures over time",
+      "visState": "{\"title\":\"Successes vs Failures over time\",\"type\":\"histogram\",\"params\":{\"grid\":{\"categoryLines\":false,\"style\":{\"color\":\"#eee\"}},\"categoryAxes\":[{\"id\":\"CategoryAxis-1\",\"type\":\"category\",\"position\":\"bottom\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\"},\"labels\":{\"show\":true,\"truncate\":100},\"title\":{\"text\":\"ibm_datetime per minute\"}}],\"valueAxes\":[{\"id\":\"ValueAxis-1\",\"name\":\"LeftAxis-1\",\"type\":\"value\",\"position\":\"left\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\",\"mode\":\"normal\"},\"labels\":{\"show\":true,\"rotate\":0,\"filter\":false,\"truncate\":100},\"title\":{\"text\":\"Count\"}}],\"seriesParams\":[{\"show\":\"true\",\"type\":\"histogram\",\"mode\":\"stacked\",\"data\":{\"label\":\"Count\",\"id\":\"1\"},\"valueAxis\":\"ValueAxis-1\",\"drawLinesBetweenPoints\":true,\"showCircles\":true}],\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"times\":[],\"addTimeMarker\":false,\"type\":\"histogram\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"ibm_datetime\",\"interval\":\"auto\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}},{\"id\":\"3\",\"enabled\":true,\"type\":\"filters\",\"schema\":\"group\",\"params\":{\"filters\":[{\"input\":{\"query\":{\"query_string\":{\"query\":\"ibm_audit_outcome:success\"}}},\"label\":\"Success\"},{\"input\":{\"query\":{\"query_string\":{\"query\":\"ibm_audit_outcome:failure OR ibm_audit_outcome:denied\"}}},\"label\":\"Failure/Denied\"}]}}],\"listeners\":{}}",
+      "uiStateJSON": "{\"vis\":{\"colors\":{\"Failure/Denied\":\"#BF1B00\",\"Success\":\"#629E51\"}}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"logstash-*\",\"query\":{\"match_all\":{}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "AWWM5Z9q9D2Mc8V9L7iR",
+    "_type": "visualization",
+    "_source": {
+      "title": "Users sorted by number of Failures",
+      "visState": "{\"title\":\"Users sorted by number of Failures\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\",\"type\":\"table\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Number of Failures\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"ibm_audit_target.credential.token\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"User\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"logstash-*\",\"query\":{\"match_all\":{}},\"filter\":[{\"meta\":{\"index\":\"logstash-*\",\"type\":\"phrases\",\"key\":\"ibm_audit_outcome\",\"value\":\"failure, denied\",\"params\":[\"failure\",\"denied\"],\"negate\":false,\"disabled\":false,\"alias\":null},\"query\":{\"bool\":{\"should\":[{\"match_phrase\":{\"ibm_audit_outcome\":\"failure\"}},{\"match_phrase\":{\"ibm_audit_outcome\":\"denied\"}}],\"minimum_should_match\":1}},\"$state\":{\"store\":\"appState\"}}]}"
+      }
+    }
+  },
+  {
+    "_id": "AWWM4xzJ9D2Mc8V9L7hf",
+    "_type": "visualization",
+    "_source": {
+      "title": "Event Types over time",
+      "visState": "{\"title\":\"Event Types over time\",\"type\":\"histogram\",\"params\":{\"grid\":{\"categoryLines\":false,\"style\":{\"color\":\"#eee\"}},\"categoryAxes\":[{\"id\":\"CategoryAxis-1\",\"type\":\"category\",\"position\":\"bottom\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\"},\"labels\":{\"show\":true,\"truncate\":100},\"title\":{\"text\":\"ibm_datetime per minute\"}}],\"valueAxes\":[{\"id\":\"ValueAxis-1\",\"name\":\"LeftAxis-1\",\"type\":\"value\",\"position\":\"left\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\",\"mode\":\"normal\"},\"labels\":{\"show\":true,\"rotate\":0,\"filter\":false,\"truncate\":100},\"title\":{\"text\":\"Count\"}}],\"seriesParams\":[{\"show\":\"true\",\"type\":\"histogram\",\"mode\":\"stacked\",\"data\":{\"label\":\"Count\",\"id\":\"1\"},\"valueAxis\":\"ValueAxis-1\",\"drawLinesBetweenPoints\":true,\"showCircles\":true}],\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"times\":[],\"addTimeMarker\":false,\"type\":\"histogram\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"ibm_datetime\",\"interval\":\"auto\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"group\",\"params\":{\"field\":\"ibm_audit_eventName\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"logstash-*\",\"query\":{\"match_all\":{}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "AWW1I85vwC3Eko_hdbTk",
+    "_type": "visualization",
+    "_source": {
+      "title": "Liberty Audit SECURITY_MEMBER_MGMT",
+      "visState": "{\"title\":\"Liberty Audit SECURITY_MEMBER_MGMT\",\"type\":\"markdown\",\"params\":{\"type\":\"markdown\",\"markdown\":\"Dashboard visualizes auditable security member management events. Configure the liberty audit feature in your Liberty server.xml file and configure the logstashCollector feature to use the audit source.  Click on host, user directory, server name or tag to filter the content shown on the dashboard.\"},\"aggs\":[],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"query\":{\"match_all\":{}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "AWWlChc69D2Mc8V9MBxP",
+    "_type": "visualization",
+    "_source": {
+      "title": "Liberty Audit JMS",
+      "visState": "{\"title\":\"Liberty Audit JMS\",\"type\":\"markdown\",\"params\":{\"type\":\"markdown\",\"markdown\":\"Dashboard visualizes auditable JMS messaging authentication and authorization events. Configure the liberty audit feature in your Liberty server.xml file and configure the logstashCollector feature to use the audit source.  Click on host, user directory, server name or tag to filter the content shown on the dashboard.\"},\"aggs\":[],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"query\":{\"match_all\":{}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "AWWQ7Ib09D2Mc8V9L_-e",
+    "_type": "visualization",
+    "_source": {
+      "title": "Liberty Audit JMX",
+      "visState": "{\"title\":\"Liberty Audit JMX\",\"type\":\"markdown\",\"params\":{\"type\":\"markdown\",\"markdown\":\"Dashboard visualizes auditable JMX MBean and JMX Notification events. Configure the liberty audit feature in your Liberty server.xml file and configure the logstashCollector feature to use the audit source.  Click on host, user directory, server name or tag to filter the content shown on the dashboard.\"},\"aggs\":[],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"query\":{\"match_all\":{}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "AWWvpLxawC3Eko_hdKrs",
+    "_type": "visualization",
+    "_source": {
+      "title": "Liberty User Directories (JMS)",
+      "visState": "{\"title\":\"Liberty User Directories (JMS)\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\",\"type\":\"table\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"ibm_userDir\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+      "description": "",
+      "savedSearchId": "liberty_all",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[{\"meta\":{\"index\":\"logstash-*\",\"type\":\"phrases\",\"key\":\"ibm_audit_eventName\",\"value\":\"SECURITY_JMS_AUTHN, SECURITY_JMS_AUTHZ\",\"params\":[\"SECURITY_JMS_AUTHN\",\"SECURITY_JMS_AUTHZ\"],\"negate\":false,\"disabled\":false,\"alias\":null},\"query\":{\"bool\":{\"should\":[{\"match_phrase\":{\"ibm_audit_eventName\":\"SECURITY_JMS_AUTHN\"}},{\"match_phrase\":{\"ibm_audit_eventName\":\"SECURITY_JMS_AUTHZ\"}}],\"minimum_should_match\":1}},\"$state\":{\"store\":\"appState\"}}]}"
+      }
+    }
+  },
+  {
+    "_id": "AWWv3xZVwC3Eko_hdLVH",
+    "_type": "visualization",
+    "_source": {
+      "title": "Liberty User Directories (JMX)",
+      "visState": "{\"aggs\":[{\"enabled\":true,\"id\":\"1\",\"params\":{},\"schema\":\"metric\",\"type\":\"count\"},{\"enabled\":true,\"id\":\"2\",\"params\":{\"field\":\"ibm_userDir\",\"order\":\"desc\",\"orderBy\":\"1\",\"size\":5},\"schema\":\"bucket\",\"type\":\"terms\"}],\"listeners\":{},\"params\":{\"perPage\":10,\"showMeticsAtAllLevels\":false,\"showPartialRows\":false,\"showTotal\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"totalFunc\":\"sum\",\"type\":\"table\"},\"title\":\"Liberty User Directories (JMX)\",\"type\":\"table\"}",
+      "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+      "description": "",
+      "savedSearchId": "liberty_all",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[{\"$state\":{\"store\":\"appState\"},\"meta\":{\"alias\":null,\"disabled\":false,\"index\":\"logstash-*\",\"key\":\"ibm_audit_eventName\",\"negate\":false,\"params\":[\"JMX_MBEAN\",\"JMX_MBEAN_REGISTER\",\"JMX_MBEAN_ATTRIBUTES\",\"JMX_NOTIFICATION\"],\"type\":\"phrases\",\"value\":\"JMX_MBEAN, JMX_MBEAN_REGISTER, JMX_MBEAN_ATTRIBUTES, JMX_NOTIFICATION\"},\"query\":{\"bool\":{\"minimum_should_match\":1,\"should\":[{\"match_phrase\":{\"ibm_audit_eventName\":\"JMX_MBEAN\"}},{\"match_phrase\":{\"ibm_audit_eventName\":\"JMX_MBEAN_REGISTER\"}},{\"match_phrase\":{\"ibm_audit_eventName\":\"JMX_MBEAN_ATTRIBUTES\"}},{\"match_phrase\":{\"ibm_audit_eventName\":\"JMX_NOTIFICATION\"}}]}}}]}"
+      }
+    }
+  },
+  {
+    "_id": "AWW1IrVuwC3Eko_hdbQy",
+    "_type": "visualization",
+    "_source": {
+      "title": "Liberty User Directories (SECURITY_MEMBER_MGMT)",
+      "visState": "{\"title\":\"Liberty User Directories (SECURITY_MEMBER_MGMT)\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\",\"type\":\"table\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"ibm_userDir\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+      "description": "",
+      "savedSearchId": "liberty_all",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[{\"meta\":{\"index\":\"logstash-*\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"ibm_audit_eventName\",\"value\":\"SECURITY_MEMBER_MGMT\"},\"query\":{\"match\":{\"ibm_audit_eventName\":{\"query\":\"SECURITY_MEMBER_MGMT\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}]}"
+      }
+    }
+  },
+  {
+    "_id": "AWWviNl5wC3Eko_hdJYt",
+    "_type": "visualization",
+    "_source": {
+      "title": "Liberty Servers (Audit)",
+      "visState": "{\"title\":\"Liberty Servers (Audit)\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\",\"type\":\"table\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"ibm_serverName\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+      "description": "",
+      "savedSearchId": "liberty_all",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[{\"meta\":{\"index\":\"logstash-*\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"_type\",\"value\":\"liberty_audit\"},\"query\":{\"match\":{\"_type\":{\"query\":\"liberty_audit\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}]}"
+      }
+    }
+  },
+  {
+    "_id": "AWWv364UwC3Eko_hdLWX",
+    "_type": "visualization",
+    "_source": {
+      "title": "Liberty Servers (JMX)",
+      "visState": "{\"title\":\"Liberty Servers (JMX)\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\",\"type\":\"table\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"ibm_serverName\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+      "description": "",
+      "savedSearchId": "liberty_all",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[{\"meta\":{\"index\":\"logstash-*\",\"type\":\"phrases\",\"key\":\"ibm_audit_eventName\",\"value\":\"JMX_NOTIFICATION, JMX_MBEAN_ATTRIBUTES, JMX_MBEAN_REGISTER, JMX_MBEAN\",\"params\":[\"JMX_NOTIFICATION\",\"JMX_MBEAN_ATTRIBUTES\",\"JMX_MBEAN_REGISTER\",\"JMX_MBEAN\"],\"negate\":false,\"disabled\":false,\"alias\":null},\"query\":{\"bool\":{\"should\":[{\"match_phrase\":{\"ibm_audit_eventName\":\"JMX_NOTIFICATION\"}},{\"match_phrase\":{\"ibm_audit_eventName\":\"JMX_MBEAN_ATTRIBUTES\"}},{\"match_phrase\":{\"ibm_audit_eventName\":\"JMX_MBEAN_REGISTER\"}},{\"match_phrase\":{\"ibm_audit_eventName\":\"JMX_MBEAN\"}}],\"minimum_should_match\":1}},\"$state\":{\"store\":\"appState\"}}]}"
+      }
+    }
+  },
+  {
+    "_id": "AWW1IvH2wC3Eko_hdbRM",
+    "_type": "visualization",
+    "_source": {
+      "title": "Liberty Servers (SECURITY_MEMBER_MGMT)",
+      "visState": "{\"title\":\"Liberty Servers (SECURITY_MEMBER_MGMT)\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\",\"type\":\"table\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"ibm_serverName\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+      "description": "",
+      "savedSearchId": "liberty_all",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[{\"meta\":{\"index\":\"logstash-*\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"ibm_audit_eventName\",\"value\":\"SECURITY_MEMBER_MGMT\"},\"query\":{\"match\":{\"ibm_audit_eventName\":{\"query\":\"SECURITY_MEMBER_MGMT\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}]}"
+      }
+    }
+  },
+  {
+    "_id": "AWWvlXVYwC3Eko_hdJyZ",
+    "_type": "visualization",
+    "_source": {
+      "title": "Liberty User Directories (AUTHN/AUTHZ)",
+      "visState": "{\"title\":\"Liberty User Directories (AUTHN/AUTHZ)\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\",\"type\":\"table\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"ibm_userDir\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+      "description": "",
+      "savedSearchId": "liberty_all",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[{\"meta\":{\"index\":\"logstash-*\",\"type\":\"phrases\",\"key\":\"ibm_audit_eventName\",\"value\":\"SECURITY_AUTHZ, SECURITY_AUTHN_FAILOVER, SECURITY_AUTHN_DELEGATION, SECURITY_AUTHN, SECURITY_API_AUTHN_TERMINATE, SECURITY_API_AUTHN\",\"params\":[\"SECURITY_AUTHZ\",\"SECURITY_AUTHN_FAILOVER\",\"SECURITY_AUTHN_DELEGATION\",\"SECURITY_AUTHN\",\"SECURITY_API_AUTHN_TERMINATE\",\"SECURITY_API_AUTHN\"],\"negate\":false,\"disabled\":false,\"alias\":null},\"query\":{\"bool\":{\"should\":[{\"match_phrase\":{\"ibm_audit_eventName\":\"SECURITY_AUTHZ\"}},{\"match_phrase\":{\"ibm_audit_eventName\":\"SECURITY_AUTHN_FAILOVER\"}},{\"match_phrase\":{\"ibm_audit_eventName\":\"SECURITY_AUTHN_DELEGATION\"}},{\"match_phrase\":{\"ibm_audit_eventName\":\"SECURITY_AUTHN\"}},{\"match_phrase\":{\"ibm_audit_eventName\":\"SECURITY_API_AUTHN_TERMINATE\"}},{\"match_phrase\":{\"ibm_audit_eventName\":\"SECURITY_API_AUTHN\"}}],\"minimum_should_match\":1}},\"$state\":{\"store\":\"appState\"}}]}"
+      }
+    }
+  },
+  {
+    "_id": "AWWvlkREwC3Eko_hdJ0S",
+    "_type": "visualization",
+    "_source": {
+      "title": "Liberty Servers (AUTHN/AUTHZ)",
+      "visState": "{\"title\":\"Liberty Servers (AUTHN/AUTHZ)\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\",\"type\":\"table\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"ibm_serverName\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+      "description": "",
+      "savedSearchId": "liberty_all",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[{\"meta\":{\"index\":\"logstash-*\",\"type\":\"phrases\",\"key\":\"ibm_audit_eventName\",\"value\":\"SECURITY_API_AUTHN, SECURITY_API_AUTHN_TERMINATE, SECURITY_AUTHN, SECURITY_AUTHN_DELEGATION, SECURITY_AUTHN_FAILOVER, SECURITY_AUTHZ\",\"params\":[\"SECURITY_API_AUTHN\",\"SECURITY_API_AUTHN_TERMINATE\",\"SECURITY_AUTHN\",\"SECURITY_AUTHN_DELEGATION\",\"SECURITY_AUTHN_FAILOVER\",\"SECURITY_AUTHZ\"],\"negate\":false,\"disabled\":false,\"alias\":null},\"query\":{\"bool\":{\"should\":[{\"match_phrase\":{\"ibm_audit_eventName\":\"SECURITY_API_AUTHN\"}},{\"match_phrase\":{\"ibm_audit_eventName\":\"SECURITY_API_AUTHN_TERMINATE\"}},{\"match_phrase\":{\"ibm_audit_eventName\":\"SECURITY_AUTHN\"}},{\"match_phrase\":{\"ibm_audit_eventName\":\"SECURITY_AUTHN_DELEGATION\"}},{\"match_phrase\":{\"ibm_audit_eventName\":\"SECURITY_AUTHN_FAILOVER\"}},{\"match_phrase\":{\"ibm_audit_eventName\":\"SECURITY_AUTHZ\"}}],\"minimum_should_match\":1}},\"$state\":{\"store\":\"appState\"}}]}"
+      }
+    }
+  },
+  {
+    "_id": "AWWvpRM1wC3Eko_hdKsX",
+    "_type": "visualization",
+    "_source": {
+      "title": "Liberty Servers (JMS)",
+      "visState": "{\"title\":\"Liberty Servers (JMS)\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\",\"type\":\"table\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"ibm_serverName\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+      "description": "",
+      "savedSearchId": "liberty_all",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[{\"meta\":{\"index\":\"logstash-*\",\"type\":\"phrases\",\"key\":\"ibm_audit_eventName\",\"value\":\"SECURITY_JMS_AUTHN, SECURITY_JMS_AUTHZ\",\"params\":[\"SECURITY_JMS_AUTHN\",\"SECURITY_JMS_AUTHZ\"],\"negate\":false,\"disabled\":false,\"alias\":null},\"query\":{\"bool\":{\"should\":[{\"match_phrase\":{\"ibm_audit_eventName\":\"SECURITY_JMS_AUTHN\"}},{\"match_phrase\":{\"ibm_audit_eventName\":\"SECURITY_JMS_AUTHZ\"}}],\"minimum_should_match\":1}},\"$state\":{\"store\":\"appState\"}}]}"
+      }
+    }
+  },
+  {
+    "_id": "AWW1IkOQwC3Eko_hdbPm",
+    "_type": "visualization",
+    "_source": {
+      "title": "Liberty Hosts Table (SECURITY_MEMBER_MGMT)",
+      "visState": "{\"title\":\"Liberty Hosts Table (SECURITY_MEMBER_MGMT)\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showMeticsAtAllLevels\":false,\"showPartialRows\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\",\"type\":\"table\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"host\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+      "description": "",
+      "savedSearchId": "liberty_all",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[{\"meta\":{\"index\":\"logstash-*\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"ibm_audit_eventName\",\"value\":\"SECURITY_MEMBER_MGMT\"},\"query\":{\"match\":{\"ibm_audit_eventName\":{\"query\":\"SECURITY_MEMBER_MGMT\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}]}"
+      }
+    }
+  },
+  {
+    "_id": "AWWviH0nwC3Eko_hdJXw",
+    "_type": "visualization",
+    "_source": {
+      "title": "Liberty User Directories (Audit)",
+      "visState": "{\"title\":\"Liberty User Directories (Audit)\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\",\"type\":\"table\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"ibm_userDir\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+      "description": "",
+      "savedSearchId": "liberty_all",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[{\"meta\":{\"index\":\"logstash-*\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"_type\",\"value\":\"liberty_audit\"},\"query\":{\"match\":{\"_type\":{\"query\":\"liberty_audit\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}]}"
+      }
+    }
+  },
+  {
+    "_id": "AWWviUWtwC3Eko_hdJZp",
+    "_type": "visualization",
+    "_source": {
+      "title": "Liberty Tags (Audit)",
+      "visState": "{\"title\":\"Liberty Tags (Audit)\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\",\"type\":\"table\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"ibm_tags\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+      "description": "",
+      "savedSearchId": "liberty_all",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[{\"meta\":{\"index\":\"logstash-*\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"_type\",\"value\":\"liberty_audit\"},\"query\":{\"match\":{\"_type\":{\"query\":\"liberty_audit\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}]}"
+      }
+    }
+  },
+  {
+    "_id": "AWWvWO4YwC3Eko_hdHNA",
+    "_type": "visualization",
+    "_source": {
+      "title": "Successes vs Failures (JMS)",
+      "visState": "{\"title\":\"Successes vs Failures (JMS)\",\"type\":\"histogram\",\"params\":{\"grid\":{\"categoryLines\":false,\"style\":{\"color\":\"#eee\"}},\"categoryAxes\":[{\"id\":\"CategoryAxis-1\",\"type\":\"category\",\"position\":\"bottom\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\"},\"labels\":{\"show\":true,\"truncate\":100},\"title\":{\"text\":\"ibm_datetime per 5 minutes\"}}],\"valueAxes\":[{\"id\":\"ValueAxis-1\",\"name\":\"LeftAxis-1\",\"type\":\"value\",\"position\":\"left\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\",\"mode\":\"normal\"},\"labels\":{\"show\":true,\"rotate\":0,\"filter\":false,\"truncate\":100},\"title\":{\"text\":\"Count\"}}],\"seriesParams\":[{\"show\":\"true\",\"type\":\"histogram\",\"mode\":\"stacked\",\"data\":{\"label\":\"Count\",\"id\":\"1\"},\"valueAxis\":\"ValueAxis-1\",\"drawLinesBetweenPoints\":true,\"showCircles\":true}],\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"times\":[],\"addTimeMarker\":false,\"type\":\"histogram\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"ibm_datetime\",\"interval\":\"auto\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}},{\"id\":\"3\",\"enabled\":true,\"type\":\"filters\",\"schema\":\"group\",\"params\":{\"filters\":[{\"input\":{\"query\":{\"query_string\":{\"query\":\"ibm_audit_outcome:success\"}}},\"label\":\"Success\"},{\"input\":{\"query\":{\"query_string\":{\"query\":\"ibm_audit_outcome:failure OR ibm_audit_outcome:denied\"}}},\"label\":\"Failure/Denied\"}]}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "savedSearchId": "AWWq7bvGwC3Eko_hc-St",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "AWWQ7i-R9D2Mc8V9L__A",
+    "_type": "visualization",
+    "_source": {
+      "title": "Actions over time (JMX)",
+      "visState": "{\"title\":\"Actions over time (JMX)\",\"type\":\"histogram\",\"params\":{\"addLegend\":true,\"addTimeMarker\":false,\"addTooltip\":true,\"categoryAxes\":[{\"id\":\"CategoryAxis-1\",\"labels\":{\"show\":true,\"truncate\":100},\"position\":\"bottom\",\"scale\":{\"type\":\"linear\"},\"show\":true,\"style\":{},\"title\":{\"text\":\"ibm_datetime per minute\"},\"type\":\"category\"}],\"grid\":{\"categoryLines\":false,\"style\":{\"color\":\"#eee\"}},\"legendPosition\":\"right\",\"seriesParams\":[{\"data\":{\"id\":\"1\",\"label\":\"Count\"},\"drawLinesBetweenPoints\":true,\"mode\":\"stacked\",\"show\":\"true\",\"showCircles\":true,\"type\":\"histogram\",\"valueAxis\":\"ValueAxis-1\"}],\"times\":[],\"type\":\"histogram\",\"valueAxes\":[{\"id\":\"ValueAxis-1\",\"labels\":{\"filter\":false,\"rotate\":0,\"show\":true,\"truncate\":100},\"name\":\"LeftAxis-1\",\"position\":\"left\",\"scale\":{\"mode\":\"normal\",\"type\":\"linear\"},\"show\":true,\"style\":{},\"title\":{\"text\":\"Count\"},\"type\":\"value\"}]},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"ibm_datetime\",\"interval\":\"auto\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"group\",\"params\":{\"field\":\"ibm_audit_target.jmx.mbean.action\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "savedSearchId": "AWWQ6KH59D2Mc8V9L_9O",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "AWW1MGxjwC3Eko_hdcGM",
+    "_type": "visualization",
+    "_source": {
+      "title": "Actions sorted by Number of Failures",
+      "visState": "{\"title\":\"Actions sorted by Number of Failures\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":true,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\",\"type\":\"table\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Number of Failures\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"ibm_audit_target.typeURI\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Action\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"ibm_audit_target.uniqueName\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Unique Name\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+      "description": "",
+      "savedSearchId": "AWW1IU4UwC3Eko_hdbF6",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[{\"meta\":{\"index\":\"logstash-*\",\"type\":\"phrases\",\"key\":\"ibm_audit_outcome\",\"value\":\"failure, denied\",\"params\":[\"failure\",\"denied\"],\"negate\":false,\"disabled\":false,\"alias\":null},\"query\":{\"bool\":{\"should\":[{\"match_phrase\":{\"ibm_audit_outcome\":\"failure\"}},{\"match_phrase\":{\"ibm_audit_outcome\":\"denied\"}}],\"minimum_should_match\":1}},\"$state\":{\"store\":\"appState\"}}]}"
+      }
+    }
+  },
+  {
+    "_id": "AWWvpYGRwC3Eko_hdKtT",
+    "_type": "visualization",
+    "_source": {
+      "title": "Liberty Tags (JMS)",
+      "visState": "{\"title\":\"Liberty Tags (JMS)\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\",\"type\":\"table\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"ibm_tags\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+      "description": "",
+      "savedSearchId": "liberty_all",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[{\"meta\":{\"index\":\"logstash-*\",\"type\":\"phrases\",\"key\":\"ibm_audit_eventName\",\"value\":\"SECURITY_JMS_AUTHN, SECURITY_JMS_AUTHZ\",\"params\":[\"SECURITY_JMS_AUTHN\",\"SECURITY_JMS_AUTHZ\"],\"negate\":false,\"disabled\":false,\"alias\":null},\"query\":{\"bool\":{\"should\":[{\"match_phrase\":{\"ibm_audit_eventName\":\"SECURITY_JMS_AUTHN\"}},{\"match_phrase\":{\"ibm_audit_eventName\":\"SECURITY_JMS_AUTHZ\"}}],\"minimum_should_match\":1}},\"$state\":{\"store\":\"appState\"}}]}"
+      }
+    }
+  },
+  {
+    "_id": "AWWv8nW3wC3Eko_hdL85",
+    "_type": "visualization",
+    "_source": {
+      "title": "Successes vs Failure (JMX)",
+      "visState": "{\"title\":\"Successes vs Failure (JMX)\",\"type\":\"histogram\",\"params\":{\"grid\":{\"categoryLines\":false,\"style\":{\"color\":\"#eee\"}},\"categoryAxes\":[{\"id\":\"CategoryAxis-1\",\"type\":\"category\",\"position\":\"bottom\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\"},\"labels\":{\"show\":true,\"truncate\":100},\"title\":{\"text\":\"ibm_datetime per 5 minutes\"}}],\"valueAxes\":[{\"id\":\"ValueAxis-1\",\"name\":\"LeftAxis-1\",\"type\":\"value\",\"position\":\"left\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\",\"mode\":\"normal\"},\"labels\":{\"show\":true,\"rotate\":0,\"filter\":false,\"truncate\":100},\"title\":{\"text\":\"Count\"}}],\"seriesParams\":[{\"show\":\"true\",\"type\":\"histogram\",\"mode\":\"stacked\",\"data\":{\"label\":\"Count\",\"id\":\"1\"},\"valueAxis\":\"ValueAxis-1\",\"drawLinesBetweenPoints\":true,\"showCircles\":true}],\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"times\":[],\"addTimeMarker\":false,\"type\":\"histogram\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"ibm_datetime\",\"interval\":\"auto\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}},{\"id\":\"3\",\"enabled\":true,\"type\":\"filters\",\"schema\":\"group\",\"params\":{\"filters\":[{\"input\":{\"query\":{\"query_string\":{\"query\":\"ibm_audit_outcome:success\"}}},\"label\":\"Success\"},{\"input\":{\"query\":{\"query_string\":{\"query\":\"ibm_audit_outcome:failure OR ibm_audit_outcome:denied\"}}},\"label\":\"Failure/Denied\"}]}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "savedSearchId": "AWWQ6KH59D2Mc8V9L_9O",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "AWWv8X9MwC3Eko_hdL7A",
+    "_type": "visualization",
+    "_source": {
+      "title": "Successes vs Failures (AUTHN/AUTHZ)",
+      "visState": "{\"title\":\"Successes vs Failures (AUTHN/AUTHZ)\",\"type\":\"histogram\",\"params\":{\"grid\":{\"categoryLines\":false,\"style\":{\"color\":\"#eee\"}},\"categoryAxes\":[{\"id\":\"CategoryAxis-1\",\"type\":\"category\",\"position\":\"bottom\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\"},\"labels\":{\"show\":true,\"truncate\":100},\"title\":{\"text\":\"ibm_datetime per 5 minutes\"}}],\"valueAxes\":[{\"id\":\"ValueAxis-1\",\"name\":\"LeftAxis-1\",\"type\":\"value\",\"position\":\"left\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\",\"mode\":\"normal\"},\"labels\":{\"show\":true,\"rotate\":0,\"filter\":false,\"truncate\":100},\"title\":{\"text\":\"Count\"}}],\"seriesParams\":[{\"show\":\"true\",\"type\":\"histogram\",\"mode\":\"stacked\",\"data\":{\"label\":\"Count\",\"id\":\"1\"},\"valueAxis\":\"ValueAxis-1\",\"drawLinesBetweenPoints\":true,\"showCircles\":true}],\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"times\":[],\"addTimeMarker\":false,\"type\":\"histogram\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"ibm_datetime\",\"interval\":\"auto\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}},{\"id\":\"3\",\"enabled\":true,\"type\":\"filters\",\"schema\":\"group\",\"params\":{\"filters\":[{\"input\":{\"query\":{\"query_string\":{\"query\":\"ibm_audit_outcome:success\"}}},\"label\":\"Success\"},{\"input\":{\"query\":{\"query_string\":{\"query\":\"ibm_audit_outcome:failure OR ibm_audit_outcome:denied\"}}},\"label\":\"Failure/Denied\"}]}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "savedSearchId": "AWWQjMM79D2Mc8V9L8Yi",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "AWW1KkPTwC3Eko_hdbtQ",
+    "_type": "visualization",
+    "_source": {
+      "title": "Successes vs Failures (SECURITY_MEMBER_MGMT)",
+      "visState": "{\"title\":\"Successes vs Failures (SECURITY_MEMBER_MGMT)\",\"type\":\"histogram\",\"params\":{\"grid\":{\"categoryLines\":false,\"style\":{\"color\":\"#eee\"}},\"categoryAxes\":[{\"id\":\"CategoryAxis-1\",\"type\":\"category\",\"position\":\"bottom\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\"},\"labels\":{\"show\":true,\"truncate\":100},\"title\":{\"text\":\"ibm_datetime per 5 minutes\"}}],\"valueAxes\":[{\"id\":\"ValueAxis-1\",\"name\":\"LeftAxis-1\",\"type\":\"value\",\"position\":\"left\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\",\"mode\":\"normal\"},\"labels\":{\"show\":true,\"rotate\":0,\"filter\":false,\"truncate\":100},\"title\":{\"text\":\"Count\"}}],\"seriesParams\":[{\"show\":\"true\",\"type\":\"histogram\",\"mode\":\"stacked\",\"data\":{\"label\":\"Count\",\"id\":\"1\"},\"valueAxis\":\"ValueAxis-1\",\"drawLinesBetweenPoints\":true,\"showCircles\":true}],\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"times\":[],\"addTimeMarker\":false,\"type\":\"histogram\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"ibm_datetime\",\"interval\":\"auto\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}},{\"id\":\"3\",\"enabled\":true,\"type\":\"filters\",\"schema\":\"group\",\"params\":{\"filters\":[{\"input\":{\"query\":{\"query_string\":{\"query\":\"ibm_audit_outcome:success\"}}},\"label\":\"Success\"},{\"input\":{\"query\":{\"query_string\":{\"query\":\"ibm_audit_outcome:failure OR ibm_audit_outcome:denied\"}}},\"label\":\"Failure/Denied\"}]}}],\"listeners\":{}}",
+      "uiStateJSON": "{\"vis\":{\"colors\":{\"Failure/Denied\":\"#BF1B00\",\"Success\":\"#629E51\"}}}",
+      "description": "",
+      "savedSearchId": "AWW1IU4UwC3Eko_hdbF6",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "AWWQjfOr9D2Mc8V9L8Y6",
+    "_type": "visualization",
+    "_source": {
+      "title": "Authentication Types over time",
+      "visState": "{\"title\":\"Authentication Types over time\",\"type\":\"histogram\",\"params\":{\"grid\":{\"categoryLines\":false,\"style\":{\"color\":\"#eee\"}},\"categoryAxes\":[{\"id\":\"CategoryAxis-1\",\"type\":\"category\",\"position\":\"bottom\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\"},\"labels\":{\"show\":true,\"truncate\":100},\"title\":{\"text\":\"ibm_datetime per minute\"}}],\"valueAxes\":[{\"id\":\"ValueAxis-1\",\"name\":\"LeftAxis-1\",\"type\":\"value\",\"position\":\"left\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\",\"mode\":\"normal\"},\"labels\":{\"show\":true,\"rotate\":0,\"filter\":false,\"truncate\":100},\"title\":{\"text\":\"Count\"}}],\"seriesParams\":[{\"show\":\"true\",\"type\":\"histogram\",\"mode\":\"stacked\",\"data\":{\"label\":\"Count\",\"id\":\"1\"},\"valueAxis\":\"ValueAxis-1\",\"drawLinesBetweenPoints\":true,\"showCircles\":true}],\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"times\":[],\"addTimeMarker\":false,\"type\":\"histogram\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"ibm_datetime\",\"interval\":\"auto\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"group\",\"params\":{\"field\":\"ibm_audit_target.credential.type\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "savedSearchId": "AWWQjMM79D2Mc8V9L8Yi",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "AWXEdMrLwC3Eko_hds7L",
+    "_type": "visualization",
+    "_source": {
+      "title": "Destinations over time",
+      "visState": "{\"title\":\"Destinations over time\",\"type\":\"histogram\",\"params\":{\"grid\":{\"categoryLines\":false,\"style\":{\"color\":\"#eee\"}},\"categoryAxes\":[{\"id\":\"CategoryAxis-1\",\"type\":\"category\",\"position\":\"bottom\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\"},\"labels\":{\"show\":true,\"truncate\":100},\"title\":{\"text\":\"ibm_datetime per 5 minutes\"}}],\"valueAxes\":[{\"id\":\"ValueAxis-1\",\"name\":\"LeftAxis-1\",\"type\":\"value\",\"position\":\"left\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\",\"mode\":\"normal\"},\"labels\":{\"show\":true,\"rotate\":0,\"filter\":false,\"truncate\":100},\"title\":{\"text\":\"Count\"}}],\"seriesParams\":[{\"show\":\"true\",\"type\":\"histogram\",\"mode\":\"stacked\",\"data\":{\"label\":\"Count\",\"id\":\"1\"},\"valueAxis\":\"ValueAxis-1\",\"drawLinesBetweenPoints\":true,\"showCircles\":true}],\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"times\":[],\"addTimeMarker\":false,\"type\":\"histogram\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"ibm_datetime\",\"interval\":\"auto\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"group\",\"params\":{\"field\":\"ibm_audit_target.messaging.destination\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "savedSearchId": "AWWq7bvGwC3Eko_hc-St",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "AWXE1WU6wC3Eko_hdw7x",
+    "_type": "visualization",
+    "_source": {
+      "title": "Actions and Outcome (SECURITY_MEMBER_MGMT)",
+      "visState": "{\"title\":\"Actions and Outcome (SECURITY_MEMBER_MGMT)\",\"type\":\"pie\",\"params\":{\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":true,\"type\":\"pie\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"filters\",\"schema\":\"segment\",\"params\":{\"filters\":[{\"input\":{\"query\":{\"query_string\":{\"query\":\"ibm_audit_outcome:success\"}}},\"label\":\"Success\"},{\"input\":{\"query\":{\"query_string\":{\"query\":\"ibm_audit_outcome:failure OR ibm_audit_outcome:denied\"}}},\"label\":\"Failure/Denied\"}]}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"ibm_audit_target.typeURI\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{\"vis\":{\"colors\":{\"Failure/Denied\":\"#BF1B00\",\"service/vmmservice/create\":\"#0A437C\",\"service/vmmservice/update\":\"#1F78C1\",\"service/vmmservice/get\":\"#BADFF4\",\"cn=group2,o=ibm,c=usa\":\"#3F6833\",\"uid=user1,o=ibm,c=us\":\"#7EB26D\",\"uid=user2,o=ibm,c=us\":\"#E0F9D7\",\"uid=user2,o=ibm,c=usa\":\"#E5AC0E\",\"cn=group1,o=ibm,c=us\":\"#FCEACA\"}}}",
+      "description": "",
+      "savedSearchId": "AWW1IU4UwC3Eko_hdbF6",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "AWWvlyiiwC3Eko_hdJ2K",
+    "_type": "visualization",
+    "_source": {
+      "title": "Liberty Tags (AUTHN/AUTHZ)",
+      "visState": "{\"title\":\"Liberty Tags (AUTHN/AUTHZ)\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\",\"type\":\"table\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"ibm_tags\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+      "description": "",
+      "savedSearchId": "liberty_all",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[{\"meta\":{\"index\":\"logstash-*\",\"type\":\"phrases\",\"key\":\"ibm_audit_eventName\",\"value\":\"SECURITY_AUTHZ, SECURITY_AUTHN_FAILOVER, SECURITY_AUTHN_DELEGATION, SECURITY_AUTHN, SECURITY_API_AUTHN_TERMINATE, SECURITY_API_AUTHN\",\"params\":[\"SECURITY_AUTHZ\",\"SECURITY_AUTHN_FAILOVER\",\"SECURITY_AUTHN_DELEGATION\",\"SECURITY_AUTHN\",\"SECURITY_API_AUTHN_TERMINATE\",\"SECURITY_API_AUTHN\"],\"negate\":false,\"disabled\":false,\"alias\":null},\"query\":{\"bool\":{\"should\":[{\"match_phrase\":{\"ibm_audit_eventName\":\"SECURITY_AUTHZ\"}},{\"match_phrase\":{\"ibm_audit_eventName\":\"SECURITY_AUTHN_FAILOVER\"}},{\"match_phrase\":{\"ibm_audit_eventName\":\"SECURITY_AUTHN_DELEGATION\"}},{\"match_phrase\":{\"ibm_audit_eventName\":\"SECURITY_AUTHN\"}},{\"match_phrase\":{\"ibm_audit_eventName\":\"SECURITY_API_AUTHN_TERMINATE\"}},{\"match_phrase\":{\"ibm_audit_eventName\":\"SECURITY_API_AUTHN\"}}],\"minimum_should_match\":1}},\"$state\":{\"store\":\"appState\"}}]}"
+      }
+    }
+  },
+  {
+    "_id": "AWWv4DE9wC3Eko_hdLXV",
+    "_type": "visualization",
+    "_source": {
+      "title": "Liberty Tags (JMX)",
+      "visState": "{\"title\":\"Liberty Tags (JMX)\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\",\"type\":\"table\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"ibm_tags\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+      "description": "",
+      "savedSearchId": "liberty_all",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[{\"meta\":{\"index\":\"logstash-*\",\"type\":\"phrases\",\"key\":\"ibm_audit_eventName\",\"value\":\"JMX_MBEAN, JMX_MBEAN_REGISTER, JMX_MBEAN_ATTRIBUTES, JMX_NOTIFICATION\",\"params\":[\"JMX_MBEAN\",\"JMX_MBEAN_REGISTER\",\"JMX_MBEAN_ATTRIBUTES\",\"JMX_NOTIFICATION\"],\"negate\":false,\"disabled\":false,\"alias\":null},\"query\":{\"bool\":{\"should\":[{\"match_phrase\":{\"ibm_audit_eventName\":\"JMX_MBEAN\"}},{\"match_phrase\":{\"ibm_audit_eventName\":\"JMX_MBEAN_REGISTER\"}},{\"match_phrase\":{\"ibm_audit_eventName\":\"JMX_MBEAN_ATTRIBUTES\"}},{\"match_phrase\":{\"ibm_audit_eventName\":\"JMX_NOTIFICATION\"}}],\"minimum_should_match\":1}},\"$state\":{\"store\":\"appState\"}}]}"
+      }
+    }
+  },
+  {
+    "_id": "AWW1IzYIwC3Eko_hdbR_",
+    "_type": "visualization",
+    "_source": {
+      "title": "Liberty Tags (SECURITY_MEMBER_MGMT)",
+      "visState": "{\"title\":\"Liberty Tags (SECURITY_MEMBER_MGMT)\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\",\"type\":\"table\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"ibm_tags\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+      "description": "",
+      "savedSearchId": "liberty_all",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[{\"meta\":{\"index\":\"logstash-*\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"ibm_audit_eventName\",\"value\":\"SECURITY_MEMBER_MGMT\"},\"query\":{\"match\":{\"ibm_audit_eventName\":{\"query\":\"SECURITY_MEMBER_MGMT\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}]}"
+      }
+    }
+  }
+]
