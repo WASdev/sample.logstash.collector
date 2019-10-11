@@ -1,6 +1,6 @@
 # sample.logstash.collector
   
-This project contains the sample dashboards and configuration files to help you exploit the *logstashCollector-1.0* and *logstashCollector-1.1* features in Liberty.
+This project contains the sample dashboards and configuration files to help you exploit the *logstashCollector-1.0* feature in Liberty.
 
 ### Subdirectories
 
