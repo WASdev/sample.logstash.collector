@@ -5,19 +5,18 @@
     },
     "mappings" : {
         "properties": {
-            "type": { "type": "keyword", "index": "true"},
-            "datetime": { "type": "date", "format": "yyyy-MM-dd'T'HH:mm:ss.SSSZ" },
-            "host": { "type": "keyword", "index": "true" },
-            "userDir": { "type": "keyword", "index": "true" },
+            "type": { "type": "keyword", "index": "true" },
+            "hostName": { "type": "keyword", "index": "true" },
+            "wlpUserDir": { "type": "keyword", "index": "true" },
             "serverName": { "type": "keyword", "index": "true" },
-            "ibm_datetime": { "type": "date", "format": "yyyy-MM-dd'T'HH:mm:ss.SSSZ" },
+            "datetime": { "type": "date", "format": "yyyy-MM-dd'T'HH:mm:ss.SSSZ" },
             "sequence": { "type": "keyword", "index": "true" },
             "className": { "type": "keyword", "index": "true" },
-            "module": { "type": "keyword", "index": "true" },
+            "loggerName": { "type": "keyword", "index": "true" },
             "message": { "type": "text", "index": "true" },
             "messageId": { "type": "keyword", "index": "true" },
             "methodName": { "type": "keyword", "index": "true" },
-            "loglevel": { "type": "keyword", "index": "true" },
+            "severity": { "type": "keyword", "index": "true" },
             "threadId": { "type": "keyword", "index": "true" },
             "tags": { "type": "keyword", "index": "true"},
             "exceptionName": { "type": "keyword", "index": "true" },
@@ -37,7 +36,7 @@
             "requestProtocol": { "type": "keyword", "index": "true" },
             "bytesReceived": { "type": "long", "index": "true" },
             "elapsedTime": { "type": "long", "index": "true" },
-            "queryString": { "type": "text", "index": "true" },
+            "querykeyword": { "type": "text", "index": "true" },
             "responseCode": { "type": "integer", "index": "true" },
             "uriPath": { "type": "keyword", "index": "true" },
             "userAgent": { "type": "keyword", "index": "true" },
@@ -106,7 +105,6 @@
             "ibm_audit_target.typeURI": { "type": "keyword", "index": "true" },
             "ibm_audit_target.uniqueName": { "type": "keyword", "index": "true" },
             "ibm_audit_target.uriname": { "type": "keyword", "index": "true" }
-
         }
     }
 }
