@@ -40,7 +40,7 @@
             "queryString": { "type": "text", "index": "true" },
             "responseCode": { "type": "integer", "index": "true" },
             "uriPath": { "type": "keyword", "index": "true" },
-            "ibm_userAgent": { "type": "keyword", "index": "true" },
+            "userAgent": { "type": "keyword", "index": "true" },
             "ibm_audit_outcome": { "type": "keyword", "index": "true" },
             "ibm_audit_eventName": { "type": "keyword", "index": "true" },
             "ibm_audit_eventSequenceNumber": { "type": "keyword", "index": "true" },
