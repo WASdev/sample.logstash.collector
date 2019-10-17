@@ -81,7 +81,7 @@
       ],
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"logstash-*\",\"query\":{\"query_string\":{\"query\":\"_type:liberty_message\",\"analyze_wildcard\":true}},\"filter\":[],\"highlight\":{\"pre_tags\":[\"@kibana-highlighted-field@\"],\"post_tags\":[\"@/kibana-highlighted-field@\"],\"fields\":{\"*\":{}},\"fragment_size\":2147483647}}"
+        "searchSourceJSON": "{\"index\":\"logstash-*\",\"query\":{\"query_string\":{\"query\":\"type:liberty_message\",\"analyze_wildcard\":true}},\"filter\":[],\"highlight\":{\"pre_tags\":[\"@kibana-highlighted-field@\"],\"post_tags\":[\"@/kibana-highlighted-field@\"],\"fields\":{\"*\":{}},\"fragment_size\":2147483647}}"
       }
     }
   },
@@ -121,7 +121,7 @@
       ],
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"logstash-*\",\"highlight\":{\"pre_tags\":[\"@kibana-highlighted-field@\"],\"post_tags\":[\"@/kibana-highlighted-field@\"],\"fields\":{\"*\":{}},\"fragment_size\":2147483647},\"filter\":[],\"query\":{\"query_string\":{\"query\":\"_type:liberty_*\",\"analyze_wildcard\":true}}}"
+        "searchSourceJSON": "{\"index\":\"logstash-*\",\"highlight\":{\"pre_tags\":[\"@kibana-highlighted-field@\"],\"post_tags\":[\"@/kibana-highlighted-field@\"],\"fields\":{\"*\":{}},\"fragment_size\":2147483647},\"filter\":[],\"query\":{\"query_string\":{\"query\":\"type:liberty_*\",\"analyze_wildcard\":true}}}"
       }
     }
   },
@@ -254,7 +254,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"logstash-*\",\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"_type:liberty_message*\"}},\"filter\":[]}"
+        "searchSourceJSON": "{\"index\":\"logstash-*\",\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"type:liberty_message*\"}},\"filter\":[]}"
       }
     }
   },
@@ -269,7 +269,7 @@
       "savedSearchId": "liberty_messageSearch",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"filter\":[{\"meta\":{\"index\":\"logstash-*\",\"type\":\"phrases\",\"key\":\"_type\",\"value\":\"liberty_message, liberty_trace, liberty_ffdc\",\"params\":[\"liberty_message\",\"liberty_trace\",\"liberty_ffdc\"],\"negate\":false,\"disabled\":false,\"alias\":null},\"query\":{\"bool\":{\"should\":[{\"match_phrase\":{\"_type\":\"liberty_message\"}},{\"match_phrase\":{\"_type\":\"liberty_trace\"}},{\"match_phrase\":{\"_type\":\"liberty_ffdc\"}}],\"minimum_should_match\":1}},\"$state\":{\"store\":\"appState\"}}]}"
+        "searchSourceJSON": "{\"filter\":[{\"meta\":{\"index\":\"logstash-*\",\"type\":\"phrases\",\"key\":\"type\",\"value\":\"liberty_message, liberty_trace, liberty_ffdc\",\"params\":[\"liberty_message\",\"liberty_trace\",\"liberty_ffdc\"],\"negate\":false,\"disabled\":false,\"alias\":null},\"query\":{\"bool\":{\"should\":[{\"match_phrase\":{\"type\":\"liberty_message\"}},{\"match_phrase\":{\"type\":\"liberty_trace\"}},{\"match_phrase\":{\"type\":\"liberty_ffdc\"}}],\"minimum_should_match\":1}},\"$state\":{\"store\":\"appState\"}}]}"
       }
     }
   },
@@ -283,7 +283,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"logstash-*\",\"query\":{\"query_string\":{\"query\":\"_type:liberty_message*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+        "searchSourceJSON": "{\"index\":\"logstash-*\",\"query\":{\"query_string\":{\"query\":\"type:liberty_message*\",\"analyze_wildcard\":true}},\"filter\":[]}"
       }
     }
   },
@@ -298,7 +298,7 @@
       "savedSearchId": "liberty_all",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"filter\":[{\"meta\":{\"index\":\"logstash-*\",\"type\":\"phrases\",\"key\":\"_type\",\"value\":\"liberty_message, liberty_trace, liberty_ffdc\",\"params\":[\"liberty_message\",\"liberty_trace\",\"liberty_ffdc\"],\"negate\":false,\"disabled\":false,\"alias\":null},\"query\":{\"bool\":{\"should\":[{\"match_phrase\":{\"_type\":\"liberty_message\"}},{\"match_phrase\":{\"_type\":\"liberty_trace\"}},{\"match_phrase\":{\"_type\":\"liberty_ffdc\"}}],\"minimum_should_match\":1}},\"$state\":{\"store\":\"appState\"}}]}"
+        "searchSourceJSON": "{\"filter\":[{\"meta\":{\"index\":\"logstash-*\",\"type\":\"phrases\",\"key\":\"type\",\"value\":\"liberty_message, liberty_trace, liberty_ffdc\",\"params\":[\"liberty_message\",\"liberty_trace\",\"liberty_ffdc\"],\"negate\":false,\"disabled\":false,\"alias\":null},\"query\":{\"bool\":{\"should\":[{\"match_phrase\":{\"type\":\"liberty_message\"}},{\"match_phrase\":{\"type\":\"liberty_trace\"}},{\"match_phrase\":{\"type\":\"liberty_ffdc\"}}],\"minimum_should_match\":1}},\"$state\":{\"store\":\"appState\"}}]}"
       }
     }
   },
@@ -313,7 +313,7 @@
       "savedSearchId": "liberty_all",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"filter\":[{\"meta\":{\"index\":\"logstash-*\",\"type\":\"phrases\",\"key\":\"_type\",\"value\":\"liberty_message, liberty_trace, liberty_ffdc\",\"params\":[\"liberty_message\",\"liberty_trace\",\"liberty_ffdc\"],\"negate\":false,\"disabled\":false,\"alias\":null},\"query\":{\"bool\":{\"should\":[{\"match_phrase\":{\"_type\":\"liberty_message\"}},{\"match_phrase\":{\"_type\":\"liberty_trace\"}},{\"match_phrase\":{\"_type\":\"liberty_ffdc\"}}],\"minimum_should_match\":1}},\"$state\":{\"store\":\"appState\"}}]}"
+        "searchSourceJSON": "{\"filter\":[{\"meta\":{\"index\":\"logstash-*\",\"type\":\"phrases\",\"key\":\"type\",\"value\":\"liberty_message, liberty_trace, liberty_ffdc\",\"params\":[\"liberty_message\",\"liberty_trace\",\"liberty_ffdc\"],\"negate\":false,\"disabled\":false,\"alias\":null},\"query\":{\"bool\":{\"should\":[{\"match_phrase\":{\"type\":\"liberty_message\"}},{\"match_phrase\":{\"type\":\"liberty_trace\"}},{\"match_phrase\":{\"type\":\"liberty_ffdc\"}}],\"minimum_should_match\":1}},\"$state\":{\"store\":\"appState\"}}]}"
       }
     }
   },
@@ -328,7 +328,7 @@
       "savedSearchId": "liberty_all",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"filter\":[{\"meta\":{\"index\":\"logstash-*\",\"type\":\"phrases\",\"key\":\"_type\",\"value\":\"liberty_message, liberty_trace, liberty_ffdc\",\"params\":[\"liberty_message\",\"liberty_trace\",\"liberty_ffdc\"],\"negate\":false,\"disabled\":false,\"alias\":null},\"query\":{\"bool\":{\"should\":[{\"match_phrase\":{\"_type\":\"liberty_message\"}},{\"match_phrase\":{\"_type\":\"liberty_trace\"}},{\"match_phrase\":{\"_type\":\"liberty_ffdc\"}}],\"minimum_should_match\":1}},\"$state\":{\"store\":\"appState\"}}]}"
+        "searchSourceJSON": "{\"filter\":[{\"meta\":{\"index\":\"logstash-*\",\"type\":\"phrases\",\"key\":\"type\",\"value\":\"liberty_message, liberty_trace, liberty_ffdc\",\"params\":[\"liberty_message\",\"liberty_trace\",\"liberty_ffdc\"],\"negate\":false,\"disabled\":false,\"alias\":null},\"query\":{\"bool\":{\"should\":[{\"match_phrase\":{\"type\":\"liberty_message\"}},{\"match_phrase\":{\"type\":\"liberty_trace\"}},{\"match_phrase\":{\"type\":\"liberty_ffdc\"}}],\"minimum_should_match\":1}},\"$state\":{\"store\":\"appState\"}}]}"
       }
     }
   },
@@ -343,7 +343,7 @@
       "savedSearchId": "liberty_all",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"filter\":[{\"meta\":{\"index\":\"logstash-*\",\"type\":\"phrases\",\"key\":\"_type\",\"value\":\"liberty_message, liberty_trace, liberty_ffdc\",\"params\":[\"liberty_message\",\"liberty_trace\",\"liberty_ffdc\"],\"negate\":false,\"disabled\":false,\"alias\":null},\"query\":{\"bool\":{\"should\":[{\"match_phrase\":{\"_type\":\"liberty_message\"}},{\"match_phrase\":{\"_type\":\"liberty_trace\"}},{\"match_phrase\":{\"_type\":\"liberty_ffdc\"}}],\"minimum_should_match\":1}},\"$state\":{\"store\":\"appState\"}}]}"
+        "searchSourceJSON": "{\"filter\":[{\"meta\":{\"index\":\"logstash-*\",\"type\":\"phrases\",\"key\":\"type\",\"value\":\"liberty_message, liberty_trace, liberty_ffdc\",\"params\":[\"liberty_message\",\"liberty_trace\",\"liberty_ffdc\"],\"negate\":false,\"disabled\":false,\"alias\":null},\"query\":{\"bool\":{\"should\":[{\"match_phrase\":{\"type\":\"liberty_message\"}},{\"match_phrase\":{\"type\":\"liberty_trace\"}},{\"match_phrase\":{\"type\":\"liberty_ffdc\"}}],\"minimum_should_match\":1}},\"$state\":{\"store\":\"appState\"}}]}"
       }
     }
   },
