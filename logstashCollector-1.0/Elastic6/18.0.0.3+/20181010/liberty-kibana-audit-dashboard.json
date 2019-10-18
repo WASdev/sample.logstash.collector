@@ -100,7 +100,7 @@
       ],
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"logstash-*\",\"highlight\":{\"pre_tags\":[\"@kibana-highlighted-field@\"],\"post_tags\":[\"@/kibana-highlighted-field@\"],\"fields\":{\"*\":{}},\"fragment_size\":2147483647},\"filter\":[],\"query\":{\"query_string\":{\"query\":\"_type:liberty_*\",\"analyze_wildcard\":true}}}"
+        "searchSourceJSON": "{\"index\":\"logstash-*\",\"highlight\":{\"pre_tags\":[\"@kibana-highlighted-field@\"],\"post_tags\":[\"@/kibana-highlighted-field@\"],\"fields\":{\"*\":{}},\"fragment_size\":2147483647},\"filter\":[],\"query\":{\"query_string\":{\"query\":\"type:liberty_*\",\"analyze_wildcard\":true}}}"
       }
     }
   },
@@ -127,7 +127,7 @@
       ],
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"logstash-*\",\"highlightAll\":true,\"version\":true,\"query\":{\"match_all\":{}},\"filter\":[{\"meta\":{\"index\":\"logstash-*\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"_type\",\"value\":\"liberty_audit\"},\"query\":{\"match\":{\"_type\":{\"query\":\"liberty_audit\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}},{\"meta\":{\"index\":\"logstash-*\",\"type\":\"phrases\",\"key\":\"ibm_audit_eventName\",\"value\":\"SECURITY_AUTHZ, SECURITY_AUTHN_FAILOVER, SECURITY_AUTHN_DELEGATION, SECURITY_AUTHN, SECURITY_API_AUTHN_TERMINATE, SECURITY_API_AUTHN\",\"params\":[\"SECURITY_AUTHZ\",\"SECURITY_AUTHN_FAILOVER\",\"SECURITY_AUTHN_DELEGATION\",\"SECURITY_AUTHN\",\"SECURITY_API_AUTHN_TERMINATE\",\"SECURITY_API_AUTHN\"],\"negate\":false,\"disabled\":false,\"alias\":null},\"query\":{\"bool\":{\"should\":[{\"match_phrase\":{\"ibm_audit_eventName\":\"SECURITY_AUTHZ\"}},{\"match_phrase\":{\"ibm_audit_eventName\":\"SECURITY_AUTHN_FAILOVER\"}},{\"match_phrase\":{\"ibm_audit_eventName\":\"SECURITY_AUTHN_DELEGATION\"}},{\"match_phrase\":{\"ibm_audit_eventName\":\"SECURITY_AUTHN\"}},{\"match_phrase\":{\"ibm_audit_eventName\":\"SECURITY_API_AUTHN_TERMINATE\"}},{\"match_phrase\":{\"ibm_audit_eventName\":\"SECURITY_API_AUTHN\"}}],\"minimum_should_match\":1}},\"$state\":{\"store\":\"appState\"}}]}"
+        "searchSourceJSON": "{\"index\":\"logstash-*\",\"highlightAll\":true,\"version\":true,\"query\":{\"match_all\":{}},\"filter\":[{\"meta\":{\"index\":\"logstash-*\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"type\",\"value\":\"liberty_audit\"},\"query\":{\"match\":{\"type\":{\"query\":\"liberty_audit\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}},{\"meta\":{\"index\":\"logstash-*\",\"type\":\"phrases\",\"key\":\"ibm_audit_eventName\",\"value\":\"SECURITY_AUTHZ, SECURITY_AUTHN_FAILOVER, SECURITY_AUTHN_DELEGATION, SECURITY_AUTHN, SECURITY_API_AUTHN_TERMINATE, SECURITY_API_AUTHN\",\"params\":[\"SECURITY_AUTHZ\",\"SECURITY_AUTHN_FAILOVER\",\"SECURITY_AUTHN_DELEGATION\",\"SECURITY_AUTHN\",\"SECURITY_API_AUTHN_TERMINATE\",\"SECURITY_API_AUTHN\"],\"negate\":false,\"disabled\":false,\"alias\":null},\"query\":{\"bool\":{\"should\":[{\"match_phrase\":{\"ibm_audit_eventName\":\"SECURITY_AUTHZ\"}},{\"match_phrase\":{\"ibm_audit_eventName\":\"SECURITY_AUTHN_FAILOVER\"}},{\"match_phrase\":{\"ibm_audit_eventName\":\"SECURITY_AUTHN_DELEGATION\"}},{\"match_phrase\":{\"ibm_audit_eventName\":\"SECURITY_AUTHN\"}},{\"match_phrase\":{\"ibm_audit_eventName\":\"SECURITY_API_AUTHN_TERMINATE\"}},{\"match_phrase\":{\"ibm_audit_eventName\":\"SECURITY_API_AUTHN\"}}],\"minimum_should_match\":1}},\"$state\":{\"store\":\"appState\"}}]}"
       }
     }
   },
@@ -305,7 +305,7 @@
       ],
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"logstash-*\",\"highlightAll\":true,\"version\":true,\"query\":{\"match_all\":{}},\"filter\":[{\"meta\":{\"index\":\"logstash-*\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"_type\",\"value\":\"liberty_audit\"},\"query\":{\"match\":{\"_type\":{\"query\":\"liberty_audit\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}]}"
+        "searchSourceJSON": "{\"index\":\"logstash-*\",\"highlightAll\":true,\"version\":true,\"query\":{\"match_all\":{}},\"filter\":[{\"meta\":{\"index\":\"logstash-*\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"type\",\"value\":\"liberty_audit\"},\"query\":{\"match\":{\"type\":{\"query\":\"liberty_audit\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}]}"
       }
     }
   },
@@ -330,7 +330,7 @@
       ],
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"logstash-*\",\"highlightAll\":true,\"version\":true,\"query\":{\"match_all\":{}},\"filter\":[{\"meta\":{\"index\":\"logstash-*\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"_type\",\"value\":\"liberty_audit\"},\"query\":{\"match\":{\"_type\":{\"query\":\"liberty_audit\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}},{\"meta\":{\"index\":\"logstash-*\",\"type\":\"phrases\",\"key\":\"ibm_audit_eventName\",\"value\":\"JMX_NOTIFICATION, JMX_MBEAN_ATTRIBUTES, JMX_MBEAN_REGISTER, JMX_MBEAN\",\"params\":[\"JMX_NOTIFICATION\",\"JMX_MBEAN_ATTRIBUTES\",\"JMX_MBEAN_REGISTER\",\"JMX_MBEAN\"],\"negate\":false,\"disabled\":false,\"alias\":null},\"query\":{\"bool\":{\"should\":[{\"match_phrase\":{\"ibm_audit_eventName\":\"JMX_NOTIFICATION\"}},{\"match_phrase\":{\"ibm_audit_eventName\":\"JMX_MBEAN_ATTRIBUTES\"}},{\"match_phrase\":{\"ibm_audit_eventName\":\"JMX_MBEAN_REGISTER\"}},{\"match_phrase\":{\"ibm_audit_eventName\":\"JMX_MBEAN\"}}],\"minimum_should_match\":1}},\"$state\":{\"store\":\"appState\"}}]}"
+        "searchSourceJSON": "{\"index\":\"logstash-*\",\"highlightAll\":true,\"version\":true,\"query\":{\"match_all\":{}},\"filter\":[{\"meta\":{\"index\":\"logstash-*\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"type\",\"value\":\"liberty_audit\"},\"query\":{\"match\":{\"type\":{\"query\":\"liberty_audit\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}},{\"meta\":{\"index\":\"logstash-*\",\"type\":\"phrases\",\"key\":\"ibm_audit_eventName\",\"value\":\"JMX_NOTIFICATION, JMX_MBEAN_ATTRIBUTES, JMX_MBEAN_REGISTER, JMX_MBEAN\",\"params\":[\"JMX_NOTIFICATION\",\"JMX_MBEAN_ATTRIBUTES\",\"JMX_MBEAN_REGISTER\",\"JMX_MBEAN\"],\"negate\":false,\"disabled\":false,\"alias\":null},\"query\":{\"bool\":{\"should\":[{\"match_phrase\":{\"ibm_audit_eventName\":\"JMX_NOTIFICATION\"}},{\"match_phrase\":{\"ibm_audit_eventName\":\"JMX_MBEAN_ATTRIBUTES\"}},{\"match_phrase\":{\"ibm_audit_eventName\":\"JMX_MBEAN_REGISTER\"}},{\"match_phrase\":{\"ibm_audit_eventName\":\"JMX_MBEAN\"}}],\"minimum_should_match\":1}},\"$state\":{\"store\":\"appState\"}}]}"
       }
     }
   },
@@ -358,7 +358,7 @@
       ],
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"logstash-*\",\"highlightAll\":true,\"version\":true,\"query\":{\"match_all\":{}},\"filter\":[{\"meta\":{\"index\":\"logstash-*\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"_type\",\"value\":\"liberty_audit\"},\"query\":{\"match\":{\"_type\":{\"query\":\"liberty_audit\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}},{\"meta\":{\"index\":\"logstash-*\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"ibm_audit_eventName\",\"value\":\"SECURITY_MEMBER_MGMT\"},\"query\":{\"match\":{\"ibm_audit_eventName\":{\"query\":\"SECURITY_MEMBER_MGMT\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}]}"
+        "searchSourceJSON": "{\"index\":\"logstash-*\",\"highlightAll\":true,\"version\":true,\"query\":{\"match_all\":{}},\"filter\":[{\"meta\":{\"index\":\"logstash-*\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"type\",\"value\":\"liberty_audit\"},\"query\":{\"match\":{\"type\":{\"query\":\"liberty_audit\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}},{\"meta\":{\"index\":\"logstash-*\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"ibm_audit_eventName\",\"value\":\"SECURITY_MEMBER_MGMT\"},\"query\":{\"match\":{\"ibm_audit_eventName\":{\"query\":\"SECURITY_MEMBER_MGMT\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}]}"
       }
     }
   },
@@ -401,7 +401,7 @@
       "savedSearchId": "liberty_all",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"filter\":[{\"meta\":{\"index\":\"logstash-*\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"_type\",\"value\":\"liberty_audit\"},\"query\":{\"match\":{\"_type\":{\"query\":\"liberty_audit\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}]}"
+        "searchSourceJSON": "{\"filter\":[{\"meta\":{\"index\":\"logstash-*\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"type\",\"value\":\"liberty_audit\"},\"query\":{\"match\":{\"type\":{\"query\":\"liberty_audit\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}]}"
       }
     }
   },
@@ -604,7 +604,7 @@
       "savedSearchId": "liberty_all",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"filter\":[{\"meta\":{\"index\":\"logstash-*\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"_type\",\"value\":\"liberty_audit\"},\"query\":{\"match\":{\"_type\":{\"query\":\"liberty_audit\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}]}"
+        "searchSourceJSON": "{\"filter\":[{\"meta\":{\"index\":\"logstash-*\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"type\",\"value\":\"liberty_audit\"},\"query\":{\"match\":{\"type\":{\"query\":\"liberty_audit\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}]}"
       }
     }
   },
@@ -709,7 +709,7 @@
       "savedSearchId": "liberty_all",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"filter\":[{\"meta\":{\"index\":\"logstash-*\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"_type\",\"value\":\"liberty_audit\"},\"query\":{\"match\":{\"_type\":{\"query\":\"liberty_audit\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}]}"
+        "searchSourceJSON": "{\"filter\":[{\"meta\":{\"index\":\"logstash-*\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"type\",\"value\":\"liberty_audit\"},\"query\":{\"match\":{\"type\":{\"query\":\"liberty_audit\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}]}"
       }
     }
   },
@@ -724,7 +724,7 @@
       "savedSearchId": "liberty_all",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"filter\":[{\"meta\":{\"index\":\"logstash-*\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"_type\",\"value\":\"liberty_audit\"},\"query\":{\"match\":{\"_type\":{\"query\":\"liberty_audit\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}]}"
+        "searchSourceJSON": "{\"filter\":[{\"meta\":{\"index\":\"logstash-*\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"type\",\"value\":\"liberty_audit\"},\"query\":{\"match\":{\"type\":{\"query\":\"liberty_audit\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}]}"
       }
     }
   },
