@@ -1,14 +1,14 @@
 [
   {
-    "_id": "Liberty-Problems-K5-20170516",
+    "_id": "Liberty-Problems-K7-20191108",
     "_type": "dashboard",
     "_source": {
-      "title": "Liberty-Problems-K5-20180912",
+      "title": "Liberty-Problems-K7-20191108",
       "hits": 0,
       "description": "",
-      "panelsJSON": "[{\"col\":1,\"id\":\"liberty_probleminfo\",\"panelIndex\":1,\"row\":1,\"size_x\":12,\"size_y\":1,\"type\":\"visualization\"},{\"col\":1,\"id\":\"liberty_topMessageIds\",\"panelIndex\":5,\"row\":4,\"size_x\":12,\"size_y\":3,\"type\":\"visualization\"},{\"col\":1,\"id\":\"liberty_messageGraph\",\"panelIndex\":6,\"row\":7,\"size_x\":4,\"size_y\":2,\"type\":\"visualization\"},{\"col\":9,\"id\":\"liberty_ffdcGraph\",\"panelIndex\":7,\"row\":7,\"size_x\":4,\"size_y\":2,\"type\":\"visualization\"},{\"col\":5,\"id\":\"liberty_traceGraph\",\"panelIndex\":8,\"row\":7,\"size_x\":4,\"size_y\":2,\"type\":\"visualization\"},{\"col\":1,\"columns\":[\"loggerName\",\"module\",\"message\",\"sequence\"],\"id\":\"liberty_messageSearch\",\"panelIndex\":9,\"row\":9,\"size_x\":12,\"size_y\":4,\"sort\":[\"sequence\",\"desc\"],\"type\":\"search\"},{\"col\":1,\"columns\":[\"loggerName\",\"module\",\"message\",\"sequence\"],\"id\":\"liberty_traceSearch\",\"panelIndex\":10,\"row\":13,\"size_x\":12,\"size_y\":4,\"sort\":[\"sequence\",\"desc\"],\"type\":\"search\"},{\"col\":1,\"columns\":[\"className\",\"probeID\",\"exceptionName\",\"sequence\"],\"id\":\"liberty_ffdcSearch\",\"panelIndex\":11,\"row\":17,\"size_x\":12,\"size_y\":4,\"sort\":[\"sequence\",\"desc\"],\"type\":\"search\"},{\"col\":1,\"id\":\"AWYWEnetwC3Eko_hh4AJ\",\"panelIndex\":13,\"row\":2,\"size_x\":3,\"size_y\":2,\"type\":\"visualization\"},{\"col\":4,\"id\":\"AWYWExMJwC3Eko_hh4DG\",\"panelIndex\":14,\"row\":2,\"size_x\":3,\"size_y\":2,\"type\":\"visualization\"},{\"col\":7,\"id\":\"AWYWE4dZwC3Eko_hh4FU\",\"panelIndex\":15,\"row\":2,\"size_x\":3,\"size_y\":2,\"type\":\"visualization\"},{\"col\":10,\"id\":\"AWYWE_hhwC3Eko_hh4Hi\",\"panelIndex\":16,\"row\":2,\"size_x\":3,\"size_y\":2,\"type\":\"visualization\"}]",
+      "panelsJSON": "[{\"col\":1,\"id\":\"liberty_probleminfo\",\"panelIndex\":1,\"row\":1,\"size_x\":12,\"size_y\":1,\"type\":\"visualization\"},{\"col\":1,\"id\":\"liberty_topMessageIds\",\"panelIndex\":5,\"row\":5,\"size_x\":12,\"size_y\":3,\"type\":\"visualization\"},{\"col\":1,\"id\":\"liberty_messageGraph\",\"panelIndex\":6,\"row\":8,\"size_x\":4,\"size_y\":2,\"type\":\"visualization\"},{\"col\":9,\"id\":\"liberty_ffdcGraph\",\"panelIndex\":7,\"row\":8,\"size_x\":4,\"size_y\":2,\"type\":\"visualization\"},{\"col\":5,\"id\":\"liberty_traceGraph\",\"panelIndex\":8,\"row\":8,\"size_x\":4,\"size_y\":2,\"type\":\"visualization\"},{\"col\":1,\"columns\":[\"loggerName\",\"module\",\"message\",\"sequence\"],\"id\":\"liberty_messageSearch\",\"panelIndex\":9,\"row\":10,\"size_x\":12,\"size_y\":4,\"sort\":[\"sequence\",\"desc\"],\"type\":\"search\"},{\"col\":1,\"columns\":[\"loggerName\",\"module\",\"message\",\"sequence\"],\"id\":\"liberty_traceSearch\",\"panelIndex\":10,\"row\":14,\"size_x\":12,\"size_y\":4,\"sort\":[\"sequence\",\"desc\"],\"type\":\"search\"},{\"col\":1,\"columns\":[\"className\",\"probeID\",\"exceptionName\",\"sequence\"],\"id\":\"liberty_ffdcSearch\",\"panelIndex\":11,\"row\":18,\"size_x\":12,\"size_y\":4,\"sort\":[\"sequence\",\"desc\"],\"type\":\"search\"},{\"col\":1,\"id\":\"AWYWEnetwC3Eko_hh4AJ\",\"panelIndex\":13,\"row\":2,\"size_x\":3,\"size_y\":2,\"type\":\"visualization\"},{\"col\":4,\"id\":\"AWYWExMJwC3Eko_hh4DG\",\"panelIndex\":14,\"row\":2,\"size_x\":3,\"size_y\":2,\"type\":\"visualization\"},{\"col\":7,\"id\":\"AWYWE4dZwC3Eko_hh4FU\",\"panelIndex\":15,\"row\":2,\"size_x\":3,\"size_y\":2,\"type\":\"visualization\"},{\"col\":10,\"id\":\"AWYWE_hhwC3Eko_hh4Hi\",\"panelIndex\":16,\"row\":2,\"size_x\":3,\"size_y\":2,\"type\":\"visualization\"},{\"col\":1,\"id\":\"liberty_potentialProblemCount\",\"panelIndex\":17,\"row\":4,\"size_x\":12,\"size_y\":1.5,\"type\":\"visualization\"}]",
       "optionsJSON": "{\"darkTheme\":false}",
-      "uiStateJSON": "{\"P-13\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-6\":{\"vis\":{\"colors\":{\"AUDIT\":\"#3F2B5B\",\"INFO\":\"#7EB26D\",\"SEVERE\":\"#BF1B00\",\"WARNING\":\"#F2C96D\"}}},\"P-14\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-15\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-16\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}}",
+      "uiStateJSON": "{\"P-13\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-6\":{\"vis\":{\"colors\":{\"ERROR\":\"#890F02\",\"AUDIT\":\"#4F2671\",\"DETAIL\":\"#64B0C8\",\"WARNING\":\"#EAB839\",\"SystemOut\":\"#E5A8E2\",\"SystemErr\":\"#58140C\",\"INFO\":\"#629E51\"}}},\"P-14\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-15\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-16\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}}",
       "version": 1,
       "timeRestore": false,
       "kibanaSavedObjectMeta": {
@@ -86,10 +86,10 @@
     }
   },
   {
-    "_id": "liberty_badHits",
+    "_id": "liberty_problemSearch",
     "_type": "search",
     "_source": {
-      "title": "Liberty Bad Hits Search",
+      "title": "Liberty Problem Search",
       "description": "",
       "hits": 0,
       "columns": [
@@ -101,57 +101,7 @@
       ],
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"logstash-*\",\"highlight\":{\"pre_tags\":[\"@kibana-highlighted-field@\"],\"post_tags\":[\"@/kibana-highlighted-field@\"],\"fields\":{\"*\":{}},\"fragment_size\":2147483647},\"filter\":[],\"query\":{\"query_string\":{\"query\":\"type:\\\"liberty_accesslog\\\" AND !responseCode:\\\"200\\\"\",\"analyze_wildcard\":true}}}"
-      }
-    }
-  },
-  {
-    "_id": "liberty_all",
-    "_type": "search",
-    "_source": {
-      "title": "Liberty All Search",
-      "description": "",
-      "hits": 0,
-      "columns": [
-        "_source"
-      ],
-      "sort": [
-        "@timestamp",
-        "desc"
-      ],
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"logstash-*\",\"highlight\":{\"pre_tags\":[\"@kibana-highlighted-field@\"],\"post_tags\":[\"@/kibana-highlighted-field@\"],\"fields\":{\"*\":{}},\"fragment_size\":2147483647},\"filter\":[],\"query\":{\"query_string\":{\"query\":\"type:liberty_*\",\"analyze_wildcard\":true}}}"
-      }
-    }
-  },
-  {
-    "_id": "liberty_serversTable",
-    "_type": "visualization",
-    "_source": {
-      "title": "Liberty Servers",
-      "visState": "{\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"serverName\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{},\"title\":\"Liberty Servers\"}",
-      "uiStateJSON": "{}",
-      "description": "",
-      "savedSearchId": "liberty_all",
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"filter\":[]}"
-      }
-    }
-  },
-  {
-    "_id": "liberty_tagsTable",
-    "_type": "visualization",
-    "_source": {
-      "title": "Liberty Tags",
-      "visState": "{\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"tags\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{},\"title\":\"Liberty Tags\"}",
-      "uiStateJSON": "{}",
-      "description": "",
-      "savedSearchId": "liberty_all",
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"filter\":[]}"
+        "searchSourceJSON": "{\"index\":\"logstash-*\",\"highlight\":{\"pre_tags\":[\"@kibana-highlighted-field@\"],\"post_tags\":[\"@/kibana-highlighted-field@\"],\"fields\":{\"*\":{}},\"fragment_size\":2147483647},\"filter\":[],\"query\":{\"bool\":{\"should\":[{\"match_phrase\":{\"type\":\"liberty_message\"}},{\"match_phrase\":{\"type\":\"liberty_trace\"}},{\"match_phrase\":{\"type\":\"liberty_ffdc\"}}],\"minimum_should_match\":1}},\"highlightAll\":true,\"version\":true}"
       }
     }
   },
@@ -215,36 +165,6 @@
     }
   },
   {
-    "_id": "liberty_hostsTable",
-    "_type": "visualization",
-    "_source": {
-      "title": "Liberty Hosts Table",
-      "visState": "{\"aggs\":[{\"id\":\"1\",\"params\":{},\"schema\":\"metric\",\"type\":\"count\"},{\"id\":\"2\",\"params\":{\"field\":\"hostName\",\"order\":\"desc\",\"orderBy\":\"1\",\"size\":5},\"schema\":\"bucket\",\"type\":\"terms\"}],\"listeners\":{},\"params\":{\"perPage\":10,\"showMeticsAtAllLevels\":false,\"showPartialRows\":false},\"type\":\"table\",\"title\":\"Liberty Hosts Table\"}",
-      "uiStateJSON": "{}",
-      "description": "",
-      "savedSearchId": "liberty_all",
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"filter\":[]}"
-      }
-    }
-  },
-  {
-    "_id": "liberty_userDirsTable",
-    "_type": "visualization",
-    "_source": {
-      "title": "Liberty User Directories",
-      "visState": "{\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"wlpUserDir\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{},\"title\":\"Liberty User Directories\"}",
-      "uiStateJSON": "{}",
-      "description": "",
-      "savedSearchId": "liberty_all",
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"filter\":[]}"
-      }
-    }
-  },
-  {
     "_id": "liberty_messageCount",
     "_type": "visualization",
     "_source": {
@@ -252,9 +172,10 @@
       "visState": "{\"type\":\"metric\",\"params\":{\"fontSize\":\"30\"},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{}}],\"listeners\":{},\"title\":\"Liberty Message Count\"}",
       "uiStateJSON": "{}",
       "description": "",
+      "savedSearchId": "liberty_messageSearch",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"logstash-*\",\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"type:liberty_message*\"}},\"filter\":[]}"
+        "searchSourceJSON": "{\"filter\":[]}"
       }
     }
   },
@@ -278,12 +199,13 @@
     "_type": "visualization",
     "_source": {
       "title": "Liberty Message",
-      "visState": "{\"title\":\"Liberty Message\",\"type\":\"histogram\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"scale\":\"linear\",\"mode\":\"stacked\",\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{},\"grid\":{\"categoryLines\":false,\"style\":{\"color\":\"#eee\"}},\"categoryAxes\":[{\"id\":\"CategoryAxis-1\",\"type\":\"category\",\"position\":\"bottom\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\"},\"labels\":{\"show\":true,\"truncate\":100},\"title\":{}}],\"valueAxes\":[{\"id\":\"ValueAxis-1\",\"name\":\"LeftAxis-1\",\"type\":\"value\",\"position\":\"left\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\",\"mode\":\"normal\",\"setYExtents\":false,\"defaultYExtents\":false},\"labels\":{\"show\":true,\"rotate\":0,\"filter\":false,\"truncate\":100},\"title\":{\"text\":\"Count\"}}],\"seriesParams\":[{\"show\":\"true\",\"type\":\"histogram\",\"mode\":\"stacked\",\"data\":{\"label\":\"Count\",\"id\":\"1\"},\"valueAxis\":\"ValueAxis-1\",\"drawLinesBetweenPoints\":true,\"showCircles\":true,\"interpolate\":\"linear\"}],\"legendPosition\":\"right\",\"type\":\"histogram\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"datetime\",\"interval\":\"auto\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"group\",\"params\":{\"field\":\"loggerName\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{}}",
-      "uiStateJSON": "{}",
+      "visState": "{\"title\":\"Liberty Message\",\"type\":\"histogram\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"scale\":\"linear\",\"mode\":\"stacked\",\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{},\"grid\":{\"categoryLines\":false,\"style\":{\"color\":\"#eee\"}},\"categoryAxes\":[{\"id\":\"CategoryAxis-1\",\"type\":\"category\",\"position\":\"bottom\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\"},\"labels\":{\"show\":true,\"truncate\":100},\"title\":{}}],\"valueAxes\":[{\"id\":\"ValueAxis-1\",\"name\":\"LeftAxis-1\",\"type\":\"value\",\"position\":\"left\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\",\"mode\":\"normal\",\"setYExtents\":false,\"defaultYExtents\":false},\"labels\":{\"show\":true,\"rotate\":0,\"filter\":false,\"truncate\":100},\"title\":{\"text\":\"Count\"}}],\"seriesParams\":[{\"show\":\"true\",\"type\":\"histogram\",\"mode\":\"stacked\",\"data\":{\"label\":\"Count\",\"id\":\"1\"},\"valueAxis\":\"ValueAxis-1\",\"drawLinesBetweenPoints\":true,\"showCircles\":true,\"interpolate\":\"linear\"}],\"legendPosition\":\"right\",\"type\":\"histogram\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"datetime\",\"useNormalizedEsInterval\":true,\"interval\":\"auto\",\"drop_partials\":false,\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}},{\"id\":\"3\",\"enabled\":true,\"type\":\"filters\",\"schema\":\"group\",\"params\":{\"filters\":[{\"input\":{\"query\":\"severity:E\"},\"label\":\"ERROR\"},{\"input\":{\"query\":\"severity:W\"},\"label\":\"WARNING\"},{\"input\":{\"query\":\"severity:A\"},\"label\":\"AUDIT\"},{\"input\":{\"query\":\"severity:I\"},\"label\":\"INFO\"},{\"input\":{\"query\":\"severity:D\"},\"label\":\"DETAIL\"},{\"input\":{\"query\":\"severity:R\"},\"label\":\"SystemErr\"},{\"input\":{\"query\":\"severity:O\"},\"label\":\"SystemOut\"}]}}]}",
+      "uiStateJSON": "{\"vis\":{\"colors\":{\"ERROR\":\"#890F02\",\"AUDIT\":\"#4F2671\",\"DETAIL\":\"#64B0C8\",\"WARNING\":\"#EAB839\",\"SystemOut\":\"#E5A8E2\",\"SystemErr\":\"#58140C\",\"INFO\":\"#629E51\"}}}",
       "description": "",
+      "savedSearchId": "liberty_messageSearch",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"logstash-*\",\"query\":{\"query_string\":{\"query\":\"type:liberty_message*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+        "searchSourceJSON": "{\"filter\":[]}"
       }
     }
   },
@@ -295,7 +217,7 @@
       "visState": "{\"title\":\"Liberty User Directories (Problems)\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\",\"type\":\"table\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"wlpUserDir\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{}}",
       "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
       "description": "",
-      "savedSearchId": "liberty_all",
+      "savedSearchId": "liberty_problemSearch",
       "version": 1,
       "kibanaSavedObjectMeta": {
         "searchSourceJSON": "{\"filter\":[{\"meta\":{\"index\":\"logstash-*\",\"type\":\"phrases\",\"key\":\"type\",\"value\":\"liberty_message, liberty_trace, liberty_ffdc\",\"params\":[\"liberty_message\",\"liberty_trace\",\"liberty_ffdc\"],\"negate\":false,\"disabled\":false,\"alias\":null},\"query\":{\"bool\":{\"should\":[{\"match_phrase\":{\"type\":\"liberty_message\"}},{\"match_phrase\":{\"type\":\"liberty_trace\"}},{\"match_phrase\":{\"type\":\"liberty_ffdc\"}}],\"minimum_should_match\":1}},\"$state\":{\"store\":\"appState\"}}]}"
@@ -306,11 +228,11 @@
     "_id": "AWYWEnetwC3Eko_hh4AJ",
     "_type": "visualization",
     "_source": {
-      "title": "Liberty Hosts Table (Problems)",
-      "visState": "{\"title\":\"Liberty Hosts Table (Problems)\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showMeticsAtAllLevels\":false,\"showPartialRows\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\",\"type\":\"table\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"hostName\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{}}",
+      "title": "Liberty Hosts (Problems)",
+      "visState": "{\"title\":\"Liberty Hosts (Problems)\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showMeticsAtAllLevels\":false,\"showPartialRows\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\",\"type\":\"table\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"hostName\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{}}",
       "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
       "description": "",
-      "savedSearchId": "liberty_all",
+      "savedSearchId": "liberty_problemSearch",
       "version": 1,
       "kibanaSavedObjectMeta": {
         "searchSourceJSON": "{\"filter\":[{\"meta\":{\"index\":\"logstash-*\",\"type\":\"phrases\",\"key\":\"type\",\"value\":\"liberty_message, liberty_trace, liberty_ffdc\",\"params\":[\"liberty_message\",\"liberty_trace\",\"liberty_ffdc\"],\"negate\":false,\"disabled\":false,\"alias\":null},\"query\":{\"bool\":{\"should\":[{\"match_phrase\":{\"type\":\"liberty_message\"}},{\"match_phrase\":{\"type\":\"liberty_trace\"}},{\"match_phrase\":{\"type\":\"liberty_ffdc\"}}],\"minimum_should_match\":1}},\"$state\":{\"store\":\"appState\"}}]}"
@@ -325,7 +247,7 @@
       "visState": "{\"title\":\"Liberty Servers (Problems)\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\",\"type\":\"table\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"serverName\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{}}",
       "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
       "description": "",
-      "savedSearchId": "liberty_all",
+      "savedSearchId": "liberty_problemSearch",
       "version": 1,
       "kibanaSavedObjectMeta": {
         "searchSourceJSON": "{\"filter\":[{\"meta\":{\"index\":\"logstash-*\",\"type\":\"phrases\",\"key\":\"type\",\"value\":\"liberty_message, liberty_trace, liberty_ffdc\",\"params\":[\"liberty_message\",\"liberty_trace\",\"liberty_ffdc\"],\"negate\":false,\"disabled\":false,\"alias\":null},\"query\":{\"bool\":{\"should\":[{\"match_phrase\":{\"type\":\"liberty_message\"}},{\"match_phrase\":{\"type\":\"liberty_trace\"}},{\"match_phrase\":{\"type\":\"liberty_ffdc\"}}],\"minimum_should_match\":1}},\"$state\":{\"store\":\"appState\"}}]}"
@@ -340,7 +262,7 @@
       "visState": "{\"title\":\"Liberty Tags (Problems)\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\",\"type\":\"table\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"tags\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{}}",
       "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
       "description": "",
-      "savedSearchId": "liberty_all",
+      "savedSearchId": "liberty_problemSearch",
       "version": 1,
       "kibanaSavedObjectMeta": {
         "searchSourceJSON": "{\"filter\":[{\"meta\":{\"index\":\"logstash-*\",\"type\":\"phrases\",\"key\":\"type\",\"value\":\"liberty_message, liberty_trace, liberty_ffdc\",\"params\":[\"liberty_message\",\"liberty_trace\",\"liberty_ffdc\"],\"negate\":false,\"disabled\":false,\"alias\":null},\"query\":{\"bool\":{\"should\":[{\"match_phrase\":{\"type\":\"liberty_message\"}},{\"match_phrase\":{\"type\":\"liberty_trace\"}},{\"match_phrase\":{\"type\":\"liberty_ffdc\"}}],\"minimum_should_match\":1}},\"$state\":{\"store\":\"appState\"}}]}"
@@ -371,6 +293,21 @@
       "uiStateJSON": "{}",
       "description": "",
       "savedSearchId": "liberty_ffdcSearch",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "liberty_potentialProblemCount",
+    "_type": "visualization",
+    "_source": {
+      "title": "Liberty Potential Problem Count",
+      "visState": "{\"title\":\"Liberty Potential Problem Count\",\"type\":\"metric\",\"params\":{\"addTooltip\":true,\"addLegend\":false,\"type\":\"metric\",\"metric\":{\"percentageMode\":false,\"useRanges\":false,\"colorSchema\":\"Green to Red\",\"metricColorMode\":\"None\",\"colorsRange\":[{\"from\":0,\"to\":10000}],\"labels\":{\"show\":true},\"invertColors\":false,\"style\":{\"bgFill\":\"#000\",\"bgColor\":false,\"labelColor\":false,\"subText\":\"\",\"fontSize\":40}}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"filters\",\"schema\":\"group\",\"params\":{\"filters\":[{\"input\":{\"query\":\"severity:E\"},\"label\":\"ERROR\"},{\"input\":{\"query\":\"severity:W\"},\"label\":\"WARNING\"},{\"input\":{\"query\":\"severity:R\"},\"label\":\"SYSTEMERR\"}]}}]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "savedSearchId": "liberty_problemSearch",
       "version": 1,
       "kibanaSavedObjectMeta": {
         "searchSourceJSON": "{\"filter\":[]}"
