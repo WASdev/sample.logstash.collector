@@ -1,12 +1,12 @@
 [
   {
-    "_id": "Liberty-Traffic-K5-20170516",
+    "_id": "Liberty-Traffic-K7-20191106",
     "_type": "dashboard",
     "_source": {
-      "title": "Liberty-Traffic-K5-20180912",
+      "title": "Liberty-Traffic-K7-20191106",
       "hits": 0,
       "description": "",
-      "panelsJSON": "[{\"col\":1,\"id\":\"liberty_trafficinfo\",\"panelIndex\":1,\"row\":1,\"size_x\":12,\"size_y\":1,\"type\":\"visualization\"},{\"col\":1,\"id\":\"liberty_accessLogResponseCodeGraph\",\"panelIndex\":6,\"row\":7,\"size_x\":4,\"size_y\":3,\"type\":\"visualization\"},{\"col\":9,\"id\":\"liberty_accessLogElapsedTimeGraph\",\"panelIndex\":7,\"row\":7,\"size_x\":4,\"size_y\":3,\"type\":\"visualization\"},{\"col\":1,\"columns\":[\"remoteHost\",\"uriPath\",\"responseCode\",\"bytesReceived\",\"elapsedTime\",\"sequence\"],\"id\":\"liberty_accessLogSearch\",\"panelIndex\":8,\"row\":10,\"size_x\":12,\"size_y\":4,\"sort\":[\"sequence\",\"desc\"],\"type\":\"search\"},{\"col\":5,\"id\":\"liberty_accessLogAverageElapsedTimeGraph\",\"panelIndex\":10,\"row\":7,\"size_x\":4,\"size_y\":3,\"type\":\"visualization\"},{\"col\":1,\"id\":\"AWYWBw3twC3Eko_hh3Ju\",\"panelIndex\":12,\"row\":2,\"size_x\":3,\"size_y\":2,\"type\":\"visualization\"},{\"col\":4,\"id\":\"AWYWB4hHwC3Eko_hh3L8\",\"panelIndex\":13,\"row\":2,\"size_x\":3,\"size_y\":2,\"type\":\"visualization\"},{\"col\":7,\"id\":\"AWYWB9oBwC3Eko_hh3Nb\",\"panelIndex\":14,\"row\":2,\"size_x\":3,\"size_y\":2,\"type\":\"visualization\"},{\"col\":10,\"id\":\"AWYWCD42wC3Eko_hh3O7\",\"panelIndex\":15,\"row\":2,\"size_x\":3,\"size_y\":2,\"type\":\"visualization\"},{\"col\":1,\"id\":\"liberty_topURLs\",\"panelIndex\":16,\"row\":4,\"size_x\":6,\"size_y\":3,\"type\":\"visualization\"},{\"col\":7,\"id\":\"liberty_slowestURLs\",\"panelIndex\":17,\"row\":4,\"size_x\":6,\"size_y\":3,\"type\":\"visualization\"}]",
+      "panelsJSON": "[{\"col\":1,\"id\":\"liberty_trafficinfo\",\"panelIndex\":1,\"row\":1,\"size_x\":12,\"size_y\":1,\"type\":\"visualization\"},{\"col\":1,\"id\":\"liberty_accessLogResponseCodeGraph\",\"panelIndex\":6,\"row\":7,\"size_x\":4,\"size_y\":3,\"type\":\"visualization\"},{\"col\":9,\"id\":\"liberty_accessLogElapsedTimeGraph\",\"panelIndex\":7,\"row\":7,\"size_x\":4,\"size_y\":3,\"type\":\"visualization\"},{\"col\":1,\"columns\":[\"remoteHost\",\"uriPath\",\"responseCode\",\"bytesReceived\",\"elapsedTime\",\"sequence\"],\"id\":\"liberty_accessLogSearch\",\"panelIndex\":8,\"row\":10,\"size_x\":12,\"size_y\":4,\"sort\":[\"sequence\",\"desc\"],\"type\":\"search\"},{\"col\":5,\"id\":\"liberty_accessLogAverageElapsedTimeGraph\",\"panelIndex\":10,\"row\":7,\"size_x\":4,\"size_y\":3,\"type\":\"visualization\"},{\"col\":1,\"id\":\"AWYWBw3twC3Eko_hh3Ju\",\"panelIndex\":12,\"row\":2,\"size_x\":3,\"size_y\":2,\"type\":\"visualization\"},{\"col\":4,\"id\":\"AWYWB4hHwC3Eko_hh3L8\",\"panelIndex\":13,\"row\":2,\"size_x\":3,\"size_y\":2,\"type\":\"visualization\"},{\"col\":7,\"id\":\"AWYWB9oBwC3Eko_hh3Nb\",\"panelIndex\":14,\"row\":2,\"size_x\":3,\"size_y\":2,\"type\":\"visualization\"},{\"col\":10,\"id\":\"AWYWCD42wC3Eko_hh3O7\",\"panelIndex\":15,\"row\":2,\"size_x\":3,\"size_y\":2,\"type\":\"visualization\"},{\"col\":1,\"id\":\"liberty_topURLs\",\"panelIndex\":16,\"row\":5,\"size_x\":6,\"size_y\":3,\"type\":\"visualization\"},{\"col\":7,\"id\":\"liberty_slowestURLs\",\"panelIndex\":17,\"row\":5,\"size_x\":6,\"size_y\":3,\"type\":\"visualization\"}, {\"col\":1,\"id\":\"liberty_errorResponseCodeCount\",\"panelIndex\":18,\"row\":4,\"size_x\":12,\"size_y\":1.5,\"type\":\"visualization\"}]",
       "optionsJSON": "{\"darkTheme\":false}",
       "uiStateJSON": "{\"P-12\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-13\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-14\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-15\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-16\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-17\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}}",
       "version": 1,
@@ -42,26 +42,6 @@
     }
   },
   {
-    "_id": "liberty_all",
-    "_type": "search",
-    "_source": {
-      "title": "Liberty All Search",
-      "description": "",
-      "hits": 0,
-      "columns": [
-        "_source"
-      ],
-      "sort": [
-        "@timestamp",
-        "desc"
-      ],
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"logstash-*\",\"highlight\":{\"pre_tags\":[\"@kibana-highlighted-field@\"],\"post_tags\":[\"@/kibana-highlighted-field@\"],\"fields\":{\"*\":{}},\"fragment_size\":2147483647},\"filter\":[],\"query\":{\"query_string\":{\"query\":\"type:liberty_*\",\"analyze_wildcard\":true}}}"
-      }
-    }
-  },
-  {
     "_id": "liberty_accessLogCount",
     "_type": "visualization",
     "_source": {
@@ -72,36 +52,6 @@
       "version": 1,
       "kibanaSavedObjectMeta": {
         "searchSourceJSON": "{\"filter\":[],\"index\":\"logstash-*\",\"query\":{\"query_string\":{\"query\":\"type:access_log OR type:liberty_accesslog\",\"analyze_wildcard\":true}},\"highlight\":{\"pre_tags\":[\"@kibana-highlighted-field@\"],\"post_tags\":[\"@/kibana-highlighted-field@\"],\"fields\":{\"*\":{}},\"require_field_match\":false,\"fragment_size\":2147483647}}"
-      }
-    }
-  },
-  {
-    "_id": "liberty_userDirsTable",
-    "_type": "visualization",
-    "_source": {
-      "title": "Liberty User Directories",
-      "visState": "{\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"wlpUserDir\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{},\"title\":\"Liberty User Directories\"}",
-      "uiStateJSON": "{}",
-      "description": "",
-      "savedSearchId": "liberty_all",
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"filter\":[]}"
-      }
-    }
-  },
-  {
-    "_id": "liberty_serversTable",
-    "_type": "visualization",
-    "_source": {
-      "title": "Liberty Servers",
-      "visState": "{\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"serverName\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{},\"title\":\"Liberty Servers\"}",
-      "uiStateJSON": "{}",
-      "description": "",
-      "savedSearchId": "liberty_all",
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"filter\":[]}"
       }
     }
   },
@@ -135,25 +85,10 @@
     }
   },
   {
-    "_id": "liberty_tagsTable",
-    "_type": "visualization",
-    "_source": {
-      "title": "Liberty Tags",
-      "visState": "{\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"tags\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{},\"title\":\"Liberty Tags\"}",
-      "uiStateJSON": "{}",
-      "description": "",
-      "savedSearchId": "liberty_all",
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"filter\":[]}"
-      }
-    }
-  },
-  {
     "_id": "liberty_topURLs",
     "_type": "visualization",
     "_source": {
-      "title": "Liberty Top URLs",
+      "title": "Liberty Top URLs (in microseconds)",
       "visState": "{\"title\":\"Liberty Top URLs\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\",\"type\":\"table\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"uriPath\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"elapsedTime\"}},{\"id\":\"4\",\"enabled\":true,\"type\":\"min\",\"schema\":\"metric\",\"params\":{\"field\":\"elapsedTime\"}},{\"id\":\"5\",\"enabled\":true,\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"elapsedTime\"}}],\"listeners\":{}}",
       "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
       "description": "",
@@ -187,7 +122,7 @@
       "visState": "{\"title\":\"Liberty User Directories (Traffic)\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\",\"type\":\"table\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"wlpUserDir\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{}}",
       "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
       "description": "",
-      "savedSearchId": "liberty_all",
+      "savedSearchId": "liberty_accessLogSearch",
       "version": 1,
       "kibanaSavedObjectMeta": {
         "searchSourceJSON": "{\"filter\":[{\"meta\":{\"index\":\"logstash-*\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"type\",\"value\":\"liberty_accesslog\"},\"query\":{\"match\":{\"type\":{\"query\":\"liberty_accesslog\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}]}"
@@ -198,11 +133,11 @@
     "_id": "AWYWBw3twC3Eko_hh3Ju",
     "_type": "visualization",
     "_source": {
-      "title": "Liberty Hosts Table (Traffic)",
-      "visState": "{\"title\":\"Liberty Hosts Table (Traffic)\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showMeticsAtAllLevels\":false,\"showPartialRows\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\",\"type\":\"table\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"hostName\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{}}",
+      "title": "Liberty Hosts (Traffic)",
+      "visState": "{\"title\":\"Liberty Hosts (Traffic)\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showMeticsAtAllLevels\":false,\"showPartialRows\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\",\"type\":\"table\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"hostName\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{}}",
       "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
       "description": "",
-      "savedSearchId": "liberty_all",
+      "savedSearchId": "liberty_accessLogSearch",
       "version": 1,
       "kibanaSavedObjectMeta": {
         "searchSourceJSON": "{\"filter\":[{\"meta\":{\"index\":\"logstash-*\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"type\",\"value\":\"liberty_accesslog\"},\"query\":{\"match\":{\"type\":{\"query\":\"liberty_accesslog\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}]}"
@@ -217,7 +152,7 @@
       "visState": "{\"title\":\"Liberty Servers (Traffic)\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\",\"type\":\"table\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"serverName\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{}}",
       "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
       "description": "",
-      "savedSearchId": "liberty_all",
+      "savedSearchId": "liberty_accessLogSearch",
       "version": 1,
       "kibanaSavedObjectMeta": {
         "searchSourceJSON": "{\"filter\":[{\"meta\":{\"index\":\"logstash-*\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"type\",\"value\":\"liberty_accesslog\"},\"query\":{\"match\":{\"type\":{\"query\":\"liberty_accesslog\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}]}"
@@ -232,7 +167,7 @@
       "visState": "{\"title\":\"Liberty Tags (Traffic)\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\",\"type\":\"table\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"tags\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{}}",
       "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
       "description": "",
-      "savedSearchId": "liberty_all",
+      "savedSearchId": "liberty_accessLogSearch",
       "version": 1,
       "kibanaSavedObjectMeta": {
         "searchSourceJSON": "{\"filter\":[{\"meta\":{\"index\":\"logstash-*\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"type\",\"value\":\"liberty_accesslog\"},\"query\":{\"match\":{\"type\":{\"query\":\"liberty_accesslog\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}]}"
@@ -243,7 +178,7 @@
     "_id": "liberty_slowHits",
     "_type": "visualization",
     "_source": {
-      "title": "Liberty Slow Hits",
+      "title": "Liberty Slow Hits (in microseconds)",
       "visState": "{\"type\":\"histogram\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"scale\":\"linear\",\"mode\":\"stacked\",\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"datetime\",\"interval\":\"a\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}},{\"id\":\"3\",\"type\":\"range\",\"schema\":\"group\",\"params\":{\"field\":\"elapsedTime\",\"ranges\":[{\"from\":500000,\"to\":1000000},{\"from\":1000000}]}}],\"listeners\":{},\"title\":\"Liberty Slow Hits\"}",
       "uiStateJSON": "{}",
       "description": "",
@@ -255,25 +190,10 @@
     }
   },
   {
-    "_id": "liberty_hostsTable",
-    "_type": "visualization",
-    "_source": {
-      "title": "Liberty Hosts Table",
-      "visState": "{\"title\":\"Liberty Hosts Table\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showMeticsAtAllLevels\":false,\"showPartialRows\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\",\"type\":\"table\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"hostName\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{}}",
-      "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
-      "description": "",
-      "savedSearchId": "liberty_all",
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"filter\":[]}"
-      }
-    }
-  },
-  {
     "_id": "liberty_slowestURLs",
     "_type": "visualization",
     "_source": {
-      "title": "Liberty Slowest URLs",
+      "title": "Liberty Slowest URLs (in microseconds)",
       "visState": "{\"title\":\"Liberty Slowest URLs\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\",\"type\":\"table\"},\"aggs\":[{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"uriPath\",\"size\":10,\"orderAgg\":{\"id\":\"2-orderAgg\",\"enabled\":true,\"type\":\"avg\",\"schema\":\"orderAgg\",\"params\":{\"field\":\"elapsedTime\"}},\"order\":\"desc\",\"orderBy\":\"custom\"}},{\"id\":\"4\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"3\",\"enabled\":true,\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"elapsedTime\"}},{\"id\":\"5\",\"enabled\":true,\"type\":\"min\",\"schema\":\"metric\",\"params\":{\"field\":\"elapsedTime\"}},{\"id\":\"1\",\"enabled\":true,\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"elapsedTime\"}}],\"listeners\":{}}",
       "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
       "description": "",
@@ -288,8 +208,8 @@
     "_id": "liberty_accessLogAverageElapsedTimeGraph",
     "_type": "visualization",
     "_source": {
-      "title": "Liberty Access Log Average Elapsed Time",
-      "visState": "{\"title\":\"Liberty Access Log Average Elapsed Time\",\"type\":\"line\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":false,\"showCircles\":true,\"smoothLines\":false,\"interpolate\":\"linear\",\"scale\":\"linear\",\"drawLinesBetweenPoints\":true,\"radiusRatio\":9,\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{},\"grid\":{\"categoryLines\":false,\"style\":{\"color\":\"#eee\"}},\"categoryAxes\":[{\"id\":\"CategoryAxis-1\",\"type\":\"category\",\"position\":\"bottom\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\"},\"labels\":{\"show\":true,\"truncate\":100},\"title\":{}}],\"valueAxes\":[{\"id\":\"ValueAxis-1\",\"name\":\"LeftAxis-1\",\"type\":\"value\",\"position\":\"left\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\",\"mode\":\"normal\",\"setYExtents\":false,\"defaultYExtents\":false},\"labels\":{\"show\":true,\"rotate\":0,\"filter\":false,\"truncate\":100},\"title\":{\"text\":\"Count\"}}],\"seriesParams\":[{\"show\":\"true\",\"type\":\"line\",\"mode\":\"stacked\",\"data\":{\"label\":\"Count\",\"id\":\"1\"},\"valueAxis\":\"ValueAxis-1\",\"drawLinesBetweenPoints\":true,\"showCircles\":true,\"interpolate\":\"linear\",\"radiusRatio\":9}],\"legendPosition\":\"right\",\"type\":\"line\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"elapsedTime\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"datetime\",\"interval\":\"auto\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}}],\"listeners\":{}}",
+      "title": "Liberty Access Log Average Elapsed Time (in microseconds)",
+      "visState": "{\"title\":\"Liberty Access Log Average Elapsed Time\",\"type\":\"line\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":false,\"showCircles\":true,\"smoothLines\":false,\"interpolate\":\"linear\",\"scale\":\"linear\",\"drawLinesBetweenPoints\":true,\"radiusRatio\":9,\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{},\"grid\":{\"categoryLines\":false,\"style\":{\"color\":\"#eee\"}},\"categoryAxes\":[{\"id\":\"CategoryAxis-1\",\"type\":\"category\",\"position\":\"bottom\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\"},\"labels\":{\"show\":true,\"truncate\":100},\"title\":{}}],\"valueAxes\":[{\"id\":\"ValueAxis-1\",\"name\":\"LeftAxis-1\",\"type\":\"value\",\"position\":\"left\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\",\"mode\":\"normal\",\"setYExtents\":false,\"defaultYExtents\":false},\"labels\":{\"show\":true,\"rotate\":0,\"filter\":false,\"truncate\":100},\"title\":{\"text\":\"Elapsed Time (microseconds)\"}}],\"seriesParams\":[{\"show\":\"true\",\"type\":\"line\",\"mode\":\"stacked\",\"data\":{\"label\":\"Count\",\"id\":\"1\"},\"valueAxis\":\"ValueAxis-1\",\"drawLinesBetweenPoints\":true,\"showCircles\":true,\"interpolate\":\"linear\",\"radiusRatio\":9}],\"legendPosition\":\"right\",\"type\":\"line\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"elapsedTime\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"datetime\",\"interval\":\"auto\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}}],\"listeners\":{}}",
       "uiStateJSON": "{}",
       "description": "",
       "savedSearchId": "liberty_accessLogSearch",
@@ -303,7 +223,7 @@
     "_id": "liberty_accessLogElapsedTimeGraph",
     "_type": "visualization",
     "_source": {
-      "title": "Liberty Access Log Elapsed Time",
+      "title": "Liberty Access Log Elapsed Time (in microseconds)",
       "visState": "{\"title\":\"Liberty Access Log Elapsed Time\",\"type\":\"histogram\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"scale\":\"linear\",\"mode\":\"stacked\",\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{},\"grid\":{\"categoryLines\":false,\"style\":{\"color\":\"#eee\"}},\"categoryAxes\":[{\"id\":\"CategoryAxis-1\",\"type\":\"category\",\"position\":\"bottom\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\"},\"labels\":{\"show\":true,\"truncate\":100},\"title\":{}}],\"valueAxes\":[{\"id\":\"ValueAxis-1\",\"name\":\"LeftAxis-1\",\"type\":\"value\",\"position\":\"left\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\",\"mode\":\"normal\",\"setYExtents\":false,\"defaultYExtents\":false},\"labels\":{\"show\":true,\"rotate\":0,\"filter\":false,\"truncate\":100},\"title\":{\"text\":\"Count\"}}],\"seriesParams\":[{\"show\":\"true\",\"type\":\"histogram\",\"mode\":\"stacked\",\"data\":{\"label\":\"Count\",\"id\":\"1\"},\"valueAxis\":\"ValueAxis-1\",\"drawLinesBetweenPoints\":true,\"showCircles\":true,\"interpolate\":\"linear\"}],\"legendPosition\":\"right\",\"type\":\"histogram\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"datetime\",\"interval\":\"auto\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}},{\"id\":\"3\",\"enabled\":true,\"type\":\"range\",\"schema\":\"group\",\"params\":{\"field\":\"elapsedTime\",\"ranges\":[{\"from\":0,\"to\":250000},{\"from\":250000,\"to\":500000},{\"from\":500000,\"to\":1000000},{\"from\":1000000,\"to\":2000000},{\"from\":2000000}]}}],\"listeners\":{}}",
       "uiStateJSON": "{}",
       "description": "",
@@ -326,6 +246,21 @@
       "version": 1,
       "kibanaSavedObjectMeta": {
         "searchSourceJSON": "{\"filter\":[{\"meta\":{\"index\":\"logstash-*\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"type\",\"value\":\"liberty_accesslog\"},\"query\":{\"match\":{\"type\":{\"query\":\"liberty_accesslog\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}]}"
+      }
+    }
+  },
+  {
+    "_id": "liberty_errorResponseCodeCount",
+    "_type": "visualization",
+    "_source": {
+      "title": "Liberty Error Response Code Count",
+      "visState": "{\"title\":\"Liberty Error Response Code Count\",\"type\":\"metric\",\"params\":{\"addLegend\":false,\"addTooltip\":true,\"fontSize\":\"10\",\"metric\":{\"colorSchema\":\"Green to Red\",\"colorsRange\":[{\"from\":0,\"to\":10000}],\"invertColors\":false,\"labels\":{\"show\":true},\"metricColorMode\":\"None\",\"percentageMode\":false,\"style\":{\"bgColor\":false,\"bgFill\":\"#000\",\"fontSize\":40,\"labelColor\":false,\"subText\":\"\"},\"useRanges\":false},\"type\":\"metric\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"filters\",\"schema\":\"group\",\"params\":{\"filters\":[{\"input\":{\"query\":\"responseCode:[400 TO 499]\"},\"label\":\"400s\"},{\"input\":{\"query\":\"responseCode:[500 TO 599]\"},\"label\":\"500s\"}]}}]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "savedSearchId": "liberty_accessLogSearch",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[],\"query\":{\"language\":\"lucene\",\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"type:access_log OR type:liberty_accesslog\"}}},\"highlight\":{\"pre_tags\":[\"@kibana-highlighted-field@\"],\"post_tags\":[\"@/kibana-highlighted-field@\"],\"fields\":{\"*\":{}},\"require_field_match\":false,\"fragment_size\":2147483647},\"indexRefName\":\"kibanaSavedObjectMeta.searchSourceJSON.index\"}"
       }
     }
   }
